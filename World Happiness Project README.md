@@ -13,7 +13,7 @@ The World Happiness Informational Dashboard project aims to create an interactiv
 The objectives of the project are as follows:
 * To create an interactive dashboard that presents data on the happiness levels of countries around the world
 * To provide users with an overview of the factors that contribute to happiness
-* To use Tableau public to create the dashboard
+* To use Tableau public to create data story and a series of visuals and dashboards
 * To ensure the dashboard is easy to use and accessible
 
 ## Scope ##
