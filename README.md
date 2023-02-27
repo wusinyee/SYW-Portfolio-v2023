@@ -13,6 +13,13 @@ With over four years of practical experience in data analytics and business inte
 * 🧠  I'm learning Data modeling, Microsoft Power Automate, Trans-Media Data Storytelling
 * 🤝  I'm open to collaborating on Interesting projects and writing technical documents
 
+Project List: 
+--------------
+- [x] World Happiness Informational Dashboard
+- [x] Divvy Bike Rider Analysis
+- [ ] Data Cleaning Demo (Python and )MySQL
+- [ ] Extract, Tranform, Load (ETL) with Microsoft SQL Server Integration Services
+
 
 World Happiness Informational Dashboard Project
 ------------------------------------------------
