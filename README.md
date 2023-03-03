@@ -1,6 +1,6 @@
 Hi ![](https://user-images.githubusercontent.com/18350557/176309783-0785949b-9127-417c-8b55-ab5a4333674e.gif)My name is Mandy SY Wu
 ===================================================================================================================================
-I leverage data analytics and business intelligence to achieve tangible results, while aspiring to be a skilled solution designer and data story-teller. I am also passionate about travel, mental health research, philosophy of mind, skydiving, and meme.
+I leverage data to achieve tangible results, while aspiring to be a resourceful problem solver and data story-teller. I am also passionate about travel, mental health research, philosophy of mind, skydiving, and meme.
 
 Software Engineer || Data & Business Intelligence Analyst
 ---------------------------------------------------------
