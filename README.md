@@ -15,8 +15,8 @@ Software Engineer || Data & Business Intelligence Analyst
 
 Project List: 
 --------------
-- [x] [World Happiness Informational Dashboard](https://public.tableau.com/views/WorldHappinessInformationalDashboard/Title?:language=en-US&:display_count=n&:origin=viz_share_link)
-- [x] [Divvy Bike Rider Analysis](https://public.tableau.com/views/DIVVYANALYSIS/RidersAnalysis?:language=en-US&:display_count=n&:origin=viz_share_link)
+- [x] [World Happiness Informational Dashboard](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/36f23f5ce5a58ee402b7d7bc0aaa80f8fb1d2666/World%20Happiness%20Project%20Outline.md)
+- [x] [Divvy Bike Rider Analysis](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/36f23f5ce5a58ee402b7d7bc0aaa80f8fb1d2666/Divvy%20Analysis%20Project.md)
 - [ ]  Analyze data with Python
 - [x] [Extract, Tranform, Load (ETL) with Microsoft SQL Server Integration Services](https://www.canva.com/design/DAFbF6ULnlw/M-IEfwb71qhXO_sf0nTgiA/view?utm_content=DAFbF6ULnlw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 - [x] [Business Requirement Documentation Sample](https://www.canva.com/design/DAFb08GxmS0/op8wOGsa2pDsh0tuxEQFcw/view?utm_content=DAFb08GxmS0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
