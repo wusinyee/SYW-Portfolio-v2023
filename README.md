@@ -13,14 +13,17 @@ I leverage data to achieve tangible results, while aspiring to be a resourceful 
 
 
 
-Project List: 
+Project List
 --------------
-- [x] [World Happiness Informational Dashboard](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/36f23f5ce5a58ee402b7d7bc0aaa80f8fb1d2666/World%20Happiness%20Project%20Outline.md)
-- [x] [Divvy Bike Rider Analysis](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/36f23f5ce5a58ee402b7d7bc0aaa80f8fb1d2666/Divvy%20Analysis%20Project.md)
-- [x] [Sales data analysis and visualization with Python](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/55c05d4b57da2c4ad358811c9ffeafd1fa986b3e/Sales%20data%20analysis%20and%20visualization%20with%20Python.md)
-- [x] [Extract, Tranform, Load (ETL) with Microsoft SQL Server Integration Services](https://www.canva.com/design/DAFbF6ULnlw/M-IEfwb71qhXO_sf0nTgiA/view?utm_content=DAFbF6ULnlw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
-- [x] [Business Requirement Documentation Sample](https://www.canva.com/design/DAFb08GxmS0/op8wOGsa2pDsh0tuxEQFcw/view?utm_content=DAFb08GxmS0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
-- [x] [SQL Data Cleaning and Analysis](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/f2969db51e0b5e973965462903698f2f2009ff41/SQL%20Data%20Cleaning%20and%20Analysis.md)
+
+> - [x] [World Happiness Informational Dashboard](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/36f23f5ce5a58ee402b7d7bc0aaa80f8fb1d2666/World%20Happiness%20Project%20Outline.md)
+> - [x] [Divvy Bike Rider Analysis](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/36f23f5ce5a58ee402b7d7bc0aaa80f8fb1d2666/Divvy%20Analysis%20Project.md)
+> - [x] [Sales data analysis and visualization with Python](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/55c05d4b57da2c4ad358811c9ffeafd1fa986b3e/Sales%20data%20analysis%20and%20visualization%20with%20Python.md)
+> - [x] [Extract, Tranform, Load (ETL) with Microsoft SQL Server Integration Services](https://www.canva.com/design/DAFbF6ULnlw/M-IEfwb71qhXO_sf0nTgiA/view?utm_content=DAFbF6ULnlw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+> - [x] [Business Requirement Documentation Sample](https://www.canva.com/design/DAFb08GxmS0/op8wOGsa2pDsh0tuxEQFcw/view?utm_content=DAFb08GxmS0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+> - [x] [SQL Data Cleaning and Analysis](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/f2969db51e0b5e973965462903698f2f2009ff41/SQL%20Data%20Cleaning%20and%20Analysis.md)
+
+
 
 World Happiness Informational Dashboard Project
 ------------------------------------------------
