@@ -15,7 +15,7 @@ With over four years of practical experience in data analytics and business inte
 
 Project List: 
 --------------
-- [x] [World Happiness Informational Dashboard](https://public.tableau.com/views/WorldHappinessInformationalDashboard/TitlePage?:language=en-US&:display_count=n&:origin=viz_share_link)
+- [x] [World Happiness Informational Dashboard](https://public.tableau.com/views/WorldHappinessInformationalDashboard/Title?:language=en-US&:display_count=n&:origin=viz_share_link)
 - [x] [Divvy Bike Rider Analysis](https://public.tableau.com/views/DIVVYANALYSIS/RidersAnalysis?:language=en-US&:display_count=n&:origin=viz_share_link)
 - [ ] Data Cleaning Demo (Python and MySQL)
 - [x] [Extract, Tranform, Load (ETL) with Microsoft SQL Server Integration Services](https://www.canva.com/design/DAFbF6ULnlw/M-IEfwb71qhXO_sf0nTgiA/view?utm_content=DAFbF6ULnlw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
@@ -23,8 +23,8 @@ Project List:
 
 World Happiness Informational Dashboard Project
 ------------------------------------------------
- [World Happiness Informational Dashboard](https://public.tableau.com/views/WorldHappinessInformationalDashboard/TitlePage?:language=en-US&:display_count=n&:origin=viz_share_link)
- <div class='tableauPlaceholder' id='viz1676785237130' style='position: relative'><noscript><a href='#'><img alt='World Happiness Informational Dashboard  2015-2017 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Wo&#47;WorldHappinessInformationalDashboard&#47;TitlePage&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='WorldHappinessInformationalDashboard&#47;TitlePage' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Wo&#47;WorldHappinessInformationalDashboard&#47;TitlePage&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div> 
+ [World Happiness Informational Dashboard](https://public.tableau.com/views/WorldHappinessInformationalDashboard/Title?:language=en-US&:display_count=n&:origin=viz_share_link)
+<div class='tableauPlaceholder' id='viz1677918495729' style='position: relative'><noscript><a href='#'><img alt='World Happiness Informational Dashboard  2015-2017 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Wo&#47;WorldHappinessInformationalDashboard&#47;Title&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='WorldHappinessInformationalDashboard&#47;Title' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Wo&#47;WorldHappinessInformationalDashboard&#47;Title&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>
 
 Divvy Bike Rider Analysis Project
 ----------------------------------
