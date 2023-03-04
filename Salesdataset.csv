@@ -1,0 +1,18 @@
+Date	Day	Month	Year	Customer_Age	Age_Group	Customer_Gender	Country	State	Product_Category	Sub_Category	Product	Order_Quantity	Unit_Cost	Unit_Price	Profit	Cost	Revenue
+2016-07-31	31	July	2016	23	Youth (<25)	M	Germany	Saarland	Accessories	Bike Racks	Hitch Rack - 4-Bike	23	45	120	1228	1035	2263
+2016-07-31	31	July	2016	31	Young Adults (25-34)	M	Australia	Queensland	Accessories	Bike Racks	Hitch Rack - 4-Bike	6	45	120	335	270	605
+2016-07-31	31	July	2016	54	Adults (35-64)	M	Canada	British Columbia	Accessories	Bottles and Cages	Water Bottle - 30 oz.	6	2	5	18	12	30
+2016-07-31	31	July	2016	54	Adults (35-64)	M	Canada	British Columbia	Accessories	Bottles and Cages	Water Bottle - 30 oz.	13	2	5	38	26	64
+2016-07-31	31	July	2016	48	Adults (35-64)	F	United States	Washington	Accessories	Bottles and Cages	Water Bottle - 30 oz.	12	2	5	23	24	47
+2016-07-31	31	July	2016	36	Adults (35-64)	M	United States	Virginia	Accessories	Bottles and Cages	Water Bottle - 30 oz.	11	2	5	21	22	43
+2016-07-31	31	July	2016	39	Adults (35-64)	M	United States	California	Accessories	Bottles and Cages	Mountain Bottle Cage	19	4	10	110	76	186
+2016-07-31	31	July	2016	38	Adults (35-64)	M	United States	California	Accessories	Bottles and Cages	Water Bottle - 30 oz.	18	2	5	52	36	88
+2016-07-31	31	July	2016	26	Young Adults (25-34)	M	Canada	British Columbia	Clothing	Caps	AWC Logo Cap	27	7	9	52	189	241
+2016-07-31	31	July	2016	55	Adults (35-64)	F	United States	California	Clothing	Caps	AWC Logo Cap	23	7	9	42	161	203
+2016-07-31	31	July	2016	19	Youth (<25)	M	Canada	British Columbia	Clothing	Caps	AWC Logo Cap	3	7	9	6	21	27
+2016-07-31	31	July	2016	48	Adults (35-64)	F	United Kingdom	England	Clothing	Caps	AWC Logo Cap	16	7	9	26	112	138
+2016-07-31	31	July	2016	19	Youth (<25)	F	United States	Washington	Clothing	Caps	AWC Logo Cap	18	7	9	0	126	126
+2016-07-31	31	July	2016	19	Youth (<25)	F	United States	Washington	Accessories	Cleaners	Bike Wash - Dissolver	23	3	8	75	69	144
+2016-07-31	31	July	2016	23	Youth (<25)	M	Germany	Saarland	Accessories	Cleaners	Bike Wash - Dissolver	8	3	8	28	24	52
+2016-07-31	31	July	2016	52	Adults (35-64)	F	Australia	New South Wales	Accessories	Cleaners	Bike Wash - Dissolver	16	3	8	63	48	111
+2016-07-31	31	July	2016	48	Adults (35-64)	F	United States	Washington	Accessories	Cleaners	Bike Wash - Dissolver	12	3	8	39	36	75
