@@ -40,6 +40,15 @@ Extract, Tranform, Load (ETL) with Microsoft SQL Server Integration Services
 
 ![Flowchart](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/88cbdcd21e2c18a24f3cfd018c4d035322e4439a/ETLwithSSISflowchart.jpg)
 
+
+Business Requirement Documentation Sample
+------------------------------------------
+
+[PDF](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/7c00fd2c34d6554339c032af068ac96ae3893aa2/BRD%20Sample%20.pdf)
+
+
+
+
 ### Skills
 
 
