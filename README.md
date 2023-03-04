@@ -1,25 +1,26 @@
-Hi ![](https://user-images.githubusercontent.com/18350557/176309783-0785949b-9127-417c-8b55-ab5a4333674e.gif)My name is Mandy SY Wu
+Hi ![](https://user-images.githubusercontent.com/18350557/176309783-0785949b-9127-417c-8b55-ab5a4333674e.gif)My name is Mandy
 ===================================================================================================================================
 I leverage data to achieve tangible results, while aspiring to be a resourceful problem solver and data story-teller. I am also passionate about travel, mental health research, philosophy of mind, skydiving, and meme.
 
 Software Engineer || Data & Business Intelligence Analyst
 ---------------------------------------------------------
 
-With over four years of practical experience in data analytics and business intelligence, I have consistently demonstrated the ability to use data to drive tangible business results. Employing an analytical and technical approach, I have a talent for breaking down complex problems into actionable tasks and regularly challenge myself to find creative and effective solutions. My strong communication, interpersonal, and time-management skills have been foundational to my success in collaborating with teams and effectively delivering results. My technical expertise includes proficiency in SQL (MySQL, PostgreSQL, and Transact-SQL), Python (including NumPy, Pandas, and Seaborn libraries), and data visualization (Tableau, Qlik Sense, and Power Bi), as well as strong skills in data management, reporting, and dashboard design and maintenance. I am driven by a passion for using data to provide valuable insights, and I am committed to continuing to expand my skills and knowledge in this rapidly-evolving field.
-
 * 🌍  I'm based in Wan Chai, Hong Kong
 * 🖥️  See my portfolio at [Unlocking Insights: A Collection of BI & Data Analysis Projects](http://github.com/wusinyee/Portfolio-2023.git)
 * ✉️  You can contact me at [wuqianyi1021@gmail.com](mailto:wuqianyi1021@gmail.com)
-* 🧠  I'm learning Data modeling, Microsoft Power Automate, Trans-Media Data Storytelling
+* 🧠  I'm learning PHP, Microsoft Power Automate, Trans-Media Data Storytelling
 * 🤝  I'm open to collaborating on Interesting projects and writing technical documents
+
+
 
 Project List: 
 --------------
 - [x] [World Happiness Informational Dashboard](https://public.tableau.com/views/WorldHappinessInformationalDashboard/Title?:language=en-US&:display_count=n&:origin=viz_share_link)
 - [x] [Divvy Bike Rider Analysis](https://public.tableau.com/views/DIVVYANALYSIS/RidersAnalysis?:language=en-US&:display_count=n&:origin=viz_share_link)
-- [ ] Data Cleaning Demo (Python and MySQL)
+- [ ]  Analyze data with Python
 - [x] [Extract, Tranform, Load (ETL) with Microsoft SQL Server Integration Services](https://www.canva.com/design/DAFbF6ULnlw/M-IEfwb71qhXO_sf0nTgiA/view?utm_content=DAFbF6ULnlw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 - [x] [Business Requirement Documentation Sample](https://www.canva.com/design/DAFb08GxmS0/op8wOGsa2pDsh0tuxEQFcw/view?utm_content=DAFb08GxmS0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+- [ ] Data Cleaing with SQL
 
 World Happiness Informational Dashboard Project
 ------------------------------------------------
