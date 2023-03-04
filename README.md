@@ -20,7 +20,7 @@ Project List:
 - [x] [Sales data analysis and visualization with Python](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/55c05d4b57da2c4ad358811c9ffeafd1fa986b3e/Sales%20data%20analysis%20and%20visualization%20with%20Python.md)
 - [x] [Extract, Tranform, Load (ETL) with Microsoft SQL Server Integration Services](https://www.canva.com/design/DAFbF6ULnlw/M-IEfwb71qhXO_sf0nTgiA/view?utm_content=DAFbF6ULnlw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 - [x] [Business Requirement Documentation Sample](https://www.canva.com/design/DAFb08GxmS0/op8wOGsa2pDsh0tuxEQFcw/view?utm_content=DAFb08GxmS0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
-- [ ] Data Cleaing with SQL
+- [x] SQL Data Cleaning and Analysis
 
 World Happiness Informational Dashboard Project
 ------------------------------------------------
