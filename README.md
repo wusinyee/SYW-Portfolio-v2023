@@ -2,8 +2,8 @@ Hi ![](https://user-images.githubusercontent.com/18350557/176309783-0785949b-912
 ===================================================================================================================================
 I leverage data to achieve tangible results, while aspiring to be a resourceful problem solver and data story-teller. I am also passionate about travel, mental health research, philosophy of mind, skydiving, and meme.
 
-Software Engineer || Data & Business Intelligence Analyst
----------------------------------------------------------
+ Data & Business Intelligence Analyst || Software Engineer 
+-----------------------------------------------------------
 
 * 🌍  I'm based in Wan Chai, Hong Kong
 * 🖥️  See my portfolio at [Unlocking Insights: A Collection of BI & Data Analysis Projects](http://github.com/wusinyee/Portfolio-2023.git)
