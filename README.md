@@ -8,7 +8,7 @@ I leverage data to achieve tangible results, while aspiring to be a resourceful 
 * 🌍  I'm based in Wan Chai, Hong Kong
 * 🖥️  See my portfolio at [Unlocking Insights: A Collection of BI & Data Analysis Projects](http://github.com/wusinyee/Portfolio-2023.git)
 * ✉️  You can contact me at [wuqianyi1021@gmail.com](mailto:wuqianyi1021@gmail.com)
-* 🧠  I'm learning PHP, Microsoft Power Automate, Trans-Media Data Storytelling
+* 🧠  I'm learning PHP, Alteryx, and SAP Analytics Cloud
 * 🤝  I'm open to collaborating on Interesting projects and writing technical documents
 
 
