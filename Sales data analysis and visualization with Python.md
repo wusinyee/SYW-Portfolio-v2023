@@ -1,5 +1,3 @@
-
-
 To use Python to analyze and visualize the data. I usually use pandas, matplotlib, and seaborn. After importing the libaries, the dataset from the CSV file will be read and some data cleaing and transformation will be preformed. Last but not least, some visuals will be created.
 
 ```python
