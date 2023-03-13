@@ -22,6 +22,10 @@ Project List
 > - [x] [Extract, Tranform, Load (ETL) with Microsoft SQL Server Integration Services](https://www.canva.com/design/DAFbF6ULnlw/M-IEfwb71qhXO_sf0nTgiA/view?utm_content=DAFbF6ULnlw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 > - [x] [Business Requirement Documentation Sample](https://www.canva.com/design/DAFb08GxmS0/op8wOGsa2pDsh0tuxEQFcw/view?utm_content=DAFb08GxmS0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 > - [x] [SQL Data Cleaning and Analysis](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/f2969db51e0b5e973965462903698f2f2009ff41/SQL%20Data%20Cleaning%20and%20Analysis.md)
+> - [x] [Sales Sample Dashboard with Qlik Sense](https://mapv4ogz9cbv0i5.sg.qlikcloud.com/single/?appid=6cdbe106-5436-4140-9229-f0891d5f13e0&sheet=cce95a84-cf17-45aa-b858-254acca56bea&theme=horizon&opt=ctxmenu,currsel)
+> - [x] [Sales Insights Sample Dashboard with Qlik Sense](https://mapv4ogz9cbv0i5.sg.qlikcloud.com/single/?appid=6cdbe106-5436-4140-9229-f0891d5f13e0&sheet=63a29d72-3f96-4487-b314-63c01d781745&theme=horizon&opt=ctxmenu,currsel)
+
+
 
 Certification & Accomplishment
 --------------------------------
