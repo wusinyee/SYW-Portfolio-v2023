@@ -1,3 +1,13 @@
+## Hi All,
+## I am excited to announce that my portfolio is about to receive a significant update! I have been hard at work adding new projects to the collection, and I believe they will be of great interest to you.
+Here are some of the exciting new projects that will be featured:
+- [ ] Contoso Sales Overview Dashboard by Power BI
+- [ ] Business Requirement Document (BRD) and Functional Requirement Document Sample
+- [ ] Data Quality Assessment Dashboard by Tableau
+- [ ] Data Flow Diagram (DFD) Sample
+- [ ] Customer Segmentation Analysis with SQL
+- [ ] AI Sentiment Snalysis on Twitter with python
+
 Hi ![](https://user-images.githubusercontent.com/18350557/176309783-0785949b-9127-417c-8b55-ab5a4333674e.gif)My name is Mandy
 ===================================================================================================================================
 I leverage data to achieve tangible results, while aspiring to be a resourceful problem solver and data story-teller. I am also passionate about travel, mental health research, philosophy of mind, skydiving, and meme.
