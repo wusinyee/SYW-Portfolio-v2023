@@ -179,11 +179,36 @@ print("Customer data generated successfully!")
 ## 3. Explore the customer data to identify patterns and relationships between different variables
 
 Customer demographics refer to the characteristics of a group of customers or the population of customers that a business serves. These characteristics may include but not limited to:
-1. Age: the age range of customers, such as 18-24, 25-34, 35-44, etc.
-2. Gender: the gender of customers, such as male, female, or non-binary.
-3. Location: the geographic location of customers, such as city, state, or country.
-4. Education: the education level of customers, such as high school, college, or graduate degree.
-5. Income: the income level of customers, such as low-income, middle-income, or high-income.
+1. Age: customers are grouped into 3 age groups based on their age ranges: young adults (18-35), middle-aged adults (36-60), and seniors (above 60). 
+
+```sql
+-- Query to group customers by age
+SELECT
+CASE
+WHEN age BETWEEN 18 AND 35 THEN 'Young Adults'
+WHEN age BETWEEN 36 AND 60 THEN 'Middle-Aged Adults'
+WHEN age > 60 THEN 'Seniors'
+END AS age_group,
+COUNT(*) as num_customers
+FROM MasterCustomer
+GROUP BY age_group;
+```
+To group customers by age as young adults, middle-aged adults, and seniors, I used the CASE statement in SQL to create age ranges and group customers based on those ranges. 
+
+| age_group                   | num_customers |
+| --------------------------  | ------------- |
+| Seniors (above 60)          | 250           |
+| Young Adults (18-35)        | 101           |
+| Middle-Aged Adults (35-60)  | 149           |
+ 
+
+
+
+
+3. Gender: the gender of customers, such as male, female, or non-binary.
+4. Location: the geographic location of customers, such as city, state, or country.
+5. Education: the education level of customers, such as high school, college, or graduate degree.
+6. Income: the income level of customers, such as low-income, middle-income, or high-income.
 
 
 
