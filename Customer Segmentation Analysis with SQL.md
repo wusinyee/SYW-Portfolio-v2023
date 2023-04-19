@@ -39,30 +39,30 @@ TBC
 
 Befor generating the sample customer data, I defined the columns and their values as follows:
 
-| Columns       | Values         |
-| ------------- | -------------  |
-| customer_id   | a-000          |
-| first_name    | Victor         |
-| last_name     | Smith          |
-| email         | xxx@xxx.com    |
-| age           | 18 to 100      |
-| gender        | Male or Felmale| 
-| location      | Germany        |
-| Content Cell  | Content Cell   |
-| Content Cell  | Content Cell   |
-| Content Cell  | Content Cell   |
-| Content Cell  | Content Cell   |
-| Content Cell  | Content Cell   |
-| Content Cell  | Content Cell   |
-| Content Cell  | Content Cell   |
-| Content Cell  | Content Cell   |
-| Content Cell  | Content Cell   |
-| Content Cell  | Content Cell   |
-| Content Cell  | Content Cell   |
-| Content Cell  | Content Cell   |
-| Content Cell  | Content Cell   |
-| Content Cell  | Content Cell   |
-| Content Cell  | Content Cell   |
+| Columns             | Values         |
+| ------------------- |----------------|
+| customer_id         | a-000          |
+| first_name          | Victor         |
+| last_name           | Smith          |
+| email               | xxx@xxx.com    |
+| age                 | 18 to 100      |
+| gender              |More than 3, very woke| 
+| location            | country        |
+| education           | Content Cell   |
+| income              | Content Cell   |
+| channel_preference  | Content Cell   |
+| lifecycle_stage     | Content Cell   |
+| time_spent          | Content Cell   |
+| purchase_id         | Content Cell   |
+| order_date          | Content Cell   |
+| product_category    | Content Cell   |
+| brand               | Content Cell   |
+| order_value         | Content Cell   |
+| rating              | Content Cell   |
+| quality             | Content Cell   |
+| delivery            | Content Cell   |
+| review_date         | Content Cell   |
+
 
 Given that all esstential data is stored in one table, I named it 'MasterCustomer' Table with the following schema (SQL):
 
