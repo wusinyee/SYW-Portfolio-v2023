@@ -39,30 +39,28 @@ TBC
 
 Befor generating the sample customer data, I defined the columns and their values as follows:
 
-| Columns             | Values         |
-| ------------------- |----------------|
-| customer_id         | a-000          |
-| first_name          | Victor         |
-| last_name           | Smith          |
-| email               | xxx@xxx.com    |
-| age                 | 18 to 100      |
-| gender              |More than 3, very woke| 
-| location            | country        |
-| education           | Content Cell   |
-| income              | Content Cell   |
-| channel_preference  | Content Cell   |
-| lifecycle_stage     | Content Cell   |
-| time_spent          | Content Cell   |
-| purchase_id         | Content Cell   |
-| order_date          | Content Cell   |
-| product_category    | Content Cell   |
-| brand               | Content Cell   |
-| order_value         | Content Cell   |
-| rating              | Content Cell   |
-| quality             | Content Cell   |
-| delivery            | Content Cell   |
-| review_date         | Content Cell   |
-
+* customer_id: a string that represents the unique identifier of each customer
+* first_name: a string that represents the first name of each customer
+* last_name: a string that represents the last name of each customer
+* email: a string that represents the email address of each customer
+* age: an integer that represents the age of each customer
+* gender: a string that represents the gender of each customer
+* location: a string that represents the location of each customer
+* education: a string that represents the education level of each customer
+* income: a string that represents the income level of each customer
+* channel_preference: a string that represents the channel preference of each customer
+* lifecycle_stage: a string that represents the lifecycle stage of each customer
+* behavior_id: an integer that represents the behavior ID of each customer
+* time_spent: an integer that represents the time spent by each customer
+* purchase_id: a string that represents the purchase ID of each customer
+* order_date: a string that represents the date of the order
+* product_category: a string that represents the product category
+* brand: a string that represents the brand of the product
+* order_value: a string that represents the order value
+* rating: a string that represents the rating of the product
+* quality: a string that represents the quality of the product
+* delivery: a string that represents the delivery status of the product
+* review_date: a string that represents the date of the review.
 
 Given that all esstential data is stored in one table, I named it 'MasterCustomer' Table with the following schema (SQL):
 
@@ -77,7 +75,7 @@ CREATE TABLE MasterCustomer
     gender	VARCHAR(512),
     location	VARCHAR(512),
     education	VARCHAR(512),
-    income	VARCHAR(512),
+    income	INT,
     channel_preference	VARCHAR(512),
     lifecycle_stage	VARCHAR(512),
     behavior_id	INT,
@@ -86,7 +84,7 @@ CREATE TABLE MasterCustomer
     order_date	VARCHAR(512),
     product_category	VARCHAR(512),
     brand	VARCHAR(512),
-    order_value	VARCHAR(512),
+    order_value	INT,
     rating	VARCHAR(512),
     quality	VARCHAR(512),
     delivery	VARCHAR(512),
@@ -97,12 +95,8 @@ CREATE TABLE MasterCustomer
 I wrote INSERT statements to insert the customer data records:
 
 ```sql
-
-INSERT INTO MasterCustomer (customer_id, first_name, last_name, email, age, gender, location, education, income, channel_preference, lifecycle_stage, behavior_id, time_spent, purchase_id, order_date, product_category, brand, order_value, rating, quality, delivery, review_date) VALUES ('d-534', 'Nadya', 'Barchrameev', 'nbarchrameev0@yellowpages.com', '75', 'Female', 'Mexico', 'Bachelor', '"$382,694.28 "', 'Social_Media', 'Active', '5', '14', 'om337', '1/4/2022', 'Computers', '"Spencer, Pouros and Lang"', '"$9,619.49 "', '5Extremely_Satisfied', 'As_Expected', 'On_time', '1/5/2022');
-INSERT INTO MasterCustomer (customer_id, first_name, last_name, email, age, gender, location, education, income, channel_preference, lifecycle_stage, behavior_id, time_spent, purchase_id, order_date, product_category, brand, order_value, rating, quality, delivery, review_date) VALUES ('V-503', 'Nev', 'Purnell', 'npurnell1@skyrock.com', '32', 'Male', 'United States', 'High_School', '"$803,921.79 "', 'Mobile', 'New', '2', '12', 'L7433', '1/27/2022', 'Toys', 'Hodkiewicz-Satterfield', '"$7,998.64 "', '2Dissatisfied', 'As_Expected', 'On_time', '1/28/2022');
-INSERT INTO MasterCustomer (customer_id, first_name, last_name, email, age, gender, location, education, income, channel_preference, lifecycle_stage, behavior_id, time_spent, purchase_id, order_date, product_category, brand, order_value, rating, quality, delivery, review_date) VALUES ('x-121', 'Rosamond', 'Risebarer', 'rrisebarer2@xinhuanet.com', '94', 'Female', 'United States', 'High_School', '"$350,454.18 "', 'Social_Media', 'New', '4', '17', 'cd447', '7/16/2021', 'Shoes', '"Carter, Cronin and Hintz"', '$764.74', '1Extremely_Dissatisfied', 'Exceed_Expectation', 'Fast', '7/17/2021');
-INSERT INTO MasterCustomer (customer_id, first_name, last_name, email, age, gender, location, education, income, channel_preference, lifecycle_stage, behavior_id, time_spent, purchase_id, order_date, product_category, brand, order_value, rating, quality, delivery, review_date) VALUES ('2-959', 'Gannie', 'Behrendsen', 'gbehrendsen3@angelfire.com', '44', 'Male', 'Germany', 'Master', '"$697,569.86 "', 'Social_Media', 'At Risk', '3', '21', 'km529', '2/12/2022', 'Sports', 'Gutmann-Yost', '"$8,313.23 "', '4Satisfied', 'As_Expected', 'Fast', '2/13/2022');
-
+INSERT INTO MasterCustomer (customer_id, first_name, last_name, email, age, gender, location, education, income, channel_preference, lifecycle_stage, behavior_id, time_spent, purchase_id, order_date, product_category, brand, order_value, rating, quality, delivery, review_date) VALUES ('L-885', 'Shaylynn', 'Klagges', 'sklagges0@yandex.ru', '81', 'Female', 'Mexico', 'High_School', '41211187', 'Email', 'New', '1', '12', 'uc757', '6/16/2021', 'Home', '"Kris, Carter and Brakus"', '44775558', '2Dissatisfied', 'Disappointing', 'Fast', '6/17/2021');
+INSERT INTO MasterCustomer (customer_id, first_name, last_name, email, age, gender, location, education, income, channel_preference, lifecycle_stage, behavior_id, time_spent, purchase_id, order_date, product_category, brand, order_value, rating, quality, delivery, review_date) VALUES ('k-789', 'Maribelle', 'Di Bartolommeo', 'mdibartolommeo1@elpais.com', '46', 'Female', 'United States', 'Bachelor', '82894692', 'Mobile', 'New', '2', '17', 'SF044', '4/20/2021', 'Grocery', 'Reinger-Mann', '63655474', '1Extremely_Dissatisfied', 'Exceed_Expectation', 'Late', '4/21/2021');
 ```
 
 ## 2. Generate sample customer data with python or mockroo
@@ -179,8 +173,7 @@ print("Customer data generated successfully!")
 ## 3. Explore the customer data to identify patterns and relationships between different variables
 
 Customer demographics refer to the characteristics of a group of customers or the population of customers that a business serves. These characteristics may include but not limited to:
-1. Age: customers are grouped into 3 age groups based on their age ranges: young adults (18-35), middle-aged adults (36-60), and seniors (above 60). 
-
+1. Age: young adults (18-35), middle-aged adults (36-60), and seniors (above 60). 
 ```sql
 -- Query to group customers by age
 SELECT
@@ -202,14 +195,74 @@ To group customers by age as young adults, middle-aged adults, and seniors, I us
 | Middle-Aged Adults (35-60)  | 149           |
  
 
+3. Gender: the 8 genders of customers.
+```sql
+    SELECT gender, COUNT(*) as num_customers
+    FROM MasterCustomer
+    GROUP BY gender;
+   ```
+| gender       | num_customers |
+| ------------ | ------------- |
+| Male         | 215           |
+| Non-binary   | 6             |
+| Genderqueer  | 8             |
+| Bigender     | 6             |
+| Genderfluid  | 8             |
+| Polygender   | 13            |
+| Female       | 237           |
+| Agender      | 7             |
 
 
+5. Location: the geographic location of customers, such as city, state, or country.
+```sql
+    SELECT location, COUNT(*) as num_customers
+    FROM MasterCustomer
+    GROUP BY location;
+```
 
-3. Gender: the gender of customers, such as male, female, or non-binary.
-4. Location: the geographic location of customers, such as city, state, or country.
-5. Education: the education level of customers, such as high school, college, or graduate degree.
-6. Income: the income level of customers, such as low-income, middle-income, or high-income.
+| location        | num_customers |
+| --------------- | ------------- |
+| United Kingdom  | 23            |
+| Netherlands     | 39            |
+| Mexico          | 130           |
+| Germany         | 42            |
+| United States   | 266           |
 
+
+7. Education: the education level of customers, such as high school, college, or graduate degree.
+```sql
+    SELECT education, COUNT(*) as num_customers
+    FROM MasterCustomer
+    GROUP BY education;
+```
+
+| education    | num_customers |
+| -------------| ------------- |
+| PHD          | 115           |
+| Master       | 122           |
+| Bachelor     | 141           |
+| High_School  | 122           |
+   
+
+8. Income: the income level of customers, such as low-income, middle-income, or high-income.
+```sql
+SELECT 
+    CASE 
+        WHEN income < 1000000 THEN 'Low Income'
+        WHEN income >= 1000000 AND income < 2800000 THEN 'Middle-Class'
+        WHEN income >= 2800000 AND income < 3500000 THEN 'Upper Middle-Class'
+        ELSE 'High Income'
+    END AS income_group,
+    COUNT(*) AS customer_count
+FROM MasterCustomer
+GROUP BY income_group;
+```
+| income_group       | customer_count |
+| ------------------ | -------------- |
+| High Income        | 483            |
+| Upper Middle-Class | 3              |
+| Middle-Class       | 11             |
+| Low Income         | 3              |
 
 
 
