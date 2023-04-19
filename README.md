@@ -5,7 +5,7 @@ Here are some of the exciting new projects that will be featured:
 - [ ] Business Requirement Document (BRD) and Functional Requirement Document Sample
 - [ ] Data Quality Assessment Dashboard by Tableau
 - [ ] Data Flow Diagram (DFD) Sample
-- [ ] Customer Segmentation Analysis with SQL
+- [ ] [Customer Segmentation Analysis with SQL](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/4914ce37258ffebe612979c7855e0fd019c8eca3/Customer%20Segmentation%20Analysis%20with%20SQL.md)
 - [ ] AI Sentiment Snalysis on Twitter with python
 
 Hi ![](https://user-images.githubusercontent.com/18350557/176309783-0785949b-9127-417c-8b55-ab5a4333674e.gif)My name is Mandy
