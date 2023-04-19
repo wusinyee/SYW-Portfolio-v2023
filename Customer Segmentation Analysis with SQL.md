@@ -35,5 +35,68 @@ TBC
 
 ======================================================================================
 
-## Sample Customer Data Schema (SQL)
+## Sample Customer Data Generation
+
+```python
+
+import random
+import csv
+import datetime
+
+# list of possible values for each column
+first_names = ["John", "Jane", "Tom", "Sara", "Mike", "Barry"]
+last_names = ["Doe", "Smith", "Brown", "Johnson", "Williams"]
+domains = ["example.com", "test.com", "sample.com"]
+genders = ["Male", "Female"]
+locations = ["New York", "Los Angeles", "Chicago", "Miami", "San Francisco"]
+education_levels = ["Bachelor", "Master", "PhD"]
+channel_preferences = ["Email", "Social Media", "Mobile"]
+lifecycle_stages = ["Active", "At Risk", "New"]
+product_categories = ["Electronics", "Fashion", "Beauty", "Sports", "Books"]
+brands = ["Apple", "Nike", "Adidas", "Samsung", "Amazon"]
+ratings = ["1", "2", "3", "4", "5"]
+qualities = ["Low", "Medium", "High"]
+deliveries = ["Fast", "Normal", "Slow"]
+
+# open a new CSV file and write headers
+with open("customer_data.csv", mode="w", newline="") as file:
+    writer = csv.writer(file)
+    writer.writerow(["first_name", "last_name", "email", "age", "gender", "location", "education",
+                     "income", "channel_preference", "lifecycle_stage", "behavior_id", "time_spent",
+                     "purchase_id", "order_date", "product_category", "brand", "order_value",
+                     "rating", "quality", "delivery", "review_date"])
+
+    # generate 500 random entries
+    for i in range(500):
+        # generate random values for each column
+        first_name = random.choice(first_names)
+        last_name = random.choice(last_names)
+        email = f"{first_name.lower()}.{last_name.lower()}@{random.choice(domains)}"
+        age = random.randint(18, 65)
+        gender = random.choice(genders)
+        location = random.choice(locations)
+        education = random.choice(education_levels)
+        income = random.randint(20000, 150000)
+        channel_preference = random.choice(channel_preferences)
+        lifecycle_stage = random.choice(lifecycle_stages)
+        behavior_id = f"Behavior-{i+1}"
+        time_spent = random.randint(10, 120)
+        purchase_id = f"Order-{i+1}"
+        order_date = datetime.date.today() - datetime.timedelta(days=random.randint(1, 30))
+        product_category = random.choice(product_categories)
+        brand = random.choice(brands)
+        order_value = random.randint(10, 500)
+        rating = random.choice(ratings)
+        quality = random.choice(qualities)
+        delivery = random.choice(deliveries)
+        review_date = datetime.date.today() - datetime.timedelta(days=random.randint(1, 60))
+
+        # write the row to the CSV file
+        writer.writerow([first_name, last_name, email, age, gender, location, education,
+                         income, channel_preference, lifecycle_stage, behavior_id, time_spent,
+                         purchase_id, order_date, product_category, brand, order_value,
+                         rating, quality, delivery, review_date])
+
+print("Customer data generated successfully!")
+```
 
