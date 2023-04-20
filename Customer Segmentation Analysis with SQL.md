@@ -408,6 +408,24 @@ GROUP BY income_group;
 | Middle-Aged Adults | 6801382310     |
 | Young Adults       | 5307079994     |
 
+14. Profitability by Locations
+```sql
+    SELECT 
+        mc.location,
+        SUM(p.order_value) AS total_spending
+    FROM 
+        MasterCustomer mc
+        JOIN Purchases p ON mc.customer_id = p.customer_id
+    GROUP BY 
+        mc.location
+    ORDER BY 
+        total_spending DESC 
+    LIMIT 1;
+```
+
+| location      | total_spending |
+| ------------- | -------------- |
+| United States | 11796352053    |
 
 
 
