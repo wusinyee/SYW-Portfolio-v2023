@@ -27,7 +27,7 @@ The project will be conducted using PostgreSQL relational database management sy
 The following deliverables are expected by the end of this project:
 * Self-generated CSV file with sample customer data
 * Customer data schema (SQL)
-* SQL queries for customer segmentation and analysis
+* SQL queries for customer segmentation analysis
 * Extracted insights from the analysis
 
 ### Timeline and Budget
@@ -365,7 +365,7 @@ GROUP BY income_group;
         total_orders DESC 
     LIMIT 
         10;
-  ```
+ ```
 
 | customer_id | first_name | last_name   | total_spending | total_orders |
 | ----------- | ---------- | ----------- | -------------- | ------------ |
@@ -381,7 +381,7 @@ GROUP BY income_group;
 | y-057       | Ruperta    | Davidde     | 98210904       | 1            |
 
 
-12. Top 5 Product Ctaegory
+12. Top 3 Product Ctaegory
 ```sql
     SELECT product_category, COUNT(*) AS num_purchases
     FROM Purchases
@@ -439,7 +439,190 @@ GROUP BY income_group;
 | ------------- | -------------- |
 | United States | 11796352053    |
 
+## Extract Insights and Sharing Results
  
+I filtered a series of queries that could help me obtain valuable insights from the customer data and contribute to a data-driven sales and marketing strategy.
+
+Insight 1:  Identify the most valuable customers (Top 10)
+```sql
+   SELECT 
+        mc.customer_id, 
+        mc.first_name, 
+        mc.last_name, 
+        SUM(p.order_value) AS total_spending, 
+        COUNT(DISTINCT p.purchase_id) AS total_orders 
+    FROM 
+        MasterCustomer mc 
+        INNER JOIN Purchases p ON mc.customer_id = p.customer_id 
+    GROUP BY 
+        mc.customer_id, 
+        mc.first_name, 
+        mc.last_name 
+    ORDER BY 
+        total_spending DESC, 
+        total_orders DESC 
+    LIMIT 
+        10;
+```
+This query identifies the customers who have spent the most money and made the most orders. 
+
+| customer_id | first_name | last_name   | total_spending | total_orders |
+| ----------- | ---------- | ----------- | -------------- | ------------ |
+| e-745       | Wang       | Grzeszczak  | 140646994      | 2            |
+| e-745       | Cristen    | Block       | 140646994      | 2            |
+| 6-111       | Marylynne  | Sulman      | 99869951       | 1            |
+| n-065       | Giana      | Prout       | 99809945       | 1            |
+| d-658       | Blondell   | Betteney    | 99689586       | 1            |
+| e-285       | Phebe      | Henrionot   | 99213308       | 1            |
+| E-789       | Bartie     | Postlewhite | 99032798       | 1            |
+| 7-661       | Steve      | Lockery     | 98426506       | 1            |
+| H-391       | Kelley     | Stoad       | 98395749       | 1            |
+| y-057       | Ruperta    | Davidde     | 98210904       | 1            |
+
+This information can be used to target these customers with personalized marketing campaigns, loyalty programs, and upsell opportunities.
+
+Insight 2. Determine the most popular product categories (Top 3)
+```sql
+SELECT product_category, COUNT(*) AS num_purchases
+    FROM Purchases
+    GROUP BY product_category
+    ORDER BY num_purchases DESC
+    LIMIT 3;
+ ```
+This query pinpoits the most popular product categories among your customers. 
+
+| product_category | num_purchases |
+| ---------------- | ------------- |
+| Outdoors         | 33            |
+| Industrial       | 29            |
+| Health           | 29            |
+
+This insight optimizes product offerings and marketing campaigns, and potentially expand the product line to capitalize on the most in-demand categories.
+
+Insight 3. Analyze customer behavior by channel preference
+```sql
+SELECT 
+    MasterCustomer.channel_preference, 
+    AVG(Purchases.order_value) AS avg_order_value, 
+    COUNT(DISTINCT MasterCustomer.customer_id) AS num_customers
+FROM 
+    MasterCustomer 
+    JOIN Purchases USING (customer_id)
+GROUP BY 
+    MasterCustomer.channel_preference;
+```
+This query demonstrates which channels the customers prefer to use when making purchases, and how their spending behavior differs across those channels. 
+
+| channel_preference | avg_order_value       | num_customers |
+| ------------------ | --------------------- | ------------- |
+| Email              | 46691840.612903225806 | 185           |
+| Mobile             | 46795553.517045454545 | 176           |
+| Social_Media       | 47650543.585714285714 | 139           |
+
+
+This information can to optimize  marketing campaigns for each channel, and potentially invest more in the channels that are most popular among the customers.
+
+Insight 4. Segment customers by demographic and behavior
+```sql
+SELECT 
+    CASE 
+        WHEN age < 30 THEN 'Under 30'
+        WHEN age >= 30 AND age < 50 THEN '30-50'
+        ELSE '50 and over'
+    END AS age_group, 
+    MasterCustomer.gender, 
+    MasterCustomer.education, 
+    AVG(Purchases.order_value) AS avg_order_value,
+    COUNT(DISTINCT MasterCustomer.customer_id) AS num_customers
+FROM 
+    MasterCustomer 
+    JOIN Purchases USING (customer_id)
+GROUP BY 
+    age_group, 
+    MasterCustomer.gender, 
+    MasterCustomer.education;
+```
+
+This query segments the customers by demographic and spending behavior. 
+
+| age_group   | gender      | education   | avg_order_value       | num_customers |
+| ----------- | ----------- | ----------- | --------------------- | ------------- |
+| 30-50       | Agender     | High_School | 92039087.000000000000 | 1             |
+| 30-50       | Bigender    | Master      | 75000507.000000000000 | 1             |
+| 30-50       | Female      | Bachelor    | 56278815.928571428571 | 14            |
+| 30-50       | Female      | High_School | 52655015.416666666667 | 12            |
+| 30-50       | Female      | Master      | 42093121.285714285714 | 14            |
+| 30-50       | Female      | PHD         | 42686069.214285714286 | 14            |
+| 30-50       | Genderfluid | High_School | 20738004.000000000000 | 1             |
+| 30-50       | Genderfluid | Master      | 70397696.000000000000 | 1             |
+| 30-50       | Genderfluid | PHD         | 63140865.000000000000 | 1             |
+| 30-50       | Genderqueer | Bachelor    | 85303260.000000000000 | 1             |
+| 30-50       | Genderqueer | High_School | 70185565.000000000000 | 1             |
+| 30-50       | Genderqueer | Master      | 34828595.000000000000 | 1             |
+| 30-50       | Male        | Bachelor    | 41984286.166666666667 | 12            |
+| 30-50       | Male        | High_School | 45634881.157894736842 | 19            |
+| 30-50       | Male        | Master      | 64809057.250000000000 | 11            |
+| 30-50       | Male        | PHD         | 52661921.750000000000 | 16            |
+| 30-50       | Non-binary  | High_School | 29317160.000000000000 | 1             |
+| 30-50       | Polygender  | Bachelor    | 24341811.500000000000 | 2             |
+| 30-50       | Polygender  | Master      | 41823470.500000000000 | 2             |
+| 50 and over | Agender     | Bachelor    | 78293480.000000000000 | 1             |
+| 50 and over | Agender     | High_School | 52165786.000000000000 | 2             |
+| 50 and over | Agender     | Master      | 38484430.000000000000 | 1             |
+| 50 and over | Bigender    | High_School | 57443391.000000000000 | 3             |
+| 50 and over | Bigender    | Master      | 10036459.000000000000 | 1             |
+| 50 and over | Female      | Bachelor    | 42954426.756756756757 | 37            |
+| 50 and over | Female      | High_School | 40029194.852941176471 | 34            |
+| 50 and over | Female      | Master      | 47902892.050000000000 | 19            |
+| 50 and over | Female      | PHD         | 40735117.205882352941 | 34            |
+| 50 and over | Genderfluid | Bachelor    | 31368503.000000000000 | 2             |
+| 50 and over | Genderfluid | High_School | 56112954.000000000000 | 1             |
+| 50 and over | Genderfluid | Master      | 33622911.500000000000 | 2             |
+| 50 and over | Genderfluid | PHD         | 18156675.000000000000 | 1             |
+| 50 and over | Genderqueer | Bachelor    | 32310220.000000000000 | 2             |
+| 50 and over | Genderqueer | High_School | 22932831.000000000000 | 1             |
+| 50 and over | Genderqueer | Master      | 70974500.500000000000 | 2             |
+| 50 and over | Male        | Bachelor    | 54057420.885714285714 | 35            |
+| 50 and over | Male        | High_School | 41998126.224489795918 | 49            |
+| 50 and over | Male        | Master      | 51909845.352941176471 | 34            |
+| 50 and over | Male        | PHD         | 50277864.800000000000 | 25            |
+| 50 and over | Non-binary  | Bachelor    | 95917990.000000000000 | 1             |
+| 50 and over | Non-binary  | High_School | 377669.000000000000   | 1             |
+| 50 and over | Non-binary  | Master      | 48637115.500000000000 | 2             |
+| 50 and over | Non-binary  | PHD         | 35442358.000000000000 | 2             |
+| 50 and over | Polygender  | High_School | 71470664.666666666667 | 3             |
+| 50 and over | Polygender  | Master      | 52981772.000000000000 | 1             |
+| Under 30    | Female      | Bachelor    | 44911533.125000000000 | 16            |
+| Under 30    | Female      | High_School | 48608585.538461538462 | 13            |
+| Under 30    | Female      | Master      | 44000902.000000000000 | 8             |
+| Under 30    | Female      | PHD         | 53049145.416666666667 | 12            |
+| Under 30    | Genderfluid | Master      | 20248760.000000000000 | 1             |
+| Under 30    | Genderqueer | High_School | 66913874.000000000000 | 1             |
+| Under 30    | Genderqueer | PHD         | 40231021.000000000000 | 1             |
+| Under 30    | Male        | Bachelor    | 47450889.888888888889 | 9             |
+| Under 30    | Male        | High_School | 62260482.142857142857 | 7             |
+| Under 30    | Male        | Master      | 31666352.571428571429 | 7             |
+| Under 30    | Male        | PHD         | 24720427.333333333333 | 3             |
+| Under 30    | Non-binary  | High_School | 61218059.000000000000 | 1             |
+
+This inisght contributes to targeted marketing campaigns for each segment, tailoring messaging and promotions to the specific interests and preferences of each group.
+
+5. Analyze customer churn:
+```sql
+SELECT 
+    COUNT(DISTINCT customer_id) AS num_churned_customers
+FROM 
+    MasterCustomer 
+WHERE 
+    customer_id NOT IN (
+        SELECT DISTINCT customer_id FROM Purchases 
+        WHERE order_date >= '2022-01-01' AND order_date <= '2022-12-31'
+    )
+```
+This query identifies the number of customers who have stopped ordering over a specific time period. This insight leads to the reasons why these customers left and take steps to improve customer experience, potentially implementing retention campaigns to try and win back lost customers.
+
+
+
 ### Conclusion
 
 This project aims to demonstrate how to use SQL to understand customer data and present a list of queries to identify customer segments. By identifying different customer segments based on demographics, purchasing behavior, and other characteristics, the company can better tailor its marketing strategies and improve customer satisfaction.
