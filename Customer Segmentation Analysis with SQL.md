@@ -37,33 +37,7 @@ TBC
 
 ## 1. Define sample customer data schema (SQL) and create customer data table
 
-Befor generating the sample customer data, I defined the columns and their values as follows:
-
-* customer_id: a string that represents the unique identifier of each customer
-* first_name: a string that represents the first name of each customer
-* last_name: a string that represents the last name of each customer
-* email: a string that represents the email address of each customer
-* age: an integer that represents the age of each customer
-* gender: a string that represents the gender of each customer
-* location: a string that represents the location of each customer
-* education: a string that represents the education level of each customer
-* income: a string that represents the income level of each customer
-* channel_preference: a string that represents the channel preference of each customer
-* lifecycle_stage: a string that represents the lifecycle stage of each customer
-* behavior_id: an integer that represents the behavior ID of each customer
-* time_spent: an integer that represents the time spent by each customer
-* purchase_id: a string that represents the purchase ID of each customer
-* order_date: a string that represents the date of the order
-* product_category: a string that represents the product category
-* brand: a string that represents the brand of the product
-* order_value: a string that represents the order value
-* rating: a string that represents the rating of the product
-* quality: a string that represents the quality of the product
-* delivery: a string that represents the delivery status of the product
-* review_date: a string that represents the date of the review.
-
-Given that all esstential data is stored in one table, I named it 'MasterCustomer' Table with the following schema (SQL):
-
+The Schema for the two main sources of customer data:
 ```sql
 CREATE TABLE MasterCustomer 
 (
@@ -80,7 +54,6 @@ CREATE TABLE MasterCustomer
     lifecycle_stage	VARCHAR(512),
     behavior_id	INT,
     time_spent	INT,
-    purchase_id	VARCHAR(512),
     order_date	VARCHAR(512),
     product_category	VARCHAR(512),
     brand	VARCHAR(512),
@@ -90,18 +63,42 @@ CREATE TABLE MasterCustomer
     delivery	VARCHAR(512),
     review_date	VARCHAR(512)
 );
-```
 
-I wrote INSERT statements to insert the customer data records:
-
-```sql
-INSERT INTO MasterCustomer (customer_id, first_name, last_name, email, age, gender, location, education, income, channel_preference, lifecycle_stage, behavior_id, time_spent, purchase_id, order_date, product_category, brand, order_value, rating, quality, delivery, review_date) VALUES ('L-885', 'Shaylynn', 'Klagges', 'sklagges0@yandex.ru', '81', 'Female', 'Mexico', 'High_School', '41211187', 'Email', 'New', '1', '12', 'uc757', '6/16/2021', 'Home', '"Kris, Carter and Brakus"', '44775558', '2Dissatisfied', 'Disappointing', 'Fast', '6/17/2021');
-INSERT INTO MasterCustomer (customer_id, first_name, last_name, email, age, gender, location, education, income, channel_preference, lifecycle_stage, behavior_id, time_spent, purchase_id, order_date, product_category, brand, order_value, rating, quality, delivery, review_date) VALUES ('k-789', 'Maribelle', 'Di Bartolommeo', 'mdibartolommeo1@elpais.com', '46', 'Female', 'United States', 'Bachelor', '82894692', 'Mobile', 'New', '2', '17', 'SF044', '4/20/2021', 'Grocery', 'Reinger-Mann', '63655474', '1Extremely_Dissatisfied', 'Exceed_Expectation', 'Late', '4/21/2021');
+CREATE TABLE Purchases 
+(
+    customer_id	VARCHAR(512),
+    purchase_id	VARCHAR(512),
+    first_name	VARCHAR(512),
+    last_name	VARCHAR(512),
+    gender	VARCHAR(512),
+    location	VARCHAR(512),
+    education	VARCHAR(512),
+    income	INT,
+    channel_preference	VARCHAR(512),
+    lifecycle_stage	VARCHAR(512),
+    behavior_id	INT,
+    time_spent	INT,
+    order_date	VARCHAR(512),
+    product_category	VARCHAR(512),
+    brand	VARCHAR(512),
+    order_value	INT,
+    order_frequency	INT,
+    total_num_purchase	VARCHAR(512),
+    total_num_purchase2	INT,
+    quantity	INT,
+    Price	INT
+);
 ```
+The code above defines two database tables, "MasterCustomer" and "Purchases":
+* "MasterCustomer" table includes columns for various customer information, such as their ID, first and last name, email, age, gender, location, education, income, channel preference, lifecycle stage, behavior ID, time spent, order date, product category, brand, order value, rating, quality, delivery, and review date. 
+* These columns are defined with specific data types, such as VARCHAR (variable-length character string) and INT (integer).
+* "Purchases" table includes columns for customer and purchase information, such as the customer ID, purchase ID, first and last name, gender, location, education, income, channel preference, lifecycle stage, behavior ID, time spent, order date, product category, brand, order value, order frequency, total number of purchases, total number of purchases (in integer format), quantity, and price. These columns are also defined with specific data types.
+* These two tables store information related to customer demographics, behavior, and purchasing history, which can be used for analysis and decision-making purposes
+
 
 ## 2. Generate sample customer data with python or mockroo
 
-The python script for generating 500 entries of customer data and write them into a csv file:
+You may use python script for generating 500 entries of customer data and write them into a csv file:
 
 ```python
 
