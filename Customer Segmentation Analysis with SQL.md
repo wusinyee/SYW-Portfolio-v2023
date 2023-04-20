@@ -195,7 +195,7 @@ To group customers by age as young adults, middle-aged adults, and seniors, I us
 | Middle-Aged Adults (35-60)  | 149           |
  
 
-3. Gender: the 8 genders of customers.
+2. Gender: the 8 genders of customers.
 ```sql
     SELECT gender, COUNT(*) as num_customers
     FROM MasterCustomer
@@ -213,7 +213,7 @@ To group customers by age as young adults, middle-aged adults, and seniors, I us
 | Agender      | 7             |
 
 
-5. Location: the geographic location of customers, such as city, state, or country.
+3. Location: the geographic location of customers, such as city, state, or country.
 ```sql
     SELECT location, COUNT(*) as num_customers
     FROM MasterCustomer
@@ -229,7 +229,7 @@ To group customers by age as young adults, middle-aged adults, and seniors, I us
 | United States   | 266           |
 
 
-7. Education: the education level of customers, such as high school, college, or graduate degree.
+4. Education: the education level of customers, such as high school, college, or graduate degree.
 ```sql
     SELECT education, COUNT(*) as num_customers
     FROM MasterCustomer
@@ -244,7 +244,7 @@ To group customers by age as young adults, middle-aged adults, and seniors, I us
 | High_School  | 122           |
    
 
-8. Income: the income level of customers, such as low-income, middle-income, or high-income.
+5. Income: the income level of customers, such as low-income, middle-income, or high-income.
 ```sql
 SELECT 
     CASE 
@@ -257,12 +257,159 @@ SELECT
 FROM MasterCustomer
 GROUP BY income_group;
 ```
-| income_group       | customer_count |
+| income_group        | customer_count |
+| ------------------- | -------------- |
+| High Income         | 483            |
+| Upper Middle-Class  | 3              |
+| Middle-Class        | 11             |
+| Low Income          | 3              |
+
+6. Identify the number of customers by channel preference:
+```sql
+    SELECT channel_preference, COUNT(*) as num_customers
+    FROM MasterCustomer
+    GROUP BY channel_preference
+    ORDER BY num_customers DESC;
+```
+| channel_preference | num_customers |
+| ------------------ | ------------- |
+| Email              | 185           |
+| Mobile             | 176           |
+| Social_Media       | 139           |
+
+7. Identify the average time spent on the website by lifecycle stage:
+```sql
+    SELECT lifecycle_stage, AVG(time_spent) as avg_time_spent
+    FROM MasterCustomer
+    GROUP BY lifecycle_stage;
+```
+| lifecycle_stage | avg_time_spent      |
+| --------------- | ------------------- |
+| New             | 13.6390532544378698 |
+| Active          | 12.1944444444444444 |
+| At Risk         | 12.5231788079470199 |
+
+--  8. Identify the top 5 product categories by order value: 
+```sql
+    SELECT product_category, SUM(order_value) AS total_order_value
+    FROM MasterCustomer
+    GROUP BY product_category
+    ORDER BY total_order_value DESC
+    LIMIT 5;
+```
+| product_category | total_order_value |
+| ---------------- | ----------------- |
+| Outdoors         | 1736513919        |
+| Toys             | 1513426403        |
+| Health           | 1348957645        |
+| Home             | 1339721128        |
+| Industrial       | 1328806015        |
+
+--  9.Identify the top 5 brands by number of purchases:
+```sql
+    SELECT brand, COUNT(*) as num_purchases
+    FROM MasterCustomer
+    GROUP BY brand
+    ORDER BY num_purchases DESC
+    LIMIT 5;
+```
+| brand                         | num_purchases |
+| ----------------------------- | ------------- |
+| "Rohan, Hudson and Gulgowski" | 1             |
+| Wolf-Kutch                    | 1             |
+| Dare-Wiegand                  | 1             |
+| Cole-Ruecker                  | 1             |
+| Abshire-Pacocha               | 1             |
+
+10. Identify the average order value by rating:
+``sql
+    SELECT rating, AVG(CAST(order_value AS INT)) as avg_order_value
+    FROM MasterCustomer
+    GROUP BY rating;
+```
+| rating                  | avg_order_value       |
+| ----------------------- | --------------------- |
+| 4Satisfied              | 44178787.535714285714 |
+| 5Extremely_Satisfied    | 49236718.173913043478 |
+| 1Extremely_Dissatisfied | 47575404.910000000000 |
+| 3Neutral                | 47331447.305263157895 |
+| 2Dissatisfied           | 46725728.910891089109 |
+
+
+11. Top 10  Valuable Customers
+```sql
+    SELECT 
+        mc.customer_id, 
+        mc.first_name, 
+        mc.last_name, 
+        SUM(p.order_value) AS total_spending, 
+        COUNT(DISTINCT p.purchase_id) AS total_orders 
+    FROM 
+        MasterCustomer mc 
+        INNER JOIN Purchases p ON mc.customer_id = p.customer_id 
+    GROUP BY 
+        mc.customer_id, 
+        mc.first_name, 
+        mc.last_name 
+    ORDER BY 
+        total_spending DESC, 
+        total_orders DESC 
+    LIMIT 
+        10;
+  ```
+
+| customer_id | first_name | last_name   | total_spending | total_orders |
+| ----------- | ---------- | ----------- | -------------- | ------------ |
+| e-745       | Wang       | Grzeszczak  | 140646994      | 2            |
+| e-745       | Cristen    | Block       | 140646994      | 2            |
+| 6-111       | Marylynne  | Sulman      | 99869951       | 1            |
+| n-065       | Giana      | Prout       | 99809945       | 1            |
+| d-658       | Blondell   | Betteney    | 99689586       | 1            |
+| e-285       | Phebe      | Henrionot   | 99213308       | 1            |
+| E-789       | Bartie     | Postlewhite | 99032798       | 1            |
+| 7-661       | Steve      | Lockery     | 98426506       | 1            |
+| H-391       | Kelley     | Stoad       | 98395749       | 1            |
+| y-057       | Ruperta    | Davidde     | 98210904       | 1            |
+
+
+12. Top 5 Product Ctaegory
+```sql
+    SELECT product_category, COUNT(*) AS num_purchases
+    FROM Purchases
+    GROUP BY product_category
+    ORDER BY num_purchases DESC
+    LIMIT 3;
+```
+| product_category | num_purchases |
+| ---------------- | ------------- |
+| Outdoors         | 33            |
+| Industrial       | 29            |
+| Health           | 29            |
+
+13. Age group that spends the most
+ ```sql
+ SELECT 
+        CASE 
+            WHEN age BETWEEN 18 AND 35 THEN 'Young Adults'
+            WHEN age BETWEEN 36 AND 60 THEN 'Middle-Aged Adults'
+            ELSE 'Seniors'
+        END AS age_group,
+        SUM(Purchases.order_value) AS total_spending
+    FROM 
+        MasterCustomer 
+        JOIN Purchases ON MasterCustomer.customer_id = Purchases.customer_id
+    
+    GROUP BY 
+        age_group
+    ORDER BY 
+        total_spending DESC;
+```
+
+| age_group          | total_spending |
 | ------------------ | -------------- |
-| High Income        | 483            |
-| Upper Middle-Class | 3              |
-| Middle-Class       | 11             |
-| Low Income         | 3              |
+| Seniors            | 11483313571    |
+| Middle-Aged Adults | 6801382310     |
+| Young Adults       | 5307079994     |
 
 
 
