@@ -3,39 +3,40 @@
 ## Project Proposal: Customer Segmentation Analysis with SQL
 
 ### Introduction
-The purpose of this project is to analyze customer data and segment them into different groups based on their behavior and characteristics. This will not only help the company to target specific customer groups with personalized sales and marketing tactics, but also helps the organzation improve customer satisfaction. Better understanding of customers and knowing the pain points can generate meaningful insights on devloping a precise and coherent strategies. 
+The purpose of this project is to analyze customer data and segment them into different groups based on their behavior and characteristics. This will help the company to target specific customer groups with personalized sales and marketing tactics and improve customer satisfaction. The insights gained from this project will help the company understand their customers better and develop precise and coherent strategies to meet their needs.
 
 ### Objectives
-* To identify different customer segments based on demographics, purchasing behavior, and other characteristics
+* To identify different customer segments based on demographics, purchasing behavior, and other characteristics.
 * To analyze the behavior of each segment and identify their needs and preferences
-* To share the insights using tables and bulletpoints 
+* To evaluate the performance of clustering techniques by using appropriate metrics.
+* To share the insights in a clear and concise manner
 
 ### Methodology
-The project will be conducted using PostgreSQL relational database management system  to extract and analyze customer data. The code will be tested on an online SQL database, and posted here along with the insights. 
-
-1. Define sample customer data schema (SQL) and create customer data table.
-2. Generate sample customer data with python or mockroo.
-3. Explore the customer data to identify patterns and relationships between different variables such as age, gender, location, purchase history, and preferences.
-4. Use clustering techniques such as K-means clustering or hierarchical clustering to segment customers into different groups based on their behavior and characteristics.
-5. Segment Analysis: Analyze the behavior of each segment by looking at their purchasing patterns, preferences, and needs.
+The project will be conducted using PostgreSQL relational database management system to extract and analyze customer data. The following steps will be taken:
+1. Define the scope and limitations of the project, including the types of data that will be analyzed and the time period covered
+2. Develop a data cleaning and preprocessing plan to ensure the quality of the data
+3. Generate sample customer data with Python or Mockaroo
+4. Explore the customer data to identify patterns and relationships between different variables such as age, gender, location, purchase history, and preferences
+5. Use clustering techniques such as K-means clustering or hierarchical clustering to segment customers into different groups based on their behavior and characteristics
+6. Evaluate the performance of clustering techniques using appropriate metrics such as silhouette score or elbow method to determine the optimal number of clusters
+7. Analyze the behavior of each segment by looking at their purchasing patterns, preferences, and needs
+8. Share the insights gained from the analysis using tables, graphs, and bullet points
 
 ### Deliverables:
-The following deliverables are expected by the of this project:
-* Self-generated CSV file with sample customer data 
+The following deliverables are expected by the end of this project:
+* Self-generated CSV file with sample customer data
 * Customer data schema (SQL)
 * SQL queries for customer segmentation and analysis
 * Extracted insights from the analysis
 
 ### Timeline and Budget
-The project will be completed with in 3 days. The data generation and ananlysis tools are free, thus this is a zero budget project.
+This project will be completed within 3 days, before 22 April. The data generation and analysis tools are free, so the budget for this project is zero.
 
 ### Conclusion
-This project aims to demonstrate how to use SQL to understand customer data and present a list of queries to identify customer segments. 
-TBC
-
+This project aims to demonstrate how to use SQL to understand customer data and present a list of queries to identify customer segments. By identifying different customer segments based on demographics, purchasing behavior, and other characteristics, the company can better tailor its marketing strategies and improve customer satisfaction.
 ---------------------------------------------------------------------------
 
-## 1. Define sample customer data schema (SQL) and create customer data table
+## 1. Define the scope and limitations of the project
 
 The Schema for the two main sources of customer data:
 ```sql
@@ -427,5 +428,5 @@ GROUP BY income_group;
 | ------------- | -------------- |
 | United States | 11796352053    |
 
-
+ 
 
