@@ -2,6 +2,7 @@
 ## I am excited to announce that my portfolio is about to receive a significant update! I have been hard at work adding new projects to the collection, and I believe they will be of great interest to you.
 Here are some of the exciting new projects that will be featured:
 - [ ] Contoso Sales Overview Dashboard by Power BI
+- [ ] Mean-Variance-Standard Deviation Calculator (Data Analysis with Python Project)
 - [ ] JIRA UAT Document Sample
 - [ ] Business Requirement Document (BRD) and Functional Requirement Document Sample (FRD)
 - [ ] Data Quality Assessment Dashboard by Tableau
