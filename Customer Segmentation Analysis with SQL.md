@@ -14,7 +14,7 @@ The purpose of this project is to analyze customer data and segment them into di
 ### Methodology
 The project will be conducted using PostgreSQL relational database management system to extract and analyze customer data. The following steps will be taken:
 1. Define the scope and limitations of the project, including the types of data that will be analyzed and the time period covered
-2. Develop a data cleaning and preprocessing plan to ensure the quality of the data
+2. Verify the quality of data, ensure it is ready for analysis
 3. Generate sample customer data with Python or Mockaroo
 4. Explore the customer data to identify patterns and relationships between different variables such as age, gender, location, purchase history, and preferences
 5. Use clustering techniques such as K-means clustering or hierarchical clustering to segment customers into different groups based on their behavior and characteristics
