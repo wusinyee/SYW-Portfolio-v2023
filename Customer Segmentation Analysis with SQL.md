@@ -28,8 +28,8 @@ The following deliverables are expected by the end of this project:
 * Self-generated CSV file with sample customer data
 * Customer data schema (SQL)
 * SQL queries for customer segmentation analysis
-* Extracted insights from the analysis
-
+* [Extracted insights from the analysis](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/main/Customer%20Segmentation%20Analysis%20with%20SQL.md#extract-insights-and-sharing-results
+)
 ### Timeline and Budget
 This project will be completed within 3 days, before 22 April. The data generation and analysis tools are free, so the budget for this project is zero.
 
