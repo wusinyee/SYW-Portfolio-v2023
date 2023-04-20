@@ -2,7 +2,8 @@
 ## I am excited to announce that my portfolio is about to receive a significant update! I have been hard at work adding new projects to the collection, and I believe they will be of great interest to you.
 Here are some of the exciting new projects that will be featured:
 - [ ] Contoso Sales Overview Dashboard by Power BI
-- [ ] Business Requirement Document (BRD) and Functional Requirement Document Sample
+- [ ] JIRA UAT Document Sample
+- [ ] Business Requirement Document (BRD) and Functional Requirement Document Sample (FRD)
 - [ ] Data Quality Assessment Dashboard by Tableau
 - [ ] Data Flow Diagram (DFD) Sample
 - [ ] [Customer Segmentation Analysis with SQL](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/4914ce37258ffebe612979c7855e0fd019c8eca3/Customer%20Segmentation%20Analysis%20with%20SQL.md)
