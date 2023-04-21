@@ -17,11 +17,10 @@ The project will be conducted using PostgreSQL relational database management sy
 1. Define the scope and limitations of the project, including the types of data that will be analyzed and the time period covered
 2. Verify the quality of data, ensure it is ready for analysis
 3. Generate sample customer data with Python or Mockaroo
-4. Explore the customer data to identify patterns and relationships between different variables such as age, gender, location, purchase history, and preferences
-5. Use clustering techniques such as K-means clustering or hierarchical clustering to segment customers into different groups based on their behavior and characteristics
-6. Evaluate the performance of clustering techniques using appropriate metrics such as silhouette score or elbow method to determine the optimal number of clusters
-7. Analyze the behavior of each segment by looking at their purchasing patterns, preferences, and needs
-8. Share the insights gained from the analysis using tables, graphs, and bullet points
+4. Explore the customer data to identify patterns and relationships between different variables
+5. Analyze the behavior of each segment by looking at their purchasing patterns, preferences, and needs
+6. Share the insights gained from the analysis using tables and bullet points
+7. Formulate strategies to maximize sales and recommend effective tactics based on the insights
 
 ### Deliverables:
 The following deliverables are expected by the end of this project:
@@ -174,21 +173,22 @@ with open("customer_data.csv", mode="w", newline="") as file:
 
 print("Customer data generated successfully!")
 ```
+## 3. Generate sample customer data with Python or Mockaroo
 
 [MasterCustomer Table Schema](https://www.mockaroo.com/b002d260)
 ![Preview of the data, both tables are prepared to be analyzed](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/5e659e77c0dec711ee8b30ca81ce51720cfb50b7/snapshot.png)
 
 
-## 3. Explore the customer data to identify patterns and relationships between different variables
+## 4. Explore the customer data to identify patterns and relationships between different variables
 
-Customer demographics refer to the characteristics of a group of customers or the population of customers that a business serves. These characteristics may include but not limited to:
-1. Age: young adults (18-35), middle-aged adults (36-60), and seniors (above 60). 
+Customer demographics refer to the characteristics of a group of customers or the population of customers that a business serves.
+1. Age: young adults (18-35), middle age adults (36-60), and seniors (above 60). 
 ```sql
 -- Query to group customers by age
 SELECT
 CASE
 WHEN age BETWEEN 18 AND 35 THEN 'Young Adults'
-WHEN age BETWEEN 36 AND 60 THEN 'Middle-Aged Adults'
+WHEN age BETWEEN 36 AND 60 THEN 'Middle Age Adults'
 WHEN age > 60 THEN 'Seniors'
 END AS age_group,
 COUNT(*) as num_customers
@@ -201,7 +201,7 @@ To group customers by age as young adults, middle-aged adults, and seniors, I us
 | --------------------------  | ------------- |
 | Seniors (above 60)          | 250           |
 | Young Adults (18-35)        | 101           |
-| Middle-Aged Adults (35-60)  | 149           |
+| Middle Age Adults (35-60)  | 149           |
  
 
 2. Gender: the 8 genders of customers.
@@ -314,7 +314,7 @@ GROUP BY income_group;
 | Home             | 1339721128        |
 | Industrial       | 1328806015        |
 
---  9.Identify the top 5 brands by number of purchases:
+9.Identify the top 5 brands by number of purchases:
 ```sql
     SELECT brand, COUNT(*) as num_purchases
     FROM MasterCustomer
@@ -331,7 +331,7 @@ GROUP BY income_group;
 | Abshire-Pacocha               | 1             |
 
 10. Identify the average order value by rating:
-``sql
+```sql
     SELECT rating, AVG(CAST(order_value AS INT)) as avg_order_value
     FROM MasterCustomer
     GROUP BY rating;
@@ -344,6 +344,12 @@ GROUP BY income_group;
 | 3Neutral                | 47331447.305263157895 |
 | 2Dissatisfied           | 46725728.910891089109 |
 
+Ad hoc analysis from average order value by rating:
+* The highest average order value is associated with the customers who are "Extremely Satisfied" (rating 5) with an average order value of $49,236,718. This could imply that customers who have a better experience tend to spend more
+* The lowest average order value is associated with the customers who are "Dissatisfied" (rating 2) with an average order value of $46,725,728. This suggests that customers who have a poor experience tend to spend less
+* The difference in average order value between the most satisfied and least satisfied customers is around $3 million. This indicates that customer satisfaction could have a significant impact on overall sales
+* The customers who are "Satisfied" (rating 4) and "Extremely Satisfied" (rating 5) have higher average order values compared to those who are "Dissatisfied" (rating 2) and "Extremely Dissatisfied" (rating 1). This suggests that a better customer experience can lead to higher spending.
+* The customers who are "Neutral" (rating 3) have a slightly lower average order value compared to the "Satisfied" (rating 4) and "Extremely Satisfied" (rating 5) customers. This could imply that simply satisfying the customers may not be enough to encourage higher spending, and businesses may need to strive for a better experience to drive sales.
 
 11. Top 10  Valuable Customers
 ```sql
@@ -439,9 +445,11 @@ GROUP BY income_group;
 | ------------- | -------------- |
 | United States | 11796352053    |
 
-## Extract Insights and Sharing Results
+## 5. Analyze the behavior of each segment
  
 I filtered a series of queries that could help me obtain valuable insights from the customer data and contribute to a data-driven sales and marketing strategy.
+
+## 6. Share the insights gained from the analysis using tables and bullet points
 
 Insight 1:  Identify the most valuable customers (Top 10)
 ```sql
@@ -480,6 +488,9 @@ This query identifies the customers who have spent the most money and made the m
 | y-057       | Ruperta    | Davidde     | 98210904       | 1            |
 
 This information can be used to target these customers with personalized marketing campaigns, loyalty programs, and upsell opportunities.
+* The top two rows show that customers with the rating "Satisfied" and "Extremely_Satisfied" have a higher average order value compared to other ratings
+* The customer with customer_id "e-745" has the highest total spending of 140646994 and has placed 2 orders
+* Most customers have made only 1 order, with only two customers having placed more than one order.
 
 Insight 2. Determine the most popular product categories (Top 3)
 ```sql
@@ -497,7 +508,11 @@ This query pinpoits the most popular product categories among your customers.
 | Industrial       | 29            |
 | Health           | 29            |
 
-This insight optimizes product offerings and marketing campaigns, and potentially expand the product line to capitalize on the most in-demand categories.
+These insights optimizes product offerings and marketing campaigns, and potentially expand the product line to capitalize on the most in-demand categories.
+* The top product categories based on the number of purchases are Outdoors, Industrial, and Health
+* Customers with customer_id e-745 and total_spending of 140646994 have made 2 orders, making them the highest spenders in the given data
+* Majority of the customers have made only one order, except for the customer with customer_id e-745 and Cristen Block
+* Customers with age under 30 have the highest average order value compared to other age groups
 
 Insight 3. Analyze customer behavior by channel preference
 ```sql
@@ -519,8 +534,8 @@ This query demonstrates which channels the customers prefer to use when making p
 | Mobile             | 46795553.517045454545 | 176           |
 | Social_Media       | 47650543.585714285714 | 139           |
 
-
 This information can to optimize  marketing campaigns for each channel, and potentially invest more in the channels that are most popular among the customers.
+* Customers who prefer to purchase through Social Media have a higher average order value than those who prefer Email and Mobile, but the number of customers who prefer Social Media is the lowest among the three channels
 
 Insight 4. Segment customers by demographic and behavior
 ```sql
@@ -605,7 +620,13 @@ This query segments the customers by demographic and spending behavior.
 | Under 30    | Male        | PHD         | 24720427.333333333333 | 3             |
 | Under 30    | Non-binary  | High_School | 61218059.000000000000 | 1             |
 
-This inisght contributes to targeted marketing campaigns for each segment, tailoring messaging and promotions to the specific interests and preferences of each group.
+These inisghts contribute to targeted marketing campaigns for each segment, tailoring messaging and promotions to the specific interests and preferences of each group.
+* The average order value of customers aged 30-50 is higher than that of customers aged 50 and over
+* Male customers have the highest average order value across all education levels in both age groups
+* Female customers aged 50 and over have the highest number of customers
+* There are very few customers who identify as genderqueer, genderfluid, agender, non-binary, bigender or polygender, regardless of age and education level
+* Customers with a bachelor's degree have a higher average order value compared to those with a high school diploma or a master's degree. However, customers with a PhD have a higher average order value compared to those with a bachelor's degree or a master's degree, particularly in the 30-50 age group
+* The highest average order value for customers with a PhD in the 30-50 age group is from those who identify as genderfluid
 
 5. Analyze customer churn:
 ```sql
@@ -621,8 +642,28 @@ WHERE
 ```
 This query identifies the number of customers who have stopped ordering over a specific time period. This insight leads to the reasons why these customers left and take steps to improve customer experience, potentially implementing retention campaigns to try and win back lost customers.
 
+## 7. Formulate strategies to maximize sales and recommend effective tactics based on the insights
+
+### Strategies to maximize sales:
+* Focus on the 30-50 group as they have the highest average order value
+* Target customers with higher education levels, such as Master's and PhD holders, as they tend to have a higher average order value
+* Increase marketing efforts towards female customers, who make up the majority of the customer base and have a relatively high average order value
+* Develop marketing campaigns specifically targeted towards non-binary and genderqueer customers, who currently have a smaller customer base but a higher average order value
+* Consider offering promotions or discounts to customers who have a lower average order value, such as those with a high school education or those in the 50 and over age group
+* Look for opportunities to upsell or cross-sell to existing customers, as this can increase the average order value and overall revenue
+* Continuously monitor and analyze customer data to identify patterns and trends, and adjust marketing and sales strategies accordingly
+
+### Effective tactics to maximize sales
+* Offer promotions and discounts: Customers love a good deal. Offer discounts, BOGO deals, or other promotions to entice them to make a purchase
+* Improve the checkout process: Make sure the checkout process is as smooth and easy as possible
+* Remove any unnecessary steps, offer multiple payment options, and provide clear instructions to reduce cart abandonment
+* Leverage social media: Use social media platforms like Facebook, Instagram, and Twitter to promote your products and engage with customers. Run ads and share user-generated content to increase brand awareness
+* Provide high quality customer service: Respond to customer inquiries and complaints promptly and professionally. Go above and beyond to ensure customer satisfaction, as happy customers are more likely to make repeat purchases
+* Use email marketing: Send out newsletters and promotional emails to keep customers informed about new products, discounts, and other news related to your business.
+* Upsell and cross-sell: Offer related products or upgrades during the checkout process to increase the average order value.
+* SEO: Use keywords and meta tags to improve your website's visibility on search engines like Google, making it easier for potential customers to find you
 
 
-### Conclusion
+## Conclusion
 
 This project aims to demonstrate how to use SQL to understand customer data and present a list of queries to identify customer segments. By identifying different customer segments based on demographics, purchasing behavior, and other characteristics, the company can better tailor its marketing strategies and improve customer satisfaction.
