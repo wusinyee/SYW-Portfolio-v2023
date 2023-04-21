@@ -26,11 +26,11 @@
 - [ ] Business Requirement Document (BRD) and Functional Requirement Document Sample (FRD)
 - [ ] Data Quality Assessment Dashboard by Tableau
 - [ ] Data Flow Diagram (DFD) Sample
-- [ ] [Customer Segmentation Analysis with SQL](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/4914ce37258ffebe612979c7855e0fd019c8eca3/Customer%20Segmentation%20Analysis%20with%20SQL.md)
+- [x] [Customer Segmentation Analysis with SQL](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/4914ce37258ffebe612979c7855e0fd019c8eca3/Customer%20Segmentation%20Analysis%20with%20SQL.md)
 - [ ] AI Sentiment Snalysis on Twitter with python
 
 
-### Completed projets:
+### Original Project List:
 
 > - [x] [World Happiness Informational Dashboard](https://public.tableau.com/views/WorldHappinessInformationalDashboard/Title?:language=en-US&:display_count=n&:origin=viz_share_link)
 > - [x] [Divvy Bike Rider Analysis](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/36f23f5ce5a58ee402b7d7bc0aaa80f8fb1d2666/Divvy%20Analysis%20Project.md)
