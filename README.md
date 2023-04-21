@@ -1,6 +1,25 @@
-## Hi All,
-## I am excited to announce that my portfolio is about to receive a significant update! I have been hard at work adding new projects to the collection, and I believe they will be of great interest to you.
-Here are some of the exciting new projects that will be featured:
+# 💫 About Me:
+## Hi there!👋 My name is Mandy
+* 🌍  I'm based in Wan Chai, Hong Kong
+* 🔭  I’m currently working on Business intelligence, data analytics, and technical writing projects
+* 👯  I’m looking to collaborate on visualizations, technical writing, and prompt engineering projects
+* 🌱  I’m currently learning Google Looker Studio, Figma and SAP Analytics Cloud
+* 💬  I love staying up-to-date on the latest breakthroughs and discoveries in these fields and finding ways to incorporate these insights into my work. 
+* 👨‍💻  All of my projects are available my portfolio at [Unlocking Insights: A Collection of BI & Data Analysis Projects](http://github.com/wusinyee/Portfolio-2023.git)
+* ✉️  You can contact me at [wuqianyi1021@gmail.com](mailto:wuqianyi1021@gmail.com)
+* ⚡ I am also an avid enthusiast of philosophy, mental health research, latest technological trends, and indie horror games
+
+### ✍️ Random Dev Quote
+![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark)
+
+
+
+
+# Unlocking Insights: A Collection of BI & Data Analysis Projects
+
+### I am excited to announce that my portfolio is about to receive a significant update! I have been hard at work adding new projects to the collection, and I believe they will be of great interest to you.
+### Exciting new projects that will be featured:
+
 - [ ] Contoso Sales Overview Dashboard by Power BI
 - [ ] [Mean-Variance-Standard Deviation Calculator (Data Analysis with Python Project)](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/b69963c8e2e2bf07286f57827ae90b2083c5fc8b/Mean-Variance-Standard%20Deviation%20Calculator.md)
 - [ ] JIRA UAT Document Sample
@@ -10,23 +29,8 @@ Here are some of the exciting new projects that will be featured:
 - [ ] [Customer Segmentation Analysis with SQL](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/4914ce37258ffebe612979c7855e0fd019c8eca3/Customer%20Segmentation%20Analysis%20with%20SQL.md)
 - [ ] AI Sentiment Snalysis on Twitter with python
 
-Hi ![](https://user-images.githubusercontent.com/18350557/176309783-0785949b-9127-417c-8b55-ab5a4333674e.gif)My name is Mandy
-===================================================================================================================================
-I leverage data to achieve tangible results, while aspiring to be a resourceful problem solver and data story-teller. I am also passionate about travel, mental health research, philosophy of mind, skydiving, and meme.
 
- Data & Business Intelligence Analyst 
------------------------------------------------------------
-
-* 🌍  I'm based in Wan Chai, Hong Kong
-* 🖥️  See my portfolio at [Unlocking Insights: A Collection of BI & Data Analysis Projects](http://github.com/wusinyee/Portfolio-2023.git)
-* ✉️  You can contact me at [wuqianyi1021@gmail.com](mailto:wuqianyi1021@gmail.com)
-* 🧠  I'm learning PHP, Alteryx, and SAP Analytics Cloud
-* 🤝  I'm open to collaborating on Interesting projects and writing technical documents
-
-
-
-Project List
---------------
+### Completed projets:
 
 > - [x] [World Happiness Informational Dashboard](https://public.tableau.com/views/WorldHappinessInformationalDashboard/Title?:language=en-US&:display_count=n&:origin=viz_share_link)
 > - [x] [Divvy Bike Rider Analysis](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/36f23f5ce5a58ee402b7d7bc0aaa80f8fb1d2666/Divvy%20Analysis%20Project.md)
@@ -75,18 +79,12 @@ Business Requirement Documentation Sample
 
 
 
-
-### Skills
-
-
-<p align="left">
-<a href="https://www.python.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/python-colored.svg" width="36" height="36" alt="Python" /></a>
-<a href="https://www.r-project.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/rlang-colored.svg" width="36" height="36" alt="rlang" /></a>
-<a href="https://www.postgresql.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/postgresql-colored.svg" width="36" height="36" alt="PostgreSQL" /></a>
-<a href="https://www.mysql.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mysql-colored.svg" width="36" height="36" alt="MySQL" /></a>
-</p>
-
+## 💻 Tech Stack:
+![Markdown](https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![R](https://img.shields.io/badge/r-%23276DC3.svg?style=for-the-badge&logo=r&logoColor=white) ![Google Cloud](https://img.shields.io/badge/Google%20Cloud-%234285F4.svg?style=for-the-badge&logo=google-cloud&logoColor=white) ![Shell Script](https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white) ![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white) ![.Net](https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white) ![Anaconda](https://img.shields.io/badge/Anaconda-%2344A833.svg?style=for-the-badge&logo=anaconda&logoColor=white) ![MicrosoftSQLServer](https://img.shields.io/badge/Microsoft%20SQL%20Sever-CC2927?style=for-the-badge&logo=microsoft%20sql%20server&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white) ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white) ![Canva](https://img.shields.io/badge/Canva-%2300C4CC.svg?style=for-the-badge&logo=Canva&logoColor=white) 	![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white) ![Adobe Premiere Pro](https://img.shields.io/badge/Adobe%20Premiere%20Pro-9999FF.svg?style=for-the-badge&logo=Adobe%20Premiere%20Pro&logoColor=white) ![Adobe After Effects](https://img.shields.io/badge/Adobe%20After%20Effects-9999FF.svg?style=for-the-badge&logo=Adobe%20After%20Effects&logoColor=white) ![Adobe Photoshop](https://img.shields.io/badge/adobephotoshop-%2331A8FF.svg?style=for-the-badge&logo=adobephotoshop&logoColor=white) ![SciPy](https://img.shields.io/badge/SciPy-%230C55A5.svg?style=for-the-badge&logo=scipy&logoColor=%white) ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white) ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white) ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white) ![Jira](https://img.shields.io/badge/jira-%230A0FFF.svg?style=for-the-badge&logo=jira&logoColor=white) ![Prezi](https://img.shields.io/badge/Prezi-%23000000.svg?style=for-the-badge&logo=Prezi&logoColor=white) ![Notion](https://img.shields.io/badge/Notion-%23000000.svg?style=for-the-badge&logo=notion&logoColor=white) ![Trello](https://img.shields.io/badge/Trello-%23026AA7.svg?style=for-the-badge&logo=Trello&logoColor=white)
 
 ### Socials
 
 <p align="left"> <a href="https://www.github.com/wusinyee" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/github.svg" width="32" height="32" /></a> <a href="https://www.linkedin.com/in/sin-yee-mandy-wu-865a0a13a" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/linkedin.svg" width="32" height="32" /></a> <a href="http://www.medium.com/@wuqianyi1021" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/medium.svg" width="32" height="32" /></a></p>
+
+
+
