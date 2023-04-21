@@ -4,7 +4,7 @@
 
 ### Introduction
 The purpose of this project is to analyze customer data and segment them into different groups based on their behavior and characteristics. The objective is to help the company target specific customer groups with personalized sales and marketing tactics, improve customer satisfaction, and develop precise and coherent strategies to meet their needs. 
-**Initially, the project did not involve the development of strategies. However, without taking action on the insights gained from the analysis, the purpose of conducting the analysis would be defeated.**
+**Initially, the project did not involve the development of strategies. However, without taking action on the insights gained from the analysis, the purpose of conducting the analysis would be defeated**
 
 ### Objectives
 * To identify different customer segments based on demographics, purchasing behavior, and other characteristics.
