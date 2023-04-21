@@ -24,7 +24,7 @@ The project will be conducted using PostgreSQL relational database management sy
 
 ### Deliverables:
 The following deliverables are expected by the end of this project:
-* [Effective Tactics and strategies to maximize sales](https://github.com/wusinyee/SYW-Portfolio-v2023/edit/main/Customer%20Segmentation%20Analysis%20with%20SQL.md#7-formulate-strategies-to-maximize-sales-and-recommend-effective-tactics-based-on-the-insights)
+* [Effective Tactics and strategies to maximize sales](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/main/Customer%20Segmentation%20Analysis%20with%20SQL.md#7-formulate-strategies-to-maximize-sales-and-recommend-effective-tactics-based-on-the-insights)
 * [SQL queries for customer segmentation analysis](https://github.com/wusinyee/SYW-Portfolio-v2023/edit/main/Customer%20Segmentation%20Analysis%20with%20SQL.md#4-explore-the-customer-data-to-identify-patterns-and-relationships-between-different-variables)
 * [Extracted insights from the analysis](https://github.com/wusinyee/SYW-Portfolio-v2023/edit/main/Customer%20Segmentation%20Analysis%20with%20SQL.md#6-share-the-insights-gained-from-the-analysis-using-tables-and-bullet-points)
 
