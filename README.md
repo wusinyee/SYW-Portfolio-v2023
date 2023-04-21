@@ -5,7 +5,7 @@
 * 👯  I’m looking to collaborate on visualizations, technical writing, and prompt engineering projects
 * 🌱  I’m currently learning Google Looker Studio, Figma and SAP Analytics Cloud
 * 💬  I love staying up-to-date on the latest breakthroughs and discoveries in these fields and finding ways to incorporate these insights into my work. 
-* 👨‍💻  All of my projects are available my portfolio at [Unlocking Insights: A Collection of BI & Data Analysis Projects](http://github.com/wusinyee/Portfolio-2023.git)
+* 👨‍💻  All of my projects are available my portfolio at [Unlocking Insights: A Collection of BI & Data Analysis Projects](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/main/README.md#unlocking-insights-a-collection-of-bi--data-analysis-projects)
 * ✉️  You can contact me at [wuqianyi1021@gmail.com](mailto:wuqianyi1021@gmail.com)
 * ⚡ I am also an avid enthusiast of philosophy, mental health research, latest technological trends, and indie horror games
 
