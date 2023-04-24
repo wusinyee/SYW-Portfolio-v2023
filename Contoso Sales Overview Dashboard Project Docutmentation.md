@@ -69,7 +69,7 @@ Tasks:
 - [x] Work on the Contoso database and prepare the data
 - [x] [Business Requirement Document](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/main/Contoso%20Sales%20Overview%20Dashboard%20Project%20Docutmentation.md#business-requirement-document-brd-for-contoso-sales-analytics-dashboard-project)
 - [x] [Dashboard Requirement Document](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/main/Contoso%20Sales%20Overview%20Dashboard%20Project%20Docutmentation.md#dashboard-requirement-document-drd-for-contoso-sales-analytics-dashboard-project)
-- [x] Functional Requirement Document
+- [x] [Functional Requirement Document](https://github.com/wusinyee/SYW-Portfolio-v2023/edit/main/Contoso%20Sales%20Overview%20Dashboard%20Project%20Docutmentation.md#functional-requirement-document-frd-contoso-sales-analytics-dashboard-project)
 
 ## Getting the Contoso database and prepare the data
 
