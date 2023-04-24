@@ -20,7 +20,7 @@
 ### I am excited to announce that my portfolio is about to receive a significant update! I have been hard at work adding new projects to the collection, and I believe they will be of great interest to you.
 ### Exciting new projects that will be featured:
 
-- [ ] Contoso Sales Overview Dashboard by Power BI
+- [ ] Contoso Sales Analytics Dashboard by Power BI
 - [ ] [Mean-Variance-Standard Deviation Calculator (Data Analysis with Python Project)](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/b69963c8e2e2bf07286f57827ae90b2083c5fc8b/Mean-Variance-Standard%20Deviation%20Calculator.md)
 - [ ] JIRA UAT Document Sample
 - [ ] Business Requirement Document (BRD) and Functional Requirement Document Sample (FRD)
