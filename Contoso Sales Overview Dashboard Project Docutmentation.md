@@ -67,7 +67,7 @@ The deliverables for the Contoso Sales Analytics Dashboard Project will include 
 # Phase 1: Initiation
 Tasks:
 - [x] Work on the Contoso database and prepare the data
-- [ ] Business Requirement Document
+- [x] [Business Requirement Document](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/main/Contoso%20Sales%20Overview%20Dashboard%20Project%20Docutmentation.md#business-requirement-document-brd-for-contoso-sales-analytics-dashboard-project)
 - [ ] Dashboard Requirement Document
 - [ ] Functional Requirement Document
 
