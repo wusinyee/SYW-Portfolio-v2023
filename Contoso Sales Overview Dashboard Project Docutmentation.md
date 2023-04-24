@@ -1,20 +1,21 @@
 # Project Proposal: **Contoso Sales Analytics Dashboard Project**
 
 ## I. Overview
-Contoso, a fictional electronics retail company, is seeking to track and evaluate its sales performance and improve its decision-making processes by implementing a sales analytics dashboard. The dashboard will provide stakeholders with a real-time view of sales metrics to enable data-driven decisions.
-
-Here are some screenshots of the dashboard during the early stages of developement: 
+  Contoso, a fictional electronics retail company, is interested in viewing sales performance information, such as whether sales amounts are on or off target and how certain channels, such as online stores and resellers, compare with each other. The company aims to improve its decision-making processes by implementing a sales analytics dashboard. The dashboard will provide stakeholders with a real-time view of sales metrics to enable data-driven decisions.
+  
+  Using the Power BI April 2023 Updated version and online design tool Figma, Contoso has decided to implement a Sales dashboard to provide users across the organization with the information they need. 
+  
+ The Sales dashboard will include a variety of reports, arranged in two or more dashboard pages. The dashboard described in this document is similar to the following image:  
 
 ![image](https://user-images.githubusercontent.com/108232087/234024262-a60b9ea9-bcb5-4514-a6d8-f57e9ec11586.png)
 
 ![image3](https://user-images.githubusercontent.com/108232087/234024703-c8496015-255f-4390-83e2-f1b4236021be.png)
 
-
 ## II. Prerequisites
-- Power BI free license
+- Power BI service
 - Power BI Desktop
 - Contoso sample datasets
-- Figma online free version
+- Access Figma online
 
 ## III. Objectives
 - [ ] Prepare Dashboard, Business, and Funtional Requirement Documents
@@ -71,8 +72,20 @@ Tasks:
 - [x] [Dashboard Requirement Document](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/main/Contoso%20Sales%20Overview%20Dashboard%20Project%20Docutmentation.md#dashboard-requirement-document-drd-for-contoso-sales-analytics-dashboard-project)
 - [x] [Functional Requirement Document](https://github.com/wusinyee/SYW-Portfolio-v2023/edit/main/Contoso%20Sales%20Overview%20Dashboard%20Project%20Docutmentation.md#functional-requirement-document-frd-contoso-sales-analytics-dashboard-project)
 
-## Getting the Contoso database and prepare the data
+###  Install and configure Power BI
+To install and configure Power BI, follow these steps:
+1. Go to the Power BI website: https://powerbi.microsoft.com/en-us/
+2. Click on the "Downloads" link in the top right corner of the page.
+3. Choose the version of Power BI that is appropriate for your system (e.g., Windows, Mac, or Mobile).
+4. Once the download is complete, run the installer and follow the on-screen instructions to install Power BI on your computer.
+5. Launch Power BI from your desktop or Start menu.
+6. Sign in with your Microsoft account or create a new account if you don't have one.
+7. Once you are signed in, you can start creating dashboards and reports by connecting to data sources and visualizing the data using Power BI's tools and features.
+8. To configure Power BI, go to the "File" menu and select "Options and settings" > "Options".
+9. Here, you can configure various settings such as data privacy, report settings, and user preferences.
+10. Save your settings and you are ready to start using Power BI.
 
+### Accessing the Contoso dataset sample
 1. Visting [Microsoft Learn](https://learn.microsoft.com/en-us/) and navigate to [Get samples for Power BI](https://learn.microsoft.com/en-us/power-bi/create-reports/sample-datasets)
 2. Follow the instructions on the sample dataset page and retreive the Contoso dataset. 
 3. Import the dataset into Power BI. 
