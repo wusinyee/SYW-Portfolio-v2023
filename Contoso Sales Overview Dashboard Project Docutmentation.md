@@ -222,4 +222,4 @@ C. AI Features
 ### IV. Conclusion
 The Contoso Sales Analytics Dashboard project aims to provide stakeholders with valuable insights and data-driven decision-making. The project's scope includes the design and development of a sales analytics dashboard using Power BI and Figma, integrating data from Microsoft Resources. The dashboard will include features such as revenue breakdown, sales team performance metrics, data visualization using charts, graphs, and tables, data filters, and explore AI capabilities such as Key Influencers, Decomposition Tree, and Anomaly Detection. The project's technical requirements, including data modeling and DAX formulas, ensuring that the dashboard meets user needs and expectations. The project will be completed in five phases, including initiation, design, development, implementation, and testing.
 
-###END OF FRD
+### END OF FRD
