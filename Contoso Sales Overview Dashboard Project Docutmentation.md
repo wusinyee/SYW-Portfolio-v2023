@@ -68,7 +68,7 @@ The deliverables for the Contoso Sales Analytics Dashboard Project will include 
 Tasks:
 - [x] Work on the Contoso database and prepare the data
 - [x] [Business Requirement Document](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/main/Contoso%20Sales%20Overview%20Dashboard%20Project%20Docutmentation.md#business-requirement-document-brd-for-contoso-sales-analytics-dashboard-project)
-- [ ] Dashboard Requirement Document
+- [x] Dashboard Requirement Document
 - [ ] Functional Requirement Document
 
 ## Getting the Contoso database and prepare the data
@@ -80,9 +80,9 @@ Tasks:
 5. Identify and remove redundant data; create new variables or derived metrics based on existing data.
 6. Ensure the accuracy and completeness of the data, if there is any missing data or data imputation, please record it for future reference.
 
-##  Business Requirement Document
 
-### Business Requirement Document (BRD) for Contoso Sales Analytics Dashboard Project
+## Business Requirement Document (BRD) for Contoso Sales Analytics Dashboard Project
+> This document will provide an overview of the project's business requirements. It will describe the business objectives, scope, and constraints for the project. The BRD will also define the project's stakeholders and their roles and responsibilities. The BRD will be used to ensure that the project aligns with the company's overall business goals and objectives.
 
 ### I. Purpose
 The purpose of this document is to provide an overview of the business requirements for the Contoso Sales Analytics Dashboard project. This document will outline the business objectives, scope, and constraints for the project. The BRD will also define the project's stakeholders and their roles and responsibilities.
@@ -122,4 +122,48 @@ The Contoso Sales Analytics Dashboard project aims to improve decision-making pr
 
 ## END OF BRD
 
+
+
+## Dashboard Requirement Document (DRD) for Contoso Sales Analytics Dashboard Project
+> This document will outline the business requirements and technical specifications for the sales analytics dashboard. It will provide a detailed explanation of the user requirements, the dashboard's features and functionality, and the technical specifications for the dashboard's development. The DRD will serve as a blueprint for the dashboard's development and will be used to ensure that the dashboard meets the business needs and requirements.
+
+### I. Introduction
+The Contoso Sales Analytics Dashboard Project aims to improve the decision-making process and optimize sales performance by implementing a real-time sales analytics dashboard. This document outlines the business and technical requirements for the development of the dashboard.
+
+### II. Business Requirements
+The Contoso Sales Analytics Dashboard should meet the following business requirements:
+* The dashboard should provide stakeholders with real-time sales metrics to enable data-driven decisions
+* The dashboard should enable the identification of trends and patterns in sales data, in order to optimize sales performance
+* The dashboard should increase sales revenue by providing deep insights into product popularity, key influencers, closing percentage, and top segments.
+* The dashboard should be easy to use and understand, with a user-friendly interface
+* The dashboard should be customizable, allowing users to view data by region, product, or other criteria.
+
+### III. Technical Requirements
+1. The technical requirements for the Contoso Sales Analytics Dashboard are as follows:
+<br/> 1.1 The dashboard should be developed using Power BI and Figma
+<br/> 1.2 The dashboard should integrate data from Microsoft Resources
+
+2. The dashboard should include the following features and functionality:
+<br/> 2.1 Sales data overview, such as revenue, profit, and sales by region and product
+<br/> 2.2 Revenue sources breakdown
+<br/> 2.3 Sales team performance metrics, such as sales quota attainment, pipeline metrics, and deal velocity
+<br/> 2.4 Data visualization using charts, graphs, and tables to make it easy for users to interpret
+<br/> 2.5 Data filters to allow users to view data by region, product, or other criteria
+<br/> 2.6 AI features such as Key Influencers, Decomposition Tree, and Anomaly Detection
+
+3. The dashboard should be developed using best practices for data modeling and DAX.
+4. The dashboard should be developed with scalability in mind, allowing for the addition of new data sources and features in the future.
+5. The dashboard should be deployed to a secure environment, with appropriate access controls in place to protect sensitive data.
+
+### IV. Design Requirements
+The design of the Contoso Sales Analytics Dashboard should meet the following requirements:
+* The dashboard should have a professional and modern design, with a consistent look and feel throughout.
+* The dashboard should be designed with the end user in mind, taking into account their needs and preferences.
+* The dashboard should be designed to be responsive, adapting to different screen sizes and orientations.
+* The dashboard should include appropriate branding elements, such as the Contoso logo and color scheme.
+
+### V. Conclusion
+The Contoso Sales Analytics Dashboard is a critical tool for improving decision-making processes and optimizing sales performance. This Dashboard Requirement Document outlines the business and technical requirements for the development of the dashboard, ensuring that it meets the needs of stakeholders and provides valuable insights into sales data.
+
+## END OF DRD
 
