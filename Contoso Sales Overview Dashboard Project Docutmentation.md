@@ -13,7 +13,7 @@ Here are some screenshots of the dashboard during the early stages of developeme
 ## II. Prerequisites
 - Power BI free license
 - Power BI Desktop
-- Contoso sample database
+- Contoso sample datasets
 - Figma online free version
 
 ## III. Objectives
@@ -24,7 +24,7 @@ Here are some screenshots of the dashboard during the early stages of developeme
 - [ ] Extract valuable insights and generate actionalable items
 
 ## IV. Scope:
-The scope of the project will include the design and development of a sales analytics dashboard using Power BI and Figma. The dashboard will integrate data from Microsoft Learning Centre. It will include the following features and functionality:
+The scope of the project will include the design and development of a sales analytics dashboard using Power BI and Figma. The dashboard will integrate data from Microsoft Resources. It will include the following features and functionality:
 * Sales data overview, such as revenue, profit, and sales by region and product
 * Revenue sources breakdown
 * Sales team performance metrics, such as sales quota attainment, pipeline metrics, and deal velocity
@@ -34,7 +34,7 @@ The scope of the project will include the design and development of a sales anal
 
 ## V. Project Phases
 The project will be broken down into five phases:
-1. Initiation Phase: Work on the Contoso database, prepare data, and associated documentation (DRD, BRD, and FRD)
+1. Initiation Phase: Work on the Contoso datasets, prepare data, and associated documentation (DRD, BRD, and FRD)
 2. Design/ Conceptualization Phase: Define key KPIs and metrics, design dashboard wireframes using Figma
 3. Development Phase: Create and arrange the dashboard's visuals, create filters, and explore AI features in Power BI
 4. Implementation Phase: Create a functional dashboard and prepare a simple user manual for users
@@ -58,4 +58,27 @@ The deliverables for the Contoso Sales Analytics Dashboard Project will include 
 
 ## viii. Conclusion
 [To be updated] The Contoso Sales Analytics Dashboard project aims to provide stakeholders with valuable insights to enable data-driven decisions. The project will be completed in five phases, including initiation, design, development, implementation, and testing. The project will be completed in five phases, including initiation, design, development, implementation and testing. 
+
+## End of Project Proposal
+
+
+
+
+# Phase 1: Initiation
+Tasks:
+- [x] Work on the Contoso database and prepare the data
+- [ ] Business Requirement Document
+- [ ] Dashboard Requirement Document
+- [ ] Functional Requirement Document
+
+## Getting the Contoso database and prepare the data
+
+1. Visting [Microsoft Learn](https://learn.microsoft.com/en-us/) and navigate to [Get samples for Power BI](https://learn.microsoft.com/en-us/power-bi/create-reports/sample-datasets)
+2. Follow the instructions on the sample dataset page and retreive the Contoso dataset. 
+3. Import the dataset into Power BI. 
+4. Make sure the data model is understood, and the relationships between tables are defined. Check for and correct any missing or incomplete data.
+5. Identify and remove redundant data; create new variables or derived metrics based on existing data.
+6. Ensure the accuracy and completeness of the data, if there is any missing data or data imputation, please record it for future reference.
+
+##  Business Requirement Document
 
