@@ -23,7 +23,6 @@
 - [ ] [Contoso Sales Analytics Dashboard by Power BI](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/e4d7223d91b2be3a5462ed15762098b6ed4eb97d/Contoso%20Sales%20Overview%20Dashboard%20Project%20Docutmentation.md)
 - [ ] [Mean-Variance-Standard Deviation Calculator (Data Analysis with Python Project)](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/b69963c8e2e2bf07286f57827ae90b2083c5fc8b/Mean-Variance-Standard%20Deviation%20Calculator.md)
 - [ ] JIRA UAT Document Sample
-- [ ] Business Requirement Document (BRD) and Functional Requirement Document Sample (FRD)
 - [ ] Data Quality Assessment Dashboard by Tableau
 - [x] [Customer Segmentation Analysis with SQL](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/4914ce37258ffebe612979c7855e0fd019c8eca3/Customer%20Segmentation%20Analysis%20with%20SQL.md)
 - [ ] Exploratory Data Analysis with Python
