@@ -25,9 +25,8 @@
 - [ ] JIRA UAT Document Sample
 - [ ] Business Requirement Document (BRD) and Functional Requirement Document Sample (FRD)
 - [ ] Data Quality Assessment Dashboard by Tableau
-- [ ] Data Flow Diagram (DFD) Sample
 - [x] [Customer Segmentation Analysis with SQL](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/4914ce37258ffebe612979c7855e0fd019c8eca3/Customer%20Segmentation%20Analysis%20with%20SQL.md)
-- [ ] AI Sentiment Snalysis on Twitter with python
+- [ ] Exploratory Data Analysis with Python
 
 
 ### Original Project List:
