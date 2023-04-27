@@ -25,7 +25,7 @@
 - [ ] JIRA UAT Document Sample
 - [ ] Data Quality Assessment Dashboard by Tableau
 - [x] [Customer Segmentation Analysis with SQL](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/4914ce37258ffebe612979c7855e0fd019c8eca3/Customer%20Segmentation%20Analysis%20with%20SQL.md)
-- [ ] Exploratory Data Analysis with Python
+- [ ] [Exploratory Data Analysis with Python](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/ffdc6ebc2fe983cc266d23f49cbdde7c873c609c/EDAwithPython.md)
 
 
 ### Original Project List:
