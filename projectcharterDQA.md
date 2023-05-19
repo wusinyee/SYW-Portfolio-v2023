@@ -157,3 +157,37 @@ The project budget for the Data Quality Assessment Dashboard will include costs 
 
 Conclusion:
 The implementation of a Data Quality Assessment Dashboard will significantly enhance our organization's data-driven decision-making capabilities. By identifying and resolving data quality issues, we can improve operational efficiency, enhance customer satisfaction, and drive overall business success. We are confident that this project will deliver valuable insights and enable effective data governance.
+
+--------------------------------------------------------
+
+Data quality assessment metrics are measurements used to evaluate the quality of data. These metrics help assess various aspects of data quality, such as accuracy, completeness, consistency, timeliness, and validity. Here are commonly used data quality assessment metrics:
+
+Accuracy: Measures the extent to which data values correspond to the true or expected values. Metrics include:
+
+Error rate: Percentage of incorrect or inconsistent data values.
+Validity rate: Percentage of data values that meet predefined validation rules.
+Precision: Degree of closeness between the measured value and the true value.
+Completeness: Measures the extent to which all required data elements are present. Metrics include:
+
+Missing values: Percentage of missing data elements.
+Completeness rate: Percentage of data records or fields that are complete.
+Consistency: Measures the degree of coherence and conformity among data elements. Metrics include:
+
+Inconsistency rate: Percentage of data elements that exhibit conflicting or contradictory values.
+Redundancy: Presence of duplicate or redundant data elements.
+Timeliness: Measures the currency and relevance of data in relation to the desired timeframe. Metrics include:
+
+Latency: Time delay between data creation or capture and availability for analysis.
+Age of data: Period between data capture and current date.
+Validity: Measures the adherence of data to predefined business rules and constraints. Metrics include:
+
+Conformity rate: Percentage of data values that conform to predefined validation rules.
+Rule violations: Number or percentage of data values that violate predefined business rules.
+Uniqueness: Measures the presence of duplicate or redundant data records or values. Metrics include:
+
+Duplicate records: Number or percentage of records that have identical or highly similar attributes.
+Unique values: Number or percentage of distinct values within a specific data field.
+Integrity: Measures the accuracy and consistency of relationships and dependencies among data elements. Metrics include:
+
+Referential integrity violations: Number or percentage of data records with broken or inconsistent relationships.
+It's important to note that the specific data quality assessment metrics used may vary depending on the nature of the data, industry requirements, and organizational goals. Customization and alignment of metrics to specific business needs are crucial for an effective data quality assessment.
