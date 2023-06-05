@@ -208,3 +208,16 @@ class TransactionCreateView(LoginRequiredMixin, CreateView):
 - Deploy the Django application to a production environment.
 - Utilize web servers like Nginx or Apache to serve the application.
 - Consider using platforms like Heroku, AWS, or DigitalOcean for hosting and deployment.
+
+## Notes
+
+1.	The models.py file defines the database models for the Risk Portfolio Management System. It comprises models for Portfolio, Asset, Risk, and Transaction. Each model represents a table in the database and defines the fields and relationships between them.
+2.	The urls.py file defines the URL routing for the different views in the system. Each URL pattern is mapped to a corresponding view class from the views.py file.
+3.	The views.py file contains the implementation of the views for the Risk Portfolio Management System. These views handle requests, interact with the models, and render templates to display data or receive user input. The views are built as Django's class-based views, which provide a straightforward way to organize and reuse code.
+4.	The templates folder contains HTML templates that define the structure and layout of the web pages. Each template corresponds to a specific view and includes placeholders for dynamic data that is rendered by the Django templating engine.
+5.	The authentication and authorization mechanisms of Django are used to handle user registration, login, and session management. Users can only access and modify their own portfolios, assets, risks, and transactions, ensuring data privacy and security.
+6.	Business logic and calculations specific to risk assessment and portfolio analysis can be implemented within the views or helper functions. These calculations can involve risk types, severity assessments, portfolio performance metrics, and other relevant calculations.
+7.	Unit tests can be written to ensure the functionality and reliability of the system. Django's testing framework or third-party libraries like pytest can be used to write and run these tests.
+8.	Deployment involves hosting the Django application in a production environment. Web servers like Nginx or Apache can be used to serve the application, and platforms like Heroku, AWS, or DigitalOcean can be utilized for hosting and deployment.
+
+
