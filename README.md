@@ -3,7 +3,7 @@
 * 🌍  Location: Wan Chai, Hong Kong
 * 🔭  I’m currently working on expanding my tech stack: PHP and Laravel; Django; and Statistical Modelling as data analysis techique
 * 👯  I’m open to open source project, co - writing technical document, data analysis, visualization, and prompt engineering projects
-* 🌱  Check out my [Tableau Profile](https://public.tableau.com/app/profile/sin.yee.wu) and [novyPro Portfolio](https://www.novypro.com/profile_about/mandywu)
+* 🌱  Check out my [Tableau Profile](https://public.tableau.com/app/profile/sin.yee.wu)
 * 💬  I love staying up-to-date on the latest breakthroughs and discoveries in these fields and finding ways to incorporate these insights into my work. 
 * 👨‍💻  All of my projects are available my portfolio at [Unlocking Insights: A Collection of BI & Data Analysis Projects](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/main/README.md#unlocking-insights-a-collection-of-bi--data-analysis-projects)
 * ✉️  You can contact me at [wuqianyi1021@gmail.com](mailto:wuqianyi1021@gmail.com)
