@@ -22,7 +22,7 @@
 - [ ] [Contoso Sales Analytics Dashboard by Power BI](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/e4d7223d91b2be3a5462ed15762098b6ed4eb97d/Contoso%20Sales%20Overview%20Dashboard%20Project%20Docutmentation.md)
 - [ ] [Risk Portfolio Management with Django](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/0ea685e756724c582282ba3ba1ed0af25a05a17f/RPMswithDjango.md)
 - [ ] [Mean-Variance-Standard Deviation Calculator (Data Analysis with Python Project)](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/b69963c8e2e2bf07286f57827ae90b2083c5fc8b/Mean-Variance-Standard%20Deviation%20Calculator.md)
-- [ ] Customer Sales Trend Analysis with PostgreSQL
+- [ ] [Customer Sales Trend Analysis with PostgreSQL](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/38b9d00d5b8cf32327f139afbf81cb207f9fe325/CustomerSalesTrendAnalysisPostgreSQL.md)
 - [ ] Technical documentations and specifications 
 - [ ] Data Quality Assessment Dashboard by Tableau
 - [x] [Customer Segmentation Analysis with SQL](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/4914ce37258ffebe612979c7855e0fd019c8eca3/Customer%20Segmentation%20Analysis%20with%20SQL.md)
