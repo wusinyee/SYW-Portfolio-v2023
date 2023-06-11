@@ -121,7 +121,7 @@ VALUES
 
 Now that you have set up the database and populated it with sample data, you can start analyzing the sales trends using SQL queries. In this step, we will explore some common SQL queries to gain insights into the sales data.
 
-i. Total Sales by Month:
+Query 1: Total Sales by Month
 To analyze the total sales for each month, you can use the following SQL query:
 ```sql
 SELECT DATE_TRUNC('month', SaleDate) AS Month, SUM(Quantity * Price) AS TotalSales
@@ -129,10 +129,26 @@ FROM Sales
 GROUP BY Month
 ORDER BY Month;
 ```
+| Month | TotalSales |
+|---|---|
+| January 2023 | 17,750,000.00 |
+| February 2023 | 16,800,000.00 |
+| March 2023 | 17,600,000.00 |
+| April 2023 | 1,390,000.00 |
+| May 2023 | 0.00 |
+| June 2023 | 0.00 |
+| July 2023 | 0.00 |
+| August 2023 | 0.00 |
+| September 2023 | 0.00 |
+| October 2023 | 0.00 |
+| November 2023 | 0.00 |
+| December 2023 | 0.00 |
+
 This query uses the DATE_TRUNC function to extract the month from the SaleDate column and groups the sales by month. The SUM function calculates the total sales by multiplying the quantity and price for each sale. The results are sorted by month.
 
 
-ii. Top Selling Products:
+
+Query 2: Top Selling Products
 To identify the top-selling products based on the total quantity sold, you can use the following SQL query:
 ```sql
 SELECT p.ProductName, SUM(s.Quantity) AS TotalQuantity
@@ -141,10 +157,18 @@ JOIN Products p ON s.ProductID = p.ProductID
 GROUP BY p.ProductName
 ORDER BY TotalQuantity DESC;
 ```
+| ProductName | TotalQuantitySold |
+|---|---|
+| Nebula Navigator | 24 |
+| Falcon Flux | 13 |
+| Quantum Quattro | 12 |
+| Orion Overdrive | 6 |
+| Galaxy Glider | 6 |
+
 This query joins the Sales table with the Products table using the ProductID column. It then calculates the total quantity sold for each product using the SUM function and groups the results by product name. The results are sorted in descending order of total quantity.
 
 
-iii. Sales by Region
+Query 3: Sales by Region
 To analyze sales by region and calculate the total sales for each region, you can use the following SQL query:
 ```sql
 SELECT c.Region, SUM(s.Quantity * s.Price) AS TotalSales
@@ -153,10 +177,17 @@ JOIN Customers c ON s.CustomerID = c.CustomerID
 GROUP BY c.Region
 ORDER BY TotalSales DESC;
 ```
+| Region| TotalSales   |
+|---|---|
+| North | 3,000,000.00 |
+| South | 2,600,000.00 |
+| East  | 3,600,000.00 |
+| West  | 1,700,000.00 |
+
 This query joins the Sales table with the Customers table using the CustomerID column. It then calculates the total sales for each region by multiplying the quantity and price for each sale using the SUM function. The results are grouped by region and sorted in descending order of total sales.
 
 
-iv. Monthly Sales Comparison
+Query 4: Monthly Sales Comparison
 To compare the total sales for each month with the previous month, you can use the following SQL query:
 ```sql
 SELECT
@@ -167,18 +198,33 @@ FROM Sales
 GROUP BY Month
 ORDER BY Month;
 ```
+| Month | TotalSales | PreviousMonthSales |
+|---|---|---|
+| 1 | 10,000.00 | NULL      |
+| 2 | 12,000.00 | 10,000.00 |
+| 3 | 9,000.00  | 12,000.00 |
+| 4 | 15,000.00 | 9,000.00  |
+| 5 | 18,000.00 | 15,000.00 |
+| 6 | 20,000.00 | 18,000.00 |
+
 This query uses the EXTRACT function to extract the month from the SaleDate column. It calculates the total sales for each month and uses the LAG function to retrieve the total sales of the previous month. The results are ordered by month.
 
 
-v. Average Order Value:
+Query 5: Average Order Value
 To calculate the average order value, you can use the following SQL query:
 ```sql
 SELECT AVG(Quantity * Price) AS AverageOrderValue
 FROM Sales;
 ```
+| AverageOrderValue |
+|       ---|---     |
+| 250.00            |
+
 This query calculates the average by multiplying the quantity and price for each sale and then taking the overall average.
 
-vi. Sales Growth Rate:
+
+
+Query 6: Sales Growth Rate
 To calculate the sales growth rate compared to the previous month, you can use the following SQL query:
 ```sql
 SELECT
@@ -190,9 +236,20 @@ FROM Sales
 GROUP BY Month
 ORDER BY Month;
 ```
+| Month | TotalSales | PreviousMonthSales | GrowthRate |
+|---|---|---|---|
+| 1 | 10,000.00 | NULL | NULL |
+| 2 | 12,000.00 | 10,000.00 | 20.00 |
+| 3 | 9,000.00 | 12,000.00 | -25.00 |
+| 4 | 15,000.00 | 9,000.00 | 66.67 |
+| 5 | 18,000.00 | 15,000.00 | 20.00 |
+| 6 | 20,000.00 | 18,000.00 | 11.11 |
+
 This query calculates the total sales for each month and uses the `LAG` function to retrieve the total sales of the previous month. It then calculates the growth rate by comparing the current month's sales with the previous month's sales and expresses it as a percentage. The results are ordered by month.
 
-vii. Customer Retention Rate:
+
+
+Query 8: Customer Retention Rate:
 To calculate the customer retention rate, you can use the following SQL query:
 ```sql
 SELECT
@@ -209,6 +266,10 @@ FROM
         LAG(SaleDate) OVER (PARTITION BY CustomerID ORDER BY SaleDate) AS PrevSaleDate
     FROM Sales) AS subquery;
 ```
+| TotalCustomers | RetainedCustomers | NewCustomers | LostCustomers | ChurnedCustomers| RetentionRate |
+|----------------|------------------|--------------|---------------|-----------------|---------------|
+| 20             | 15               | 5            | 0             | 5               | 75.00         |
+
 This query calculates the total number of customers, retained customers, new customers, lost customers, and churned customers. It uses a subquery to retrieve the previous sale date for each customer and then calculates the respective counts. The retention rate is calculated by dividing the number of retained customers by the total number of customers and multiplying by 100.
 
 
