@@ -116,6 +116,9 @@ VALUES
 (5, 5, 7, 180000.00, '2023-04-05'),
 (6, 6, 4, 2200000.00, '2023-04-10');
 ```
+The schema of the tables: <br>
+![TableSchema drawio (2)](https://github.com/wusinyee/SYW-Portfolio-v2023/assets/108232087/87db8cb0-4646-4b3f-a418-e65a31057577)
+
 
 ## Step 2: Analyzing Sales Trends with SQL <br>
 
