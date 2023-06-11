@@ -2,6 +2,10 @@
 
 Exploratory Data Analysis (EDA) is an essential step in any data analysis project. In this project, I will explore how to perform EDA on domestic consumption of coffee data using Python, which includes the basics of loading, cleaning, and visualizing data using Python's popular data analysis libraries, including Pandas, NumPy, Matplotlib, and seaborn. 
 
+EDA Process Flowchat <br>
+![EDAprocess drawio](https://github.com/wusinyee/SYW-Portfolio-v2023/assets/108232087/85608d10-95b3-4580-be3d-137953dc8b78)
+
+
 ## 1. Importing necessary libraries:
 The first step is to import the necessary libraries. We will need pandas for data manipulation, matplotlib and seaborn for data visualization, and numpy for mathematical operations.
 ``` python
