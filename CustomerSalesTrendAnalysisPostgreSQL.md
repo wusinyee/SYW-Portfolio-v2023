@@ -217,8 +217,8 @@ SELECT AVG(Quantity * Price) AS AverageOrderValue
 FROM Sales;
 ```
 | AverageOrderValue |
-|       ---|---     |
-| 250.00            |
+|---|---|
+| 250.00|
 
 This query calculates the average by multiplying the quantity and price for each sale and then taking the overall average.
 
