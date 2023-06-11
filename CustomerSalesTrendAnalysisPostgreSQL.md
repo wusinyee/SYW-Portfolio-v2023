@@ -4,7 +4,7 @@
 The purpose of this project is to develop a sales trend analysis system using SQL. The system will enable sales leaders and analysts to gain valuable insights from sales data, predict future trends, make informed decisions, and identify growth opportunities. The project will involve setting up a database, analyzing monthly sales trends, performing sales representative analysis, customer analysis, and product analysis.
 
 ### 2. Project Objectives:
-*	[Provide a comprehensive sales trend analysis solution using SQL]()
+*	[Provide a comprehensive sales trend analysis solution using SQL](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/main/CustomerSalesTrendAnalysisPostgreSQL.md#step-1-database-setup-)
 *	Enable sales leaders to understand sales data and make data-driven decisions.
 *	Predict future sales trends with accuracy and confidence.
 *	Identify and address potential issues in sales performance.
