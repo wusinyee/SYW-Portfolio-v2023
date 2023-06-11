@@ -1,9 +1,9 @@
 # 💫 About Me:
 ## Hi there!👋 My name is Mandy
-* 🌍  I'm based in Wan Chai, Hong Kong
+* 🌍  Location: Wan Chai, Hong Kong
 * 🔭  I’m currently working on expanding my tech stack: PHP and Laravel; Django; and Statistical Modelling as data analysis techique
 * 👯  I’m open to open source project, co - writing technical document, and prompt engineering projects
-* 🌱  I’m currently taking the final course of the Google Business Intelligence Professional Certificate program
+* 🌱  Check out my [Tableau Profile](https://public.tableau.com/app/profile/sin.yee.wu) and [novyPro Portfolio](https://www.novypro.com/profile_about/mandywu)
 * 💬  I love staying up-to-date on the latest breakthroughs and discoveries in these fields and finding ways to incorporate these insights into my work. 
 * 👨‍💻  All of my projects are available my portfolio at [Unlocking Insights: A Collection of BI & Data Analysis Projects](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/main/README.md#unlocking-insights-a-collection-of-bi--data-analysis-projects)
 * ✉️  You can contact me at [wuqianyi1021@gmail.com](mailto:wuqianyi1021@gmail.com)
