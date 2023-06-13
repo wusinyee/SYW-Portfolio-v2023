@@ -5,91 +5,59 @@ Exploratory Data Analysis (EDA) is an essential step in any data analysis projec
 EDA Process Flowchat <br>
 ![EDAprocess drawio](https://github.com/wusinyee/SYW-Portfolio-v2023/assets/108232087/85608d10-95b3-4580-be3d-137953dc8b78)
 
-
-## 1. Importing necessary libraries:
-The first step is to import the necessary libraries. We will need pandas for data manipulation, matplotlib and seaborn for data visualization, and numpy for mathematical operations.
-``` python
+```python
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
-```
 
-## 2. Loading the ddomestic consumption of coffee dataa\
-Next, we load the data into a pandas DataFrame. The data is in a CSV file called "coffee_consumption.csv". You can also use pd.read_excel for Excel files, or pd.read_sql for database connections.
-```python 
-df = pd.read_csv('coffee_consumption.csv')
-```
+# Step 1: Import necessary libraries
 
-## 3. Exploring the Data:
-The first thing to do is to explore the data to get a better understanding of its structure and content. Use the head() method to display the first few rows of the DataFrame, and the shape and info() methods to get information about the number of rows, columns, and data types.
-```python
+# Step 2: Load the dataset
+df = pd.read_csv('tripadvisor_hotel_reviews.csv')
+
+# Step 3: Understanding the dataset
+print("Shape of the dataset:", df.shape)
+print("First few rows of the dataset:")
 print(df.head())
-print(df.shape)
-print(df.info())
-```
 
-## 4. Cleaning the data
-In this step, I will clean the data by removing any missing values or duplicates, and by converting any data types as necessary.
-```python
-# Remove rows with missing values
-df.dropna(inplace=True)
+# Step 4: Data cleaning and preprocessing (if required)
+# Perform any necessary data cleaning steps here
 
-# Remove duplicates
-df.drop_duplicates(inplace=True)
+# Step 5: Exploring the columns
+print("Summary statistics for numeric columns:")
+print(df.describe())
 
-# Convert data types
-df['Date'] = pd.to_datetime(df['Date'])
-```
+print("Unique values in the 'Rating' column:")
+print(df['Rating'].value_counts())
 
-## 5. Visualizing the Data:
-Next, use various charts and plots to visualize the data. 
-```python
-# Line plot of coffee consumption over time
+# Step 6: Visualizing the data
 plt.figure(figsize=(10, 6))
-sns.lineplot(x='Date', y='Consumption', data=df)
-plt.title('Coffee Consumption Over Time')
-plt.xlabel('Year')
-plt.ylabel('Consumption (Millions of 60kg bags)')
+sns.histplot(df['Rating'], bins=5, kde=True)
+plt.xlabel('Rating')
+plt.ylabel('Count')
+plt.title('Distribution of Ratings')
 plt.show()
 
-# Histogram of coffee consumption
-plt.figure(figsize=(10, 6))
-sns.histplot(df['Consumption'], bins=20)
-plt.title('Histogram of Coffee Consumption')
-plt.xlabel('Consumption (Millions of 60kg bags)')
+# Step 7: Performing sentiment analysis
+plt.figure(figsize=(6, 6))
+df['Sentiment'].value_counts().plot(kind='pie', autopct='%1.1f%%')
+plt.title('Sentiment Distribution')
 plt.show()
 
-# Box plot of coffee consumption by region
+# Step 8: Analyzing ratings and reviews
 plt.figure(figsize=(10, 6))
-sns.boxplot(x='Region', y='Consumption', data=df)
-plt.title('Coffee Consumption by Region')
-plt.xlabel('Region')
-plt.ylabel('Consumption (Millions of 60kg bags)')
+sns.boxplot(x='Rating', y='Review', data=df)
+plt.xlabel('Rating')
+plt.ylabel('Review')
+plt.title('Ratings vs Reviews')
 plt.show()
 
-# Heatmap of correlation matrix
-plt.figure(figsize=(10, 6))
-sns.heatmap(df.corr(), annot=True, cmap='coolwarm')
-plt.title('Correlation Matrix')
-plt.show()
-```
+# Step 9: Analyzing hotel-specific information
+top_rated_hotels = df.groupby('Hotel_Name')['Rating'].mean().nlargest(10)
+print("Top 10 highest rated hotels:")
+print(top_rated_hotels)
 
-## 6. Analyzing the Data:
-Statistical analyses will be performed on the data to gain insights into the relationships between variables. For example, we can calculate the mean, median, and standard deviation of coffee consumption, or we can use regression analysis to model the relationship between coffee consumption and other variables.
-```python
-# Calculate mean, median, and standard deviation of coffee consumption
-print('Mean:', df['Consumption'].mean())
-print('Median:', df['Consumption'].median())
-print('Standard Deviation:', df['Consumption'].std())
-
-# Perform linear regression of coffee consumption on temperature
-from sklearn.linear_model import LinearRegression
-
-X = df[['Temperature']]
-y = df['Consumption']
-
-reg = LinearRegression().fit(X, y)
-print('Coefficient of Determination:', reg.score(X, y))
-print('Regression Coefficients:', reg.coef_)
+# Step 10: Temporal analysis (if applicable)
+# If the dataset includes review dates, you can perform temporal analysis here
 ```
