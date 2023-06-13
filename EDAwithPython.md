@@ -1,4 +1,4 @@
-# Exploratory Data Analysis (EDA) on Domestic Coffee Consumption with Python 
+# Exploratory Data Analysis (EDA) on TripAdvisor Hotel Reviews 
 
 Exploratory Data Analysis (EDA) is an essential step in any data analysis project. In this project, I will explore how to perform EDA on domestic consumption of coffee data using Python, which includes the basics of loading, cleaning, and visualizing data using Python's popular data analysis libraries, including Pandas, NumPy, Matplotlib, and seaborn. 
 
