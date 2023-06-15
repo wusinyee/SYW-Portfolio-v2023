@@ -70,25 +70,25 @@ plt.show()
 2.	Loading the Dataset:
 * The dataset is loaded into a DataFrame using the pd.read_csv() function. The dataset file, 'dairy_products_dataset.csv', is assumed to be located at '/content/'.
 3.	Understanding the Dataset:
-•	The code provides an overview of the dataset:
-•	It prints the number of rows and columns in the dataset using the shape attribute of the DataFrame.
-•	It displays the data types of each column using the dtypes attribute of the DataFrame.
-•	It presents the summary statistics of the numerical columns using the describe() method of the DataFrame.
+*	The code provides an overview of the dataset:
+*	It prints the number of rows and columns in the dataset using the shape attribute of the DataFrame.
+*	It displays the data types of each column using the dtypes attribute of the DataFrame.
+*	It presents the summary statistics of the numerical columns using the describe() method of the DataFrame.
 4.	Handling Missing Data:
-•	The code checks for missing values in the dataset:
-•	It uses the isnull().sum() method to calculate the sum of missing values in each column of the DataFrame.
-•	It prints the count of missing values for each column.
+*	The code checks for missing values in the dataset:
+*	It uses the isnull().sum() method to calculate the sum of missing values in each column of the DataFrame.
+*	It prints the count of missing values for each column.
 5.	Exploratory Data Analysis (EDA):
-•	The code performs exploratory data analysis by creating example visualizations:
-•	It creates a histogram of the 'Price' column using sns.histplot() and plt.show(), visualizing the distribution of prices.
-•	It creates a boxplot to examine the relationship between the 'Rating' and 'Type' columns using sns.boxplot() and plt.show().
+*	The code performs exploratory data analysis by creating example visualizations:
+*	It creates a histogram of the 'Price' column using sns.histplot() and plt.show(), visualizing the distribution of prices.
+*	It creates a boxplot to examine the relationship between the 'Rating' and 'Type' columns using sns.boxplot() and plt.show().
 6.	Correlation Analysis:
-•	The code calculates the correlation matrix of the dataset using df.corr().
-•	It creates a heatmap visualization of the correlation matrix using sns.heatmap() and plt.show(). The heatmap provides a visual representation of the correlations between different numerical variables in the dataset.
+*	The code calculates the correlation matrix of the dataset using df.corr().
+*	It creates a heatmap visualization of the correlation matrix using sns.heatmap() and plt.show(). The heatmap provides a visual representation of the correlations between different numerical variables in the dataset.
 7.	Feature Engineering (if required):
-•	The code demonstrates an example of feature engineering by creating a new feature called 'Price per Weight'. It calculates the price per weight by dividing the 'Price' column by the 'Weight' column.
+*	The code demonstrates an example of feature engineering by creating a new feature called 'Price per Weight'. It calculates the price per weight by dividing the 'Price' column by the 'Weight' column.
 8.	Additional Visualizations:
-•	The code creates additional visualizations to explore relationships between variables:
-•	It creates a scatter plot of 'Calories' versus 'Protein' with different colors representing different 'Type' categories using sns.scatterplot() and plt.show().
+*	The code creates additional visualizations to explore relationships between variables:
+*	It creates a scatter plot of 'Calories' versus 'Protein' with different colors representing different 'Type' categories using sns.scatterplot() and plt.show().
 Each step of the code is aimed at understanding the dataset, handling missing data, performing exploratory data analysis, exploring correlations, and creating visualizations to gain insights from the data.
 
