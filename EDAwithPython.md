@@ -46,6 +46,14 @@ print("Number of rows and columns:", df.shape)
 print("\nData types:\n", df.dtypes)
 print("\nSummary statistics:\n", df.describe())
 ```
+The analysis revealed various summary statistics for the dataset:   <br>
+* The average price of dairy products is *$3.79*, with a standard deviation of **$1.68**
+* The average weight is *590 grams*, with a standard deviation of **391 grams**
+* In terms of nutritional content, the average calorie count is *370*, with a standard deviation of **319.37**
+* The average protein content is *7.8 grams*, with a standard deviation of **7.16**
+* The average calcium content is *232 mg*, with a standard deviation of *182.67*, and the average sodium content is *110 mg*, with a standard deviation of **56.57**
+* The dataset also includes information on carbohydrates, sugar, and cholesterol, with their respective average values and standard deviations
+* The average rating of the dairy products is *4.24*, with a standard deviation of **0.36**
 
 4.	Handling Missing Data:
 *	The code checks for missing values in the dataset:
@@ -56,13 +64,13 @@ print("\nSummary statistics:\n", df.describe())
 ```python
 print("\nMissing values:\n", df.isnull().sum())
 ```
+* Upon inspection, it was determined that the dataset does not contain any missing values. All columns are complete and have no null entries.
 
 5.	Exploratory Data Analysis (EDA):
 *	The code performs exploratory data analysis by creating example visualizations:
 *	It creates a histogram of the 'Price' column using sns.histplot() and plt.show(), visualizing the distribution of prices   <br>
 ![step5distriprice](https://github.com/wusinyee/SYW-Portfolio-v2023/assets/108232087/191bdd42-067d-407f-8823-3c550b3b0536)
-
-*	It creates a boxplot to examine the relationship between the 'Rating' and 'Type' columns using sns.boxplot() and plt.show()   <br>
+*  A histogram of the 'Price' variable was plotted, illustrating the distribution of prices for the dairy products   <br>
 ![step5box](https://github.com/wusinyee/SYW-Portfolio-v2023/assets/108232087/4a41aa70-f7d1-4f09-86c8-e37ce942b0bd)
 
 
@@ -77,6 +85,8 @@ sns.boxplot(x='Type', y='Rating', data=df)
 plt.title('Rating by Dairy Product Type')
 plt.show()
 ```
+*	It creates a boxplot to examine the relationship between the 'Rating' and 'Type' columns using sns.boxplot() and plt.show()
+* A box plot was generated to explore the relationship between the 'Type' of dairy products (Cheese, Milk, Butter, Yogurt, Ice Cream) and their corresponding ratings
 
 6.	Correlation Analysis:
 *	The code calculates the correlation matrix of the dataset using df.corr().
@@ -111,7 +121,11 @@ sns.scatterplot(x='Calories', y='Protein', data=df, hue='Type')
 plt.title('Calories vs Protein by Dairy Product Type')
 plt.show()
 ```
+* A scatter plot was utilized to visualize the relationship between 'Calories' and 'Protein' across different types of dairy products
 
+### Relationship and Correlation:   <br>
+The box plot analysis indicated that the various types of dairy products exhibit different ratings. Specifically, Cheese demonstrated the highest median rating, while Butter had the lowest. The scatter plot analysis revealed a positive relationship between the 'Calories' and 'Protein' content of dairy products. Generally, as the calorie content increases, so does the protein content. 
+*Further exploration of potential relationships and correlations can be conducted by examining additional variables present in the dataset.*
 
 ### Source code <br>
 
