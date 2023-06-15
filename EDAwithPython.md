@@ -33,10 +33,13 @@ df = pd.read_csv('dairy_products_dataset.csv')
 ```
 
 3.	Understanding the Dataset:
-*	The code provides an overview of the dataset:
-*	It prints the number of rows and columns in the dataset using the shape attribute of the DataFrame.
-*	It displays the data types of each column using the dtypes attribute of the DataFrame.
-*	It presents the summary statistics of the numerical columns using the describe() method of the DataFrame.
+*	The code provides an overview of the dataset
+*	It prints the number of rows and columns in the dataset using the shape attribute of the DataFrame
+*	It displays the data types of each column using the dtypes attribute of the DataFrame  <br>
+![step3numclmdatatypes](https://github.com/wusinyee/SYW-Portfolio-v2023/assets/108232087/3733ad66-fd1e-4940-9c83-357488634b07) <br>
+
+*	It presents the summary statistics of the numerical columns using the describe() method of the DataFrame   <br>
+![step3sumstat](https://github.com/wusinyee/SYW-Portfolio-v2023/assets/108232087/7987de03-b6fa-47d0-9517-e79b04c989fe)
 
 ```python
 print("Number of rows and columns:", df.shape)
@@ -47,7 +50,8 @@ print("\nSummary statistics:\n", df.describe())
 4.	Handling Missing Data:
 *	The code checks for missing values in the dataset:
 *	It uses the isnull().sum() method to calculate the sum of missing values in each column of the DataFrame.
-*	It prints the count of missing values for each column.
+*	It prints the count of missing values for each column  <br>
+![step4missing](https://github.com/wusinyee/SYW-Portfolio-v2023/assets/108232087/5a735b48-10e4-411e-93a6-544440c57574)
 
 ```python
 print("\nMissing values:\n", df.isnull().sum())
@@ -55,8 +59,12 @@ print("\nMissing values:\n", df.isnull().sum())
 
 5.	Exploratory Data Analysis (EDA):
 *	The code performs exploratory data analysis by creating example visualizations:
-*	It creates a histogram of the 'Price' column using sns.histplot() and plt.show(), visualizing the distribution of prices.
-*	It creates a boxplot to examine the relationship between the 'Rating' and 'Type' columns using sns.boxplot() and plt.show().
+*	It creates a histogram of the 'Price' column using sns.histplot() and plt.show(), visualizing the distribution of prices   <br>
+![step5distriprice](https://github.com/wusinyee/SYW-Portfolio-v2023/assets/108232087/191bdd42-067d-407f-8823-3c550b3b0536)
+
+*	It creates a boxplot to examine the relationship between the 'Rating' and 'Type' columns using sns.boxplot() and plt.show()   <br>
+![step5box](https://github.com/wusinyee/SYW-Portfolio-v2023/assets/108232087/4a41aa70-f7d1-4f09-86c8-e37ce942b0bd)
+
 
 ```python
 plt.figure(figsize=(10, 6))
@@ -72,7 +80,10 @@ plt.show()
 
 6.	Correlation Analysis:
 *	The code calculates the correlation matrix of the dataset using df.corr().
-*	It creates a heatmap visualization of the correlation matrix using sns.heatmap() and plt.show(). The heatmap provides a visual representation of the correlations between different numerical variables in the dataset.
+*	It creates a heatmap visualization of the correlation matrix using sns.heatmap() and plt.show(). The heatmap provides a visual representation of the correlations between different numerical variables in the dataset   <br>
+
+![step7corrmatrix](https://github.com/wusinyee/SYW-Portfolio-v2023/assets/108232087/bbafb859-791b-4cf8-893b-19e51b85ebd0)
+
 
 ```python
 correlation_matrix = df.corr()
@@ -82,7 +93,7 @@ plt.title('Correlation Matrix')
 plt.show()
 ```
 
-7.	Feature Engineering (if required):
+7.	Feature Engineering (Optional):
 *	The code demonstrates an example of feature engineering by creating a new feature called 'Price per Weight'. It calculates the price per weight by dividing the 'Price' column by the 'Weight' column.
 
 ```python
@@ -91,7 +102,8 @@ df['Price per Weight'] = df['Price'] / df['Weight']
 
 8.	Additional Visualizations:
 *	The code creates additional visualizations to explore relationships between variables:
-*	It creates a scatter plot of 'Calories' versus 'Protein' with different colors representing different 'Type' categories using sns.scatterplot() and plt.show().
+*	It creates a scatter plot of 'Calories' versus 'Protein' with different colors representing different 'Type' categories using sns.scatterplot() and plt.show()   <br>
+![step8](https://github.com/wusinyee/SYW-Portfolio-v2023/assets/108232087/47bd6ae0-b3de-46d9-b892-feb4b57eb12b)
 
 ```python
 plt.figure(figsize=(10, 6))
