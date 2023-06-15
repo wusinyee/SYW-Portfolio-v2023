@@ -1,75 +1,94 @@
-# Exploratory Data Analysis (EDA) on TripAdvisor Hotel Reviews 
+# Exploratory Data Analysis (EDA) on Dairy Products Dataset using Python
 
-Exploratory Data Analysis (EDA) is an essential step in any data analysis project. In this project, I will explore how to perform EDA on domestic consumption of coffee data using Python, which includes the basics of loading, cleaning, and visualizing data using Python's popular data analysis libraries, including Pandas, NumPy, Matplotlib, and seaborn. 
+## Introduction
+Exploratory Data Analysis (EDA) is an essential step in any data analysis project. Exploratory data analysis (EDA) allows us to gain valuable insights into dairy products, such as their qualities, nutritional content, and customer feedback. By analyzing a dataset containing information about various dairy products, we can obtain perspective from the data set's big picture, then understand their composition, pricing, and consumer preferences.
 
-EDA Process Flowchat <br>
+The dataset includes both numerical and categorical variables, such as product type, fat content, price, weight, calories, protein content, calcium content, sodium content, carbohydrates, sugar content, cholesterol content, and customer ratings. These variables provide a comprehensive view of the dairy products and help us uncover patterns and distributions.
+
+The EDA process involves loading the dataset, examining its structure, checking for missing values, and generating summary statistics. We then look into individual variables for revealing insights and explore relationships between variables. In addition, we will handle any missing values or outliers encountered during the analysis.
+
+The outcomes of this EDA have major implications for dairy industry stakeholders such as producers, marketers, and consumers. In a competitive market, the insights gained can help with informed decision-making and efficiency optimization.
+
+
+### EDA Process Flowchat <br>
 ![EDAprocess drawio](https://github.com/wusinyee/SYW-Portfolio-v2023/assets/108232087/85608d10-95b3-4580-be3d-137953dc8b78)
 
-This is a general approach to perform exploratory data analysis (EDA) on the "Trip Advisor Hotel Reviews" dataset. Here's a step-by-step guide on how you can conduct EDA:
-1.	Importing necessary libraries: Start by importing the required libraries for data analysis, such as pandas, numpy, matplotlib, and seaborn. These libraries will help you manipulate and visualize the data.
-2.	Loading the dataset: Use the pandas library to load the CSV file into a DataFrame. You can use the read_csv() function to accomplish this. Assign the DataFrame to a variable for further analysis.
-3.	Understanding the dataset: Begin by examining the structure of the dataset. Check the number of rows and columns using the .shape attribute and display the first few rows of the DataFrame using the .head() method. This will give you an overview of the data's structure and the available columns.
-4.	Data cleaning and preprocessing (if required): Depending on the dataset, you might need to perform some data cleaning steps. This can include handling missing values, converting data types, or removing irrelevant columns. Assess the dataset for any such requirements and apply the necessary data cleaning operations.
-5.	Exploring the columns: Analyze each column to gain insights into the data. Calculate basic statistical measures, such as mean, median, minimum, maximum, and standard deviation, for the numeric columns. For categorical columns, determine the unique values and their frequency using the .value_counts() method. This will help you understand the distribution and characteristics of the data.
-6.	Visualizing the data: Create visualizations to gain further insights into the dataset. Utilize matplotlib and seaborn to generate various plots, such as histograms, bar charts, box plots, and scatter plots. These visualizations can provide a clearer understanding of the relationships and patterns within the data.
-7.	Performing sentiment analysis (if applicable): Since the dataset includes sentiment labels, you can explore the sentiment distribution. Plot the distribution of positive and negative reviews using a bar chart or pie chart. This analysis can help you understand the overall sentiment of the reviews.
-8.	Analyzing ratings and reviews: Explore the relationship between ratings and reviews. You can plot a scatter plot or box plot to visualize how the ratings are distributed and if there are any patterns or correlations with the review sentiment.
-9.	Analyzing hotel-specific information: Investigate specific hotel-related information. Determine the top-rated hotels based on the average ratings or the number of positive reviews. You can also analyze the distribution of reviews across different hotels.
-
+### Python code for performing EDA <br>
 
 ```python
+# Importing Libraries
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# Step 1: Import necessary libraries
+# Loading the Dataset
+df = pd.read_csv('/content/dairy_products_dataset.csv')
 
-# Step 2: Load the dataset
-df = pd.read_csv('tripadvisor_hotel_reviews.csv')
+# Understanding the Dataset
+print("Number of rows and columns:", df.shape)
+print("\nData types:\n", df.dtypes)
+print("\nSummary statistics:\n", df.describe())
 
-# Step 3: Understanding the dataset
-print("Shape of the dataset:", df.shape)
-print("First few rows of the dataset:")
-print(df.head())
+# Handling Missing Data
+print("\nMissing values:\n", df.isnull().sum())
 
-# Step 4: Data cleaning and preprocessing (if required)
-# Perform any necessary data cleaning steps here
-
-# Step 5: Exploring the columns
-print("Summary statistics for numeric columns:")
-print(df.describe())
-
-print("Unique values in the 'Rating' column:")
-print(df['Rating'].value_counts())
-
-# Step 6: Visualizing the data
+# Exploratory Data Analysis
+# Example visualizations
 plt.figure(figsize=(10, 6))
-sns.histplot(df['Rating'], bins=5, kde=True)
-plt.xlabel('Rating')
-plt.ylabel('Count')
-plt.title('Distribution of Ratings')
+sns.histplot(df['Price'])
+plt.title('Distribution of Price')
 plt.show()
 
-# Step 7: Performing sentiment analysis
-plt.figure(figsize=(6, 6))
-df['Sentiment'].value_counts().plot(kind='pie', autopct='%1.1f%%')
-plt.title('Sentiment Distribution')
-plt.show()
-
-# Step 8: Analyzing ratings and reviews
 plt.figure(figsize=(10, 6))
-sns.boxplot(x='Rating', y='Review', data=df)
-plt.xlabel('Rating')
-plt.ylabel('Review')
-plt.title('Ratings vs Reviews')
+sns.boxplot(x='Type', y='Rating', data=df)
+plt.title('Rating by Dairy Product Type')
 plt.show()
 
-# Step 9: Analyzing hotel-specific information
-top_rated_hotels = df.groupby('Hotel_Name')['Rating'].mean().nlargest(10)
-print("Top 10 highest rated hotels:")
-print(top_rated_hotels)
+# Correlation Analysis
+correlation_matrix = df.corr()
+plt.figure(figsize=(10, 8))
+sns.heatmap(correlation_matrix, annot=True, cmap='coolwarm')
+plt.title('Correlation Matrix')
+plt.show()
 
-# Step 10: Temporal analysis (if applicable)
-# If the dataset includes review dates, you can perform temporal analysis here
+# Feature Engineering (if required)
+# Example: Creating a new feature 'Price per Weight'
+df['Price per Weight'] = df['Price'] / df['Weight']
+
+# Visualizations
+plt.figure(figsize=(10, 6))
+sns.scatterplot(x='Calories', y='Protein', data=df, hue='Type')
+plt.title('Calories vs Protein by Dairy Product Type')
+plt.show()
 ```
+
+## Systematic Explanation of the code  <br>
+
+1.	Importing Libraries:
+* The code begins by importing the necessary libraries: pandas, numpy, matplotlib.pyplot, and seaborn. These libraries are commonly used for data analysis and visualization in Python.
+2.	Loading the Dataset:
+* The dataset is loaded into a DataFrame using the pd.read_csv() function. The dataset file, 'dairy_products_dataset.csv', is assumed to be located at '/content/'.
+3.	Understanding the Dataset:
+•	The code provides an overview of the dataset:
+•	It prints the number of rows and columns in the dataset using the shape attribute of the DataFrame.
+•	It displays the data types of each column using the dtypes attribute of the DataFrame.
+•	It presents the summary statistics of the numerical columns using the describe() method of the DataFrame.
+4.	Handling Missing Data:
+•	The code checks for missing values in the dataset:
+•	It uses the isnull().sum() method to calculate the sum of missing values in each column of the DataFrame.
+•	It prints the count of missing values for each column.
+5.	Exploratory Data Analysis (EDA):
+•	The code performs exploratory data analysis by creating example visualizations:
+•	It creates a histogram of the 'Price' column using sns.histplot() and plt.show(), visualizing the distribution of prices.
+•	It creates a boxplot to examine the relationship between the 'Rating' and 'Type' columns using sns.boxplot() and plt.show().
+6.	Correlation Analysis:
+•	The code calculates the correlation matrix of the dataset using df.corr().
+•	It creates a heatmap visualization of the correlation matrix using sns.heatmap() and plt.show(). The heatmap provides a visual representation of the correlations between different numerical variables in the dataset.
+7.	Feature Engineering (if required):
+•	The code demonstrates an example of feature engineering by creating a new feature called 'Price per Weight'. It calculates the price per weight by dividing the 'Price' column by the 'Weight' column.
+8.	Additional Visualizations:
+•	The code creates additional visualizations to explore relationships between variables:
+•	It creates a scatter plot of 'Calories' versus 'Protein' with different colors representing different 'Type' categories using sns.scatterplot() and plt.show().
+Each step of the code is aimed at understanding the dataset, handling missing data, performing exploratory data analysis, exploring correlations, and creating visualizations to gain insights from the data.
+
