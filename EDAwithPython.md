@@ -5,7 +5,7 @@ Exploratory Data Analysis (EDA) is an essential step in any data analysis projec
 
 The dataset includes both numerical and categorical variables, such as product type, fat content, price, weight, calories, protein content, calcium content, sodium content, carbohydrates, sugar content, cholesterol content, and customer ratings. These variables provide a comprehensive view of the dairy products and help us uncover patterns and distributions.
 
-The EDA process involves loading the dataset, examining its structure, checking for missing values, and generating summary statistics. We then look into individual variables for revealing insights and explore relationships between variables. In addition, we will handle any missing values or outliers encountered during the analysis.
+The EDA process involves loading the dataset, examining its structure, checking for missing values, and generating summary statistics. We then look into individual variables for revealing insights and explore relationships between variables. In addition, we will handle any missing values or outliers encountered during the analysis. We will use [Python code](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/main/EDAwithPython.md#source-code-) to perform the EDA.
 
 The outcomes of this EDA have major implications for dairy industry stakeholders such as producers, marketers, and consumers. In a competitive market, the insights gained can help with informed decision-making and efficiency optimization.
 
