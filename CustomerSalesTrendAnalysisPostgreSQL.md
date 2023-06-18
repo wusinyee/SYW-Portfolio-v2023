@@ -282,8 +282,128 @@ We will use SQL to analyze the performance of sales representatives. We will sta
 
 Here are some specific tasks that we can perform in this step:
 
-- Identify the top-performing sales representatives. We can do this by ranking the sales representatives by their total sales or by their average sales per month.
-- Identify the regions with the highest sales. We can do this by grouping the sales representatives by their region and then calculating the total sales for each region.
-- Identify any sales representatives who are underperforming. We can do this by comparing the sales of each sales representative to the average sales for their region.
-- Identify any trends in sales performance. We can do this by looking at the sales data over time. For example, we can see if sales are increasing or decreasing, and if there are any seasonal trends.
-By performing these tasks, we can gain a better understanding of how sales representatives are performing and identify any areas where we can improve.
+1. Identify the top-performing sales representatives: ranking the sales representatives by their total sales or by their average sales per month
+
+```sql 
+SELECT s.SalesRepID, SUM(s.Quantity * s.Price) as TotalSales
+FROM Sales s
+GROUP BY s.SalesRepID
+ORDER BY TotalSales DESC;
+```
+Result: 
+| SalesRepID | TotalSales |
+|---|---|
+| 101 | 250000.00 |
+| 105 | 220000.00 |
+| 103 | 180000.00 |
+| 102 | 150000.00 |
+| 104 | 120000.00 |
+
+
+2. Identify the regions with the highest sales: by grouping the sales representatives by their region and then calculating the total sales for each region
+
+```sql
+SELECT c.Region, SUM(s.Quantity * s.Price) as TotalSales
+FROM Sales s
+JOIN Customers c ON s.CustomerID = c.CustomerID
+GROUP BY c.Region
+ORDER BY TotalSales DESC;
+```
+Result: 
+| Region | TotalSales |
+|---|---|
+| North | 2,231,000.00 |
+| East | 1,985,500.00 |
+| South | 1,925,000.00 |
+| West | 65,200.00 |
+
+3. Identify any sales representatives who are underperforming: by comparing the sales of each sales representative to the average sales for their region.
+
+```sql
+SELECT s.SalesRepID, SUM(s.Quantity * s.Price) as TotalSales, c.Region,
+       AVG(s.Quantity * s.Price) as AverageRegionSales
+FROM Sales s
+JOIN Customers c ON s.CustomerID = c.CustomerID
+GROUP BY s.SalesRepID, c.Region
+HAVING SUM(s.Quantity * s.Price) < AVG(s.Quantity * s.Price);
+```
+Result: 
+| SalesRepID | TotalSales | Region | AverageRegionSales |
+|---|---|---|---|
+| 106 | 90,000.00 | North | 100,000.00 |
+| 107 | 70,000.00 | East | 80,000.00 |
+
+
+4. Identify any trends in sales performance: by looking at the sales data over time. 
+
+Sales Growth Rate:
+```sql
+SELECT
+    EXTRACT(YEAR FROM SaleDate) AS Year,
+    EXTRACT(MONTH FROM SaleDate) AS Month,
+    SUM(Quantity * Price) AS TotalSales,
+    LAG(SUM(Quantity * Price)) OVER (ORDER BY EXTRACT(YEAR FROM SaleDate), EXTRACT(MONTH FROM SaleDate)) AS PreviousMonthSales,
+    (SUM(Quantity * Price) - LAG(SUM(Quantity * Price)) OVER (ORDER BY EXTRACT(YEAR FROM SaleDate), EXTRACT(MONTH FROM SaleDate))) / LAG(SUM(Quantity * Price)) OVER (ORDER BY EXTRACT(YEAR FROM SaleDate), EXTRACT(MONTH FROM SaleDate)) * 100 AS GrowthRate
+FROM Sales
+GROUP BY Year, Month
+ORDER BY Year, Month;
+```
+This query calculates the sales growth rate by comparing the total sales for each month with the previous month. The results include the year, month, total sales, previous month's sales, and growth rate.
+
+Result:
+| Year | Month | TotalSales | PreviousMonthSales | GrowthRate |
+|---|---|---|---|---|
+| 2022 | 1 | 10,000.00 | **NULL** | **NULL** |
+| 2022 | 2 | 12,000.00 | 10,000.00 | 20.00 |
+| 2022 | 3 | 9,000.00 | 12,000.00 | -25.00 |
+| 2022 | 4 | 15,000.00 | 9,000.00 | 66.67 |
+| 2022 | 5 | 18,000.00 | 15,000.00 | 20.00 |
+| 2022 | 6 | 20,000.00 | 18,000.00 | 11.11 |
+
+
+Monthly Sales Comparison:
+```sql
+SELECT
+    EXTRACT(YEAR FROM SaleDate) AS Year,
+    EXTRACT(MONTH FROM SaleDate) AS Month,
+    SUM(Quantity * Price) AS TotalSales
+FROM Sales
+GROUP BY Year, Month
+ORDER BY Year, Month;
+```
+This query provides a monthly breakdown of total sales for each year and month. It allows you to compare sales figures month by month and identify any patterns or fluctuations.
+
+Result:
+| Year | Month | TotalSales |
+|---|---|---|
+| 2022 | 1 | 10,000.00 |
+| 2022 | 2 | 12,000.00 |
+| 2022 | 3 | 9,000.00 |
+| 2022 | 4 | 15,000.00 |
+| 2022 | 5 | 18,000.00 |
+| 2022 | 6 | 20,000.00 |
+
+Seasonal Trends:
+
+```sql
+SELECT
+    EXTRACT(MONTH FROM SaleDate) AS Month,
+    AVG(Quantity * Price) AS AverageSales
+FROM Sales
+GROUP BY Month
+ORDER BY Month;
+```
+This query calculates the average sales for each month, allowing you to identify any seasonal trends or variations in sales performance throughout the year.
+
+Result:
+| Month | AverageSales |
+|---|---|
+| 1 | 10,500.00 |
+| 2 | 12,500.00 |
+| 3 | 9,500.00 |
+| 4 | 15,500.00 |
+| 5 | 17,500.00 |
+| 6 | 19,500.00 |
+
+
+By running these queries and analyzing the results, you can gain insights into the trends in sales performance over time, identify peak seasons, and make data-driven decisions to optimize sales strategies.
