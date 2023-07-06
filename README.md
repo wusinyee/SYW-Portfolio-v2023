@@ -20,21 +20,20 @@
 
 - [x] [Exploratory Data Analysis with Python](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/b1307ea78b43019802a944f187f3cf31ba005d47/EDAwithPython.md)
 - [x] [Data Quality Assessment Dashboard by Tableau](https://public.tableau.com/views/DQADashboard/DQADB?:language=en-US&:display_count=n&:origin=viz_share_link)
-- [ ] [Advanced SQL Techniques for Actionable Insights in E-commerce Sales and Finance]
+- [x] [Advanced SQL Techniques for Actionable Insights in E-commerce Sales and Finance](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/cac1641a106928edddf31ab8848e3f1212eca84f/Advanced%20SQL%20Techniques%20for%20Actionable%20Insights%20in%20E-commerce%20Sales%20and%20Finance.md)
 - [ ] [Contoso Sales Analytics Dashboard by Power BI](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/e4d7223d91b2be3a5462ed15762098b6ed4eb97d/Contoso%20Sales%20Overview%20Dashboard%20Project%20Docutmentation.md)
 - [ ] [A Sytematic Guide to Financail Modelling](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/e8095b429677f3d49f848016ad9e628f075dac99/financial_modelling.md)
 - [ ] [Risk Portfolio Management with Django](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/0ea685e756724c582282ba3ba1ed0af25a05a17f/RPMswithDjango.md)
 - [ ] [Customer Sales Trend Analysis with PostgreSQL](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/38b9d00d5b8cf32327f139afbf81cb207f9fe325/CustomerSalesTrendAnalysisPostgreSQL.md)
 - [ ] Technical documentations and specifications 
 - [x] [Customer Segmentation Analysis with SQL](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/4914ce37258ffebe612979c7855e0fd019c8eca3/Customer%20Segmentation%20Analysis%20with%20SQL.md)
-> - [x] [World Happiness Informational Dashboard- Tableau](https://public.tableau.com/views/WorldHappinessInformationalDashboard/Title?:language=en-US&:display_count=n&:origin=viz_share_link)
-> - [x] [Divvy Bike Rider Analysis - Tableau](https://public.tableau.com/views/DIVVYANALYSIS/RidersAnalysis?:language=en-US&:display_count=n&:origin=viz_share_link)
-> - [x] [Sales data analysis and visualization with Python](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/55c05d4b57da2c4ad358811c9ffeafd1fa986b3e/Sales%20data%20analysis%20and%20visualization%20with%20Python.md)
-> - [x] [Extract, Tranform, Load (ETL) with Microsoft SQL Server Integration Services](https://www.canva.com/design/DAFbF6ULnlw/M-IEfwb71qhXO_sf0nTgiA/view?utm_content=DAFbF6ULnlw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
-> - [x] [Business Requirement Documentation Sample](https://www.canva.com/design/DAFb08GxmS0/op8wOGsa2pDsh0tuxEQFcw/view?utm_content=DAFb08GxmS0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
-> - [x] [SQL Data Cleaning and Analysis](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/f2969db51e0b5e973965462903698f2f2009ff41/SQL%20Data%20Cleaning%20and%20Analysis.md)
-> - [x] [Sales Sample Dashboard with Qlik Sense](https://mapv4ogz9cbv0i5.sg.qlikcloud.com/single/?appid=6cdbe106-5436-4140-9229-f0891d5f13e0&sheet=cce95a84-cf17-45aa-b858-254acca56bea&theme=horizon&opt=ctxmenu,currsel)
-> - [x] [Sales Insights Sample Dashboard with Qlik Sense](https://mapv4ogz9cbv0i5.sg.qlikcloud.com/single/?appid=6cdbe106-5436-4140-9229-f0891d5f13e0&sheet=63a29d72-3f96-4487-b314-63c01d781745&theme=horizon&opt=ctxmenu,currsel)
+- [x] [World Happiness Informational Dashboard- Tableau](https://public.tableau.com/views/WorldHappinessInformationalDashboard/Title?:language=en-US&:display_count=n&:origin=viz_share_link)
+- [x] [Divvy Bike Rider Analysis - Tableau](https://public.tableau.com/views/DIVVYANALYSIS/RidersAnalysis?:language=en-US&:display_count=n&:origin=viz_share_link)
+- [x] [Sales data analysis and visualization with Python](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/55c05d4b57da2c4ad358811c9ffeafd1fa986b3e/Sales%20data%20analysis%20and%20visualization%20with%20Python.md)
+- [x] [Extract, Tranform, Load (ETL) with Microsoft SQL Server Integration Services](https://www.canva.com/design/DAFbF6ULnlw/M-IEfwb71qhXO_sf0nTgiA/view?utm_content=DAFbF6ULnlw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+- [x] [Business Requirement Documentation Sample](https://www.canva.com/design/DAFb08GxmS0/op8wOGsa2pDsh0tuxEQFcw/view?utm_content=DAFb08GxmS0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+- [x] [SQL Data Cleaning and Analysis](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/f2969db51e0b5e973965462903698f2f2009ff41/SQL%20Data%20Cleaning%20and%20Analysis.md)
+
 
 
 
