@@ -13,7 +13,7 @@ In the context of e-commerce solution sales and finance for Spring GDS Hong Kong
 ```sql
 SELECT financial_target, (SELECT SUM(revenue) FROM e-commerce_sales) AS total_revenue
 FROM targets_table;
-
+```
 
 **Explanation:**
 
@@ -29,23 +29,50 @@ By comparing the total revenue with the financial targets, Spring GDS Hong Kong 
 
 **Example:** Filtering sales data for specific products based on certain criteria
 
-sql
+```sql
 SELECT product_name, sales
 FROM sales_table
 WHERE product_id IN (SELECT product_id FROM product_table WHERE category = 'Electronics');
-
+```
 
 In this example, the subquery `(SELECT product_id FROM product_table WHERE category = 'Electronics')` retrieves the product IDs for products in the `Electronics` category. The main query then selects the product names and sales for the products that match those IDs.
 
 
-
 ## 2. Window Functions:
-   - Example: Calculating cumulative revenue using a window function
-   ```sql
-   SELECT order_date, order_amount, SUM(order_amount) OVER (ORDER BY order_date) AS cumulative_revenue
-   FROM sales_table;
-   ```
-   Explanation: This query uses a window function to calculate the cumulative revenue over time. It allows you to track the growth of revenue and identify periods of significant increase or decrease.
+
+Window functions are functions that operate on a set of rows within a single table. Window functions can be used to calculate cumulative sums, running averages, and other aggregate functions over a sliding window of data.
+
+In the context of e-commerce solution sales and finance for Spring GDS Hong Kong, window functions can be used to:
+
+- Identify trends
+- Calculate running totals
+- Analyze data within specific partitions
+
+**Example:** Calculating cumulative revenue using a window function
+
+```sql
+SELECT order_date, order_amount, SUM(order_amount) OVER (ORDER BY order_date) AS cumulative_revenue
+FROM sales_table;
+```
+
+In this example, the query selects the order date and order amount from the `sales_table`. The window function `SUM(order_amount) OVER (ORDER BY order_date)` calculates the cumulative revenue over time. The `ORDER BY` clause specifies the order in which the rows are considered for the cumulative sum.
+
+By using the window function, the query generates a result set that includes the cumulative revenue alongside the order date and order amount. This allows Spring GDS Hong Kong to track the growth of revenue over time, identify periods of significant increase or decrease, and analyze revenue trends.
+
+**Window functions can be further customized by adding additional clauses such as `PARTITION BY`, `ROWS BETWEEN`, or `RANGE BETWEEN` to define the window more precisely.** 
+For example, using `PARTITION BY` allows you to calculate cumulative revenue separately for each product category or region, enabling granular analysis.
+
+```sql
+SELECT order_date, order_amount, product_category, 
+       SUM(order_amount) OVER (PARTITION BY product_category ORDER BY order_date) AS cumulative_revenue
+FROM sales_table;
+```
+
+In this modified query, the window function `SUM(order_amount) OVER (PARTITION BY product_category ORDER BY order_date)` calculates the cumulative revenue within each product category, ordering the rows by order date.
+
+**Window functions provide valuable insights into data patterns, trends, and comparisons within a specific context.** By utilizing window functions, Spring GDS Hong Kong can perform detailed analysis, identify growth patterns, detect outliers, and make data-driven decisions to optimize business strategies and drive success in e-commerce sales and finance.
+
+[Another guide on window functions and CTES](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/7da1a2e0886af990bcea12dae68daad3ea2a55df/Advanced%20SQL%20Techniques%20for%20Actionable%20Insights%20in%20E-commerce%20Sales%20and%20Finance.md)
 
 3. Common Table Expressions (CTEs):
    - Example: Calculating monthly sales using a CTE and joining it with other tables
