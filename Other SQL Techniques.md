@@ -88,7 +88,7 @@ In this modified query, the window function `SUM(order_amount) OVER (PARTITION B
    ```
    Explanation: This query creates a CTE named `monthly_sales` to calculate the total sales for each month. It then joins the CTE with the `profitability_table` to retrieve the corresponding profit margin. This allows you to analyze the relationship between sales and profitability on a monthly basis.
 
-4. Aggregate Functions with Grouping Sets:
+## 4. Aggregate Functions with Grouping Sets:
    - Example: Generating a sales report by product category and customer segment
    ```sql
    SELECT product_category, customer_segment, SUM(sales) AS total_sales
@@ -97,7 +97,7 @@ In this modified query, the window function `SUM(order_amount) OVER (PARTITION B
    ```
    Explanation: This query uses grouping sets to generate a comprehensive sales report that summarizes sales data by product category and customer segment. It provides insights into the performance of different categories and customer segments.
 
-5. Advanced Join Techniques:
+## 5. Advanced Join Techniques:
    - Example: Joining sales data with customer information to analyze customer behavior
    ```sql
    SELECT s.order_id, s.order_date, s.order_amount, c.customer_name
@@ -106,7 +106,7 @@ In this modified query, the window function `SUM(order_amount) OVER (PARTITION B
    ```
    Explanation: This query demonstrates an inner join between the `sales_table` and `customer_table` based on the customer ID. By joining these tables, you can analyze sales data alongside customer information to gain insights into customer behavior and preferences.
 
-6. Case Statements:
+## 6. Case Statements:
    - Example: Categorizing sales data based on order amount thresholds
    ```sql
    SELECT order_id, order_amount,
