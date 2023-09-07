@@ -1,12 +1,12 @@
 # 💫 About Me:
 ## Hi there!👋 My name is Mandy
 * 🌍  Location: Wan Chai, Hong Kong
-* 🔭  I’m currently expanding my tech stack and working on certifications: Rust, AWS (CLF-C01), and Azure Data Fundamentals.
-* 👯  I’m open to open source project, co - writing technical document, data analysis, visualization, and prompt engineering projects
-* 💬  I love staying up-to-date on the latest breakthroughs and discoveries in these fields and finding ways to incorporate these insights into my work. 
+* 🔭  I’m currently descending into ML problem framing, clustering, and learning the programming language Rust. 
+* 👯  I’m open to collaboration on ML/BI/DA and open source projects. And I have a genuine interest in testing different AI tools. 
+* 💬  I love staying up-to-date on the latest techological breakthroughs and discoveries, and finding ways to incorporate these insights into my work. 
 * 👨‍💻  All of my projects are available on my portfolio at [Unlocking Insights: A Collection of BI & Data Analysis Projects](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/main/README.md#unlocking-insights-a-collection-of-bi--data-analysis-projects) and [Tableau Public Profile](https://public.tableau.com/app/profile/sin.yee.wu)
 * ✉️  You can contact me via [wuqianyi1021@gmail.com](mailto:wuqianyi1021@gmail.com)
-* ⚡ I am also an avid enthusiast of philosophy, conceptual engineering, mental health research, and latest technological trends
+* ⚡ I am also an avid enthusiast of philosophy, conceptual engineering, and mental health research.
 
 ### ✍️ Random Dev Quote
 ![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark)
