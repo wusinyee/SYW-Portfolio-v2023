@@ -4,7 +4,7 @@
 
 Project management is the strategic art of planning, executing, monitoring, controlling, and closing projects. It thrives on efficiency, aiming to achieve predefined goals while navigating constraints such as time, cost, scope, and quality. Across industries, this discipline plays a pivotal role in ensuring project success and delivering value to organizations.
 
-## Key Principles Demystified
+## Key Principles 
 
 * **Objective-Driven Approach:** Project management revolves around clear, well-defined objectives. These objectives serve as the project's guiding light, ensuring every action aligns with the mission of project success.
 * **Stakeholder Engagement and Management:** Effective communication and adept stakeholder management are essential. This involves understanding the needs and expectations of all project stakeholders, ensuring their interests are considered throughout.
@@ -20,7 +20,7 @@ Project management is the strategic art of planning, executing, monitoring, cont
 * **Gantt Chart Visuals:** Graphical representations aiding project scheduling and tracking.
 * **Change Control:** Methodical management of scope, schedule, or budget changes.
 
-## PMI's Five Core Processes Deconstructed
+## PMI's Five Stagees of Project Live Cycle
 
 * **Initiation:** Marks the project's birth, defining its purpose, objectives, and scope. Key stakeholders are identified, and initial feasibility assessments are conducted. The outcome is the project charter, authorizing the project's commencement.
 * **Planning:** Develops a comprehensive project plan covering scope, objectives, schedule, budget, resources, and risk management. The project management plan serves as the project's playbook.
@@ -28,7 +28,7 @@ Project management is the strategic art of planning, executing, monitoring, cont
 * **Monitoring and Controlling:** Concurrently runs with project execution, involving performance monitoring, deviation identification, and corrective actions. Regular reports and updates are generated.
 * **Closing:** Marks the project's conclusion, finalizing all activities, obtaining stakeholder acceptance, and ensuring all requirements are met. Post-project evaluation and lessons learned are captured for future projects.
 
-## Essential Competencies at a Glance
+## Essential Competencies 
 
 * **Communication:** Conveying project goals, real-time updates, and adapting to evolving needs.
 * **Problem-Solving:** Recognizing and resolving issues effectively.
@@ -38,6 +38,6 @@ Project management is the strategic art of planning, executing, monitoring, cont
 * **Time and Resource Allocation:** Efficiently managing time and resources for deadlines and budgets.
 * **Leadership:** Providing visionary leadership, guiding teams with decisiveness and fortitude.
 
-## Conclusion
+## Bottom Line
 
 Project management is an art and science that excels in precision, facts, and practicality. By embracing these principles, terminology, and methodologies, you lay the foundation for successful project execution in today's multifaceted business landscape.
