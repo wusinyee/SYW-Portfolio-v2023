@@ -95,6 +95,71 @@ finally:
 
 ## 2. Report generation
 
+To generate an Excel report in the specified format, you can modify the previous Python script as follows. I'll assume you have a dataframe `combined_df` containing the necessary data for this report.
+
+```python
+import pandas as pd
+from openpyxl import Workbook
+from openpyxl.utils.dataframe import dataframe_to_rows
+from openpyxl.styles import Font
+
+# Create a new Excel workbook
+workbook = Workbook()
+excel_writer = pd.ExcelWriter("sales_tracking_report.xlsx", engine="openpyxl")
+excel_writer.book = workbook
+
+# Create worksheets for PRODUCT REVENUE and REVENUE BREAKDOWN
+product_revenue_sheet = workbook.active
+product_revenue_sheet.title = "PRODUCT REVENUE"
+
+revenue_breakdown_sheet = workbook.create_sheet(title="REVENUE BREAKDOWN")
+
+# Define the data for PRODUCT REVENUE
+product_revenue_data = combined_df[["PRODUCT NAME", "COST PER ITEM", "MARKUP PERCENTAGE", "TOTAL SOLD",
+                                    "TOTAL REVENUE", "SHIPPING CHARGE PER ITEM", "SHIPPING COST PER ITEM",
+                                    "PROFIT PER ITEM", "RETURNS", "TOTAL INCOME"]]
+
+# Add headers to the PRODUCT REVENUE sheet
+headers = product_revenue_data.columns.tolist()
+product_revenue_sheet.append(headers)
+
+# Add data to the PRODUCT REVENUE sheet
+for row in dataframe_to_rows(product_revenue_data, index=False, header=False):
+    product_revenue_sheet.append(row)
+
+# Add headers and percentage data to the REVENUE BREAKDOWN sheet
+revenue_breakdown_headers = ["", "ITEM 1", "ITEM 2", "ITEM 3", "ITEM 4", "ITEM 5", "ITEM 6", "ITEM 7", "ITEM 8", "ALL"]
+revenue_breakdown_sheet.append(revenue_breakdown_headers)
+
+percentage_data = ["TOTAL REVENUE"] + ["#DIV/0!" for _ in range(9)]
+revenue_breakdown_sheet.append(percentage_data)
+
+# Apply styling (optional)
+for row in revenue_breakdown_sheet.iter_rows(min_row=1, max_row=1):
+    for cell in row:
+        cell.font = Font(bold=True)
+
+# Save the Excel file
+excel_writer.save()
+excel_writer.close()
+
+print("Excel report generated successfully.")
+```
+
+In this script:
+
+1. We create separate sheets for "PRODUCT REVENUE" and "REVENUE BREAKDOWN" using `openpyxl`.
+
+2. We extract the relevant data from the `combined_df` dataframe and add it to the "PRODUCT REVENUE" sheet.
+
+3. We add headers to both sheets and set the percentage values in the "REVENUE BREAKDOWN" sheet.
+
+4. Optional: We apply bold styling to the headers.
+
+5. Finally, we save the Excel file as "sales_tracking_report.xlsx."
+
+This script should generate an Excel report in the specified format with the data from your MySQL database and Mockaroo dataset. Please replace the placeholders in the code with your actual data source and filenames.
+
 ## 3. Proofread
 
 To automate proofreading for a Word file using the `GingerIt` library in Python, you can follow these steps:
