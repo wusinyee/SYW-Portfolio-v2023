@@ -4,7 +4,7 @@
 * 🔭  I'm currently delving into ML problem framing, clustering, and completing the 100 days of coding challenge with Rust. Besides that, I have my sights set on business process and workflow automation. I would also love to unleash the full capabilities of JIRA and Looker Studio.
 * 👯  I'm open to collaborating on ML/BI/DA and open source projects. And I have a genuine interest in testing different AI-powered tools 
 * 💬  I love staying up-to-date on the latest technological breakthroughs and discoveries, and finding ways to incorporate these insights into my work. 
-* 👨‍💻  All of my projects are available on my portfolio at [Unlocking Insights: A Collection of BI & Data Analysis Projects](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/main/README.md#unlocking-insights-a-collection-of-bi--data-analysis-projects) and [Tableau Public Profile](https://public.tableau.com/app/profile/sin.yee.wu)
+* 👨‍💻  All of my projects are available on my [portfolio](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/main/README.md#unlocking-insights-a-collection-of-bi--data-analysis-projects), [Tableau Public Profile](https://public.tableau.com/app/profile/sin.yee.wu), and [Medium Profile](https://medium.com/@wuqianyi1021)
 * ✉️  You can contact me via [wuqianyi1021@gmail.com](mailto:wuqianyi1021@gmail.com)
 * ⚡ I am also an avid enthusiast of philosophy, conceptual engineering, and mental health research.
 
