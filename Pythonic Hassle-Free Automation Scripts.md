@@ -227,6 +227,53 @@ Replace `'your_document.docx'` with the path to your Word document. When you run
 
 ## 4. Data integration 
 
+import pandas as pd
+import pyodbc
+
+# Configure ODBC connection (replace with your DSN)
+connection_string = 'DSN=YourDSNName;'
+conn = pyodbc.connect(connection_string)
+
+# Define the path to your Excel file
+excel_file_path = 'path_to_your_excel_file.xlsx'
+
+# Load Excel data into a DataFrame
+excel_data = pd.read_excel(excel_file_path)
+
+# Replace spaces in column names with underscores (optional)
+excel_data.columns = excel_data.columns.str.replace(' ', '_')
+
+# Define a SQL query to create a temporary table in Power BI
+sql_query = f'''
+    DROP TABLE IF EXISTS YourTableName;
+    CREATE TABLE YourTableName (
+        {', '.join([f"{col} VARCHAR(MAX)" for col in excel_data.columns.tolist()])}
+    );
+'''
+
+# Execute the SQL query to create the table
+cursor = conn.cursor()
+cursor.execute(sql_query)
+conn.commit()
+
+# Insert data from the DataFrame into the temporary table
+for _, row in excel_data.iterrows():
+    insert_query = f'''
+        INSERT INTO YourTableName
+        VALUES ({', '.join([f"'{str(val)}'" for val in row])});
+    '''
+    cursor.execute(insert_query)
+    conn.commit()
+
+# Close the cursor and connection
+cursor.close()
+conn.close()
+
+print('Data integration completed.')
+
+# Note: Replace 'YourDSNName' and 'YourTableName' with your actual DSN and table name.
+
+
 ## 5. Customer segmentation 
 
 ## 6. Anomaly detection
