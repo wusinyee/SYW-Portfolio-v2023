@@ -227,6 +227,7 @@ Replace `'your_document.docx'` with the path to your Word document. When you run
 
 ## 4. Data integration 
 
+```python
 import pandas as pd
 import pyodbc
 
@@ -272,7 +273,7 @@ conn.close()
 print('Data integration completed.')
 
 # Note: Replace 'YourDSNName' and 'YourTableName' with your actual DSN and table name.
-
+```
 
 ## 5. Customer segmentation 
 
