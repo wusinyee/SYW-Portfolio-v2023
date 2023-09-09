@@ -77,4 +77,43 @@ Power Query is a powerful tool in Microsoft Excel and Power BI that allows you t
                 Text.Upper(Customer Name)
                 ```
 
-## Advanced Transformation```
+## Advanced Transformation
+
+* Pivot and Unpivot Data
+    * Use Pivot Column or Unpivot Columns to reshape your data.
+    * For example, to pivot the **Order Details** table so that each product is in a separate column, you would use the following steps:
+        * Click the **Pivot Column** button in the ribbon.
+        * Select the **Order Details** table.
+        * In the **Pivot Column** dialog box, select the **Product Name** column as the column to pivot.
+        * Click OK.
+    * To unpivot the data, you would use the following steps:
+        * Click the **Unpivot Columns** button in the ribbon.
+        * Select the **Order Details** table.
+        * In the **Unpivot Columns** dialog box, select the **Product Name** column as the column to unpivot.
+        * Click OK.
+* Grouping and Aggregating Data
+    * Use the Group By option to create summary statistics.
+    * For example, to group the **Order Details** table by product and calculate the total order value for each product, you would use the following steps:
+        * Click the **Group By** button in the ribbon.
+        * Select the **Order Details** table.
+        * In the **Group By** dialog box, select the **Product Name** column as the column to group by.
+        * Click OK.
+    * The **Group By** dialog box will show you the available aggregation functions. You can select the aggregation function you want to use for each column.
+* Conditional Column Creation
+    * Create custom columns with conditional logic using the Add Conditional Column feature.
+    * For example, to create a column that indicates whether an order is above or below the average order value, you would use the following steps:
+        * Click the **Add Conditional Column** button in the ribbon.
+        * In the **Add Conditional Column** dialog box, select the **Order Value** column as the column to condition on.
+        * In the **Value if True** box, type the text `Above Average`.
+        * In the **Value if False** box, type the text `Below Average`.
+        * Click OK.
+* Merging Queries
+    * Combine multiple queries using Merge Queries or Append Queries.
+    * For example, to merge the **Order Details** table with the **Customers** table, you would use the following steps:
+        * Create two separate queries for the **Order Details** table and the **Customers** table.
+        * Click the **Merge Queries** button in the ribbon.
+        * In the **Merge Queries** dialog box, select the two queries you want to merge.
+        * Click OK.
+    * The **Merge Queries** dialog box will show you the available merge options. You can select the merge option you want to use.
+
+
