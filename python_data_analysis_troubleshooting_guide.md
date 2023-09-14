@@ -79,6 +79,96 @@ Ensure that the module name is spelled correctly in the import statement. Python
 import pandas as pd  # Correct
 ```
 
+# 2.2 Data Loading Errors
+
+**Issue:** Difficulty in loading data from external sources.
+
+**2.2.1 Verify File Path or URL**
+
+**Solution:**
+
+Double-check the file path or URL to ensure it is correct. Use absolute paths or relative paths as appropriate.
+Ensure that the file is in the specified location.
+
+**Example:** Loading a CSV file with a correct file path:
+
+```python
+import pandas as pd
+
+file_path = 'data/sample_data.csv'
+df = pd.read_csv(file_path)
+```
+
+**2.2.2 Confirm Data Format**
+
+**Solution:**
+
+Verify that the data file is in the correct format (e.g., CSV, JSON, Excel) as specified in the loading function (e.g., pd.read_csv(), pd.read_json()).
+Confirm that the file extension matches the specified format.
+
+**Example:** Loading a JSON file with the correct format:
+
+```python
+import pandas as pd
+
+file_path = 'data/sample_data.json'
+df = pd.read_json(file_path)
+```
+
+**2.2.3 Check Data Integrity**
+
+**Solution:**
+
+Check if the data file is complete and not corrupted. Attempt to open the file manually to ensure it can be read without errors.
+
+**Example:** Manually checking data file integrity.
+
+```python
+# Open the file using standard file I/O
+with open('data/sample_data.csv', 'r') as file:
+    data = file.read()
+
+# Inspect the data for any obvious issues or corruption
+print(data)
+```    
+
+## 2.3 Data Cleaning and Preprocessing
+
+**Issue:** Inaccuracies or inconsistencies in the dataset.
+
+**2.3.1 Handling Missing Values**
+
+**Solution:**
+
+Use Pandas functions like `dropna()`, `fillna()`, or imputation techniques to handle missing values appropriately based on the data type and context.
+Document the chosen method for transparency.
+
+**Example:** Filling missing values with the mean of the column:
+
+```python
+import pandas as pd
+
+# Fill missing values with the mean of the column
+df['column_name'].fillna(df['column_name'].mean(), inplace=True)
+```
+
+**2.3.2 Removing Duplicates**
+
+**Solution:**
+
+Detect and remove duplicate rows using `drop_duplicates()`.
+Specify the criteria for identifying duplicates, such as considering specific columns or all columns.
+
+**Example:** Removing duplicate rows based on all columns:
+
+```python
+import pandas as pd
+
+# Remove duplicate rows based on all columns
+df.drop_duplicates(inplace=True)
+```
+
+
 
 
 
