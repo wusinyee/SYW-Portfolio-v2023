@@ -168,7 +168,16 @@ import pandas as pd
 df.drop_duplicates(inplace=True)
 ```
 
+#2.3.4 Correct outliers**
+```python
+z_scores = (df['numeric_column'] - df['numeric_column'].mean()) / df['numeric_column'].std()
 
+df = df[(z_scores <= 3) & (z_scores >= -3)]
+```
 
+#2.3.5 Conduct exploratory data analysis (EDA)
+``python
+plt.hist(df['numeric_column'], bins=20, color='skyblue', edgecolor='black')
+``
 
 
