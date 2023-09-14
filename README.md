@@ -26,7 +26,7 @@
 - [ ] [A Sytematic Guide to Financail Modelling](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/e8095b429677f3d49f848016ad9e628f075dac99/financial_modelling.md)
 - [ ] [Risk Portfolio Management with Django](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/0ea685e756724c582282ba3ba1ed0af25a05a17f/RPMswithDjango.md)
 - [ ] [Customer Sales Trend Analysis with PostgreSQL](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/38b9d00d5b8cf32327f139afbf81cb207f9fe325/CustomerSalesTrendAnalysisPostgreSQL.md)
-- [ ] Technical documentations and specifications 
+- [ ] Technical documentation and specifications 
 - [x] [Customer Segmentation Analysis with SQL](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/4914ce37258ffebe612979c7855e0fd019c8eca3/Customer%20Segmentation%20Analysis%20with%20SQL.md)
 - [x] [World Happiness Informational Dashboard- Tableau](https://public.tableau.com/views/WorldHappinessInformationalDashboard/Title?:language=en-US&:display_count=n&:origin=viz_share_link)
 - [x] [Divvy Bike Rider Analysis - Tableau](https://public.tableau.com/views/DIVVYANALYSIS/RidersAnalysis?:language=en-US&:display_count=n&:origin=viz_share_link)
