@@ -2,7 +2,7 @@
 
 ## Table of Contents
 
-1. Introduction
+1. (Introduction)[https://github.com/wusinyee/SYW-Portfolio-v2023/blob/main/python_data_analysis_troubleshooting_guide.md#1-introduction]
 2. Common Issues and Solutions
    1. Module Import Errors
       - 2.1.1 Check Module Installation
