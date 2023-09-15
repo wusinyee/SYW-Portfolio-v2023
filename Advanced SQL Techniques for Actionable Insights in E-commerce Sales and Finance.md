@@ -18,8 +18,180 @@ FROM sales_table;
 - We calculate the growth rate by subtracting the previous month's sales from the current month's sales, dividing it by the previous month's sales, and multiplying by 100 to get a percentage.
 This query helps identify the monthly growth rate of sales, allowing Spring GDS Hong Kong to track performance, identify trends, and make informed decisions on marketing strategies or inventory planning.
 
+## 2. Subqueries
 
-## 2. Common Table Expressions (CTEs)
+Subqueries are queries within a query. They can be used to retrieve data from one query and use it as input for another query. Subqueries can be powerful tools for performing complex analyses and comparisons in SQL queries.
+
+In the context of e-commerce solution sales and finance for Spring GDS Hong Kong, subqueries can help identify trends, patterns, and make informed decisions based on comparisons and calculations.
+
+**Example:** Fetching the total revenue from e-commerce sales and comparing it with financial targets
+
+```sql
+SELECT financial_target, (SELECT SUM(revenue) FROM e-commerce_sales) AS total_revenue
+FROM targets_table;
+```
+
+**Explanation:**
+
+In this example, the main query selects the financial targets from the `targets_table`. The subquery `(SELECT SUM(revenue) FROM e-commerce_sales)` retrieves the total revenue from the `e-commerce_sales` table. The subquery is executed for each row of the main query, providing the total revenue value.
+
+By comparing the total revenue with the financial targets, Spring GDS Hong Kong can evaluate the performance against set goals. This comparison can help identify whether the revenue aligns with the targets and make informed decisions about resource allocation, budgeting, and strategy adjustments.
+
+**Other uses of subqueries:**
+
+* Filtering data based on a subquery's result
+* Performing calculations using subquery results
+* Using subqueries in JOIN conditions
+
+**Example:** Filtering sales data for specific products based on certain criteria
+
+```sql
+SELECT product_name, sales
+FROM sales_table
+WHERE product_id IN (SELECT product_id FROM product_table WHERE category = 'Electronics');
+```
+
+In this example, the subquery `(SELECT product_id FROM product_table WHERE category = 'Electronics')` retrieves the product IDs for products in the `Electronics` category. The main query then selects the product names and sales for the products that match those IDs.
+
+## 3. Aggregate Functions with Grouping Sets:
+   - Example: Generating a sales report by product category and customer segment
+   ```sql
+   SELECT product_category, customer_segment, SUM(sales) AS total_sales
+   FROM sales_table
+   GROUP BY GROUPING SETS ((product_category), (customer_segment));
+   ```
+   Explanation: This query uses grouping sets to generate a comprehensive sales report that summarizes sales data by product category and customer segment. It provides insights into the performance of different categories and customer segments.
+
+## 4. Advanced Join Techniques:
+   - Example: Joining sales data with customer information to analyze customer behavior
+   ```sql
+   SELECT s.order_id, s.order_date, s.order_amount, c.customer_name
+   FROM sales_table s
+   INNER JOIN customer_table c ON s.customer_id = c.customer_id;
+   ```
+   Explanation: This query demonstrates an inner join between the `sales_table` and `customer_table` based on the customer ID. By joining these tables, you can analyze sales data alongside customer information to gain insights into customer behavior and preferences.
+
+   ## 5. Case Statements:
+   - Example: Categorizing sales data based on order amount thresholds
+   ```sql
+   SELECT order_id, order_amount,
+          CASE
+             WHEN order_amount < 1000 THEN 'Low'
+             WHEN order_amount >= 1000 AND order_amount < 5000 THEN 'Medium'
+             ELSE 'High'
+          END AS sales_category
+   FROM sales_table;
+   ```
+   Explanation: This query uses a case statement to categorize sales data based on different order amount thresholds. It allows you to analyze sales performance across different sales categories and identify trends within each category.
+
+   ## 6. Temporal Queries:
+   - Example: Analyzing year-over-year sales growth for a specific period
+   ```sql
+   SELECT year, SUM(sales) AS total_sales,
+          LAG(SUM(sales)) OVER (ORDER BY year) AS previous_year_sales,
+          (SUM(sales) - LAG(SUM(sales)) OVER (ORDER BY year)) / LAG(SUM(sales)) OVER (ORDER BY year) * 100 AS growth_rate
+   FROM sales_table
+   WHERE year BETWEEN 2020 AND 2022
+   GROUP BY year;
+   ```
+   Explanation: This query calculates year-over-year sales growth by comparing the total sales for each year with the previous year's sales. It helps identify growth rates and trends over time.
+
+## 7. Unions and Intersections:
+   - Example: Consolidating sales data from multiple sources
+   ```sql
+   SELECT order_id, order_date, sales
+   FROM sales_table_1
+   UNION
+   SELECT order_id, order_date, sales
+   FROM sales_table_2;
+   ```
+   Explanation: This query combines sales data from `sales_table_1` and `sales_table_2` using the UNION operator. It consolidates sales data from different sources into a single result set for further analysis.
+
+## 8. Views and Materialized Views:
+   - Example: Creating a view for frequently used complex queries
+   ```sql
+   CREATE VIEW monthly_revenue AS
+   SELECT month, SUM(revenue) AS total_revenue
+   FROM sales_table
+   GROUP BY month;
+   ```
+   Explanation: This query creates a view named `monthly_revenue` that encapsulates the query for calculating monthly revenue. It simplifies querying by allowing you to directly retrieve monthly revenue without having to rewrite the entire query.
+
+## 9. Performance Optimization Techniques:
+
+Optimizing query performance is crucial for complex SQL queries to ensure efficient data retrieval and analysis. By employing various optimization techniques, you can enhance the speed and efficiency of queries, resulting in faster data processing and improved overall performance. In the context of e-commerce solution sales and finance for Spring GDS Hong Kong, optimizing SQL queries can significantly impact decision-making processes and enable timely insights.
+
+**Example techniques for SQL query optimization include:**
+
+1. **Indexing:**
+    * Create appropriate indexes on columns used frequently in join conditions, WHERE clauses, or ORDER BY statements.
+    * Indexes allow the database engine to locate and retrieve data more efficiently, reducing the need for full table scans.
+Example: Creating an index on frequently used columns for faster data retrieval
+```sql
+CREATE INDEX idx_product_category ON sales_table (product_category);
+```
+Explanation: This query creates an index named idx_product_category on the product_category column of the sales_table. By creating an index on frequently used columns, such as product category, the database engine can locate and retrieve relevant data more efficiently, resulting in faster query execution.
+
+2. **Partitioning:**
+    * Partition large tables into smaller, more manageable segments based on specific criteria (e.g., date ranges or product categories).
+    * Partitioning can improve query performance by limiting the amount of data scanned during retrieval and reducing contention on disk resources.
+Example: Partitioning a large sales table by date range
+```sql
+CREATE TABLE sales_table (
+  ...
+  order_date DATE,
+  ...
+) PARTITION BY RANGE (order_date);
+
+CREATE TABLE sales_table_q1 PARTITION OF sales_table
+FOR VALUES FROM ('2023-01-01') TO ('2023-04-01');
+```
+Explanation: This example demonstrates partitioning the sales_table based on the order_date column. By splitting the table into smaller partitions based on date ranges (e.g., quarters), query performance can be improved as the database only needs to scan the relevant partition for a specific time period, rather than the entire table.
+
+3. **Analyzing Query Plans:**
+    * Use EXPLAIN or query profiling tools to analyze the query execution plan.
+    * Identify any performance bottlenecks, such as full table scans, inefficient join algorithms, or excessive sorting operations.
+    * Optimize queries by making adjustments based on the observed execution plan.
+Example:Analyzing the execution plan for a complex query
+```sql
+EXPLAIN SELECT * FROM sales_table WHERE product_category = 'Electronics';
+```
+Explanation: By using the EXPLAIN statement, the database engine generates an execution plan for the given query. The execution plan outlines the steps the database will take to retrieve the data. Analyzing the plan helps identify any performance bottlenecks, such as full table scans or inefficient join algorithms. Based on the observed execution plan, optimizations can be made to improve query performance.
+
+4. **Query Rewriting:**
+    * Rewrite complex queries to simplify their logic or improve performance.
+    * Consider using alternative query structures, rewriting subqueries as joins, or breaking down complex queries into smaller, more manageable parts.
+Example: Rewriting a subquery as a join to improve performance
+```sql
+SELECT s.product_id, s.order_amount, p.product_name
+FROM sales_table s
+JOIN product_table p ON s.product_id = p.product_id
+WHERE s.order_date >= '2023-01-01';
+```
+Explanation: Instead of using a subquery to retrieve the product_name based on the product_id, this query rewrites the subquery as a join with the product_table. By directly joining the tables, the query eliminates the need for a separate subquery, resulting in improved performance.
+
+5. **Caching:**
+    * Utilize caching mechanisms to store query results and avoid repetitive execution.
+    * Caching can significantly improve performance for queries that are frequently executed with the same parameters or on static data.
+Example: Caching frequently accessed sales data
+```sql
+SELECT * FROM sales_table CACHE;
+```
+Explanation: By adding the CACHE hint to the query, the database engine caches the result set. Subsequent executions of the same query can then retrieve the data directly from the cache instead of re-executing the entire query. Caching can significantly improve performance for queries that are frequently executed with the same parameters or on static data.
+
+6. **Parameterization:**
+    * Use parameterized queries or prepared statements to avoid repetitive compilation of query execution plans.
+    * Parameterization allows the database engine to reuse compiled plans for similar queries, reducing overhead and improving performance.
+7. **Optimized Data Types:**
+    * Choose appropriate data types for columns that match the nature of the data being stored.
+    * Avoid using excessively large data types when smaller ones are sufficient, as larger data types require more memory and storage.
+
+By employing these optimization techniques, Spring GDS Hong Kong can significantly improve query performance, enabling faster data retrieval and analysis. This, in turn, facilitates timely decision-making, enhances reporting capabilities, and supports the generation of actionable insights based on sales and financial data.
+
+**It's essential to periodically review and fine-tune the optimization strategies as data volumes and usage patterns evolve.** Regularly monitoring query performance and adjusting indexes, partitions, or rewriting queries will ensure ongoing optimization and efficient utilization of the database resources.
+
+
+## 10. Common Table Expressions (CTEs)
 CTEs are valuable for breaking down complicated queries into simpler, easier-to-handle parts. Let's consider an example where we use a CTE to analyze e-commerce sales by product category and region:
 
 ```sql
