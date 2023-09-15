@@ -395,6 +395,126 @@ Ensure that the psycopg2 and pandas libraries are installed by executing the com
 
 ## 6. Customer segmentation 
 
+The development of an efficient Python automation script for customer segmentation generally entails the utilization of machine learning libraries such as scikit-learn to execute clustering or classification tasks. Customer segmentation can be predicated on diverse factors, including behavior, demographics, and purchase history. In this example, a script for customer segmentation using K-means clustering will be provided as an illustration. Please noted that the segmentation logic can be significantly more intricate and tailored to a specific domain.
+
+Before running the script, make sure the necessary libraries are installed, including 'pandas', 'scikit-learn', and 'openpyxl':
+```python
+pip install pandas scikit-learn openpyxl
+```
+Here's the script with a test function to perform customer segmentation:
+```python
+import pandas as pd
+from sklearn.cluster import KMeans
+from sklearn.preprocessing import StandardScaler
+from openpyxl import load_workbook
+
+def customer_segmentation(input_excel, output_excel):
+    try:
+        # Load the Excel file into a DataFrame
+        df = pd.read_excel(input_excel)
+
+        # Extract relevant features for segmentation (customize this based on your data)
+        features = df[['Age', 'Income']]
+
+        # Standardize the features
+        scaler = StandardScaler()
+        scaled_features = scaler.fit_transform(features)
+
+        # Perform K-means clustering (customize the number of clusters)
+        num_clusters = 3  # Adjust this based on your desired number of segments
+        kmeans = KMeans(n_clusters=num_clusters, random_state=0)
+        df['Segment'] = kmeans.fit_predict(scaled_features)
+
+        # Save the segmented data back to the Excel file
+        with pd.ExcelWriter(output_excel, engine='openpyxl') as writer:
+            writer.book = load_workbook(input_excel)
+            df.to_excel(writer, sheet_name='Sheet1', index=False)
+
+        print(f"Customer segmentation completed. Segmented data saved as '{output_excel}'.")
+
+    except Exception as e:
+        print(f"Error: {e}")
+
+def test_customer_segmentation():
+    # Replace with your input and output Excel file paths
+    input_excel = 'Customer Profitability Sample-no-PV.xlsx'
+    output_excel = 'Segmented Customer Data.xlsx'
+
+    # Test the customer segmentation
+    customer_segmentation(input_excel, output_excel)
+
+if __name__ == "__main__":
+    # Test the customer_segmentation function
+    test_customer_segmentation()
+```
+In this script:
+1. We load the data from the Excel file that was given to us and pull out the important parts, such as Age and Income.
+2. The scales of the traits are made the same by standardizing them.
+3. K-means grouping is done with a certain number of groups (num_clusters), which you can change to suit your needs.
+4. The data is saved back to the Excel file after it has been split up.
+5. Error handling is used to handle problems in a calm way.
+6. The segmentation process can be run with the help of a test code called test_customer_segmentation.
+
+To use the script:
+1. Replace 'Customer Profitability Sample-no-PV.xlsx' with the path to your input Excel file and 'Segmented Customer Data.xlsx' with the path to your chosen output file.
+2. Run the script. It will perform customer segmentation and save the segmented data back to the Excel file. It will also display a success message.
+
+The following code demonstrates performaning K-means clustering on customer sample data:
+```python
+import pandas as pd
+from sklearn.cluster import KMeans
+from sklearn.preprocessing import StandardScaler
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Load the data from a CSV file
+data = pd.read_csv('Kmeans Customer Sample.csv')
+
+# Data cleaning: Remove non-numeric characters ('$' and ',') from 'annual_income'
+data['annual_income'] = data['annual_income'].str.replace('[\$,]', '', regex=True)
+
+# Convert 'annual_income' to numeric
+data['annual_income'] = pd.to_numeric(data['annual_income'], errors='coerce')
+
+# Drop rows with missing 'annual_income' values (NaN)
+data.dropna(subset=['annual_income'], inplace=True)
+
+# Extract relevant features for clustering ('age' and 'annual_income')
+features = data[['age', 'annual_income']]
+
+# Standardize the features
+scaler = StandardScaler()
+scaled_features = scaler.fit_transform(features)
+
+# Perform K-means clustering with a specified number of clusters
+num_clusters = 3  # Adjust this based on your desired number of clusters
+kmeans = KMeans(n_clusters=num_clusters, random_state=0)
+data['Cluster'] = kmeans.fit_predict(scaled_features)
+
+# Create a colormap for cluster colors
+colors = plt.cm.viridis(np.linspace(0, 1, num_clusters))
+
+# Define cluster labels
+cluster_labels = {
+    0: 'Young and Low Income',
+    1: 'Middle-Aged and Medium Income',
+    2: 'Senior and High Income'
+}
+
+# Visualize the clusters
+plt.figure(figsize=(10, 6))
+for cluster in range(num_clusters):
+    cluster_data = data[data['Cluster'] == cluster]
+    plt.scatter(cluster_data['age'], cluster_data['annual_income'], label=f'Cluster {cluster + 1}: {cluster_labels[cluster]}', c=[colors[cluster]])
+
+plt.scatter(kmeans.cluster_centers_[:, 0], kmeans.cluster_centers_[:, 1], s=100, c='black', marker='x', label='Centroids')
+plt.xlabel('Age')
+plt.ylabel('Annual Income')
+plt.title('K-means Clustering')
+plt.legend()
+plt.show()
+```
+
 ## 7. Anomaly detection
 
 ## 8. Sentiment analysis
