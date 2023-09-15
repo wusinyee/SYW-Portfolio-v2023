@@ -229,7 +229,9 @@ This script defines three functions:
 
 Replace `'your_document.docx'` with the path to your Word document. When you run this script, it will proofread the document, print the corrections (optional), and save the corrected document as 'corrected_document.docx'.
 
-## 4. Data integration 
+## 4. Data Preperation 
+
+## 5. Data integration 
 
 ```python
 import pandas as pd
@@ -279,16 +281,16 @@ print('Data integration completed.')
 # Note: Replace 'YourDSNName' and 'YourTableName' with your actual DSN and table name.
 ```
 
-## 5. Customer segmentation 
+## 6. Customer segmentation 
 
-## 6. Anomaly detection
+## 7. Anomaly detection
 
-## 7. Sentiment analysis
+## 8. Sentiment analysis
 
-## 8. Inventory management
+## 9. Inventory management
 
-## 9. Email campaigns
+## 10. Email campaigns
 
-## 10. Predictive analytics
+## 11. Predictive analytics
 
-## 11. Data visualization
+## 12. Data visualization
