@@ -459,7 +459,7 @@ To use the script:
 1. Replace 'Customer Profitability Sample-no-PV.xlsx' with the path to your input Excel file and 'Segmented Customer Data.xlsx' with the path to your chosen output file.
 2. Run the script. It will perform customer segmentation and save the segmented data back to the Excel file. It will also display a success message.
 
-The following code demonstrates performaning K-means clustering on customer sample data:
+The following code demonstrates using K-means clustering for customer segmentation:
 ```python
 import pandas as pd
 from sklearn.cluster import KMeans
@@ -514,6 +514,7 @@ plt.title('K-means Clustering')
 plt.legend()
 plt.show()
 ```
+![Example of customer segmentation using K-Means Clustering](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/7290f9810f48b8a9599acb850a26a917c4dfa05b/kmeans.jpg)
 
 ## 7. Anomaly detection
 
