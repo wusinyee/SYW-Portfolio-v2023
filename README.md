@@ -15,25 +15,52 @@
 
 
 # Unlocking Insights: A Collection of BI & Data Analysis Projects
+### Project List
 
-### Project list:
-
+* **Python**
 - [x] [Exploratory Data Analysis with Python](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/b1307ea78b43019802a944f187f3cf31ba005d47/EDAwithPython.md)
-- [x] [Data Quality Assessment Dashboard by Tableau](https://public.tableau.com/views/DQADashboard/DQADB?:language=en-US&:display_count=n&:origin=viz_share_link)
+    * A project that uses Python to build a machine learning model.
+    * A project that uses Python to automate tasks.
+* **SQL**
 - [x] [Advanced SQL Techniques for Actionable Insights in E-commerce Sales and Finance](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/cac1641a106928edddf31ab8848e3f1212eca84f/Advanced%20SQL%20Techniques%20for%20Actionable%20Insights%20in%20E-commerce%20Sales%20and%20Finance.md)
-- [ ] [The Project Management Cliff Notes](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/f5f50447fb7865ef1a862a98a5ed327c9a9b65b2/The%20Project%20Management%20Cliff%20Notes.md)
-- [ ] [Contoso Sales Analytics Dashboard by Power BI](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/e4d7223d91b2be3a5462ed15762098b6ed4eb97d/Contoso%20Sales%20Overview%20Dashboard%20Project%20Docutmentation.md)
-- [ ] [A Sytematic Guide to Financail Modelling](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/e8095b429677f3d49f848016ad9e628f075dac99/financial_modelling.md)
-- [ ] [Risk Portfolio Management with Django](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/0ea685e756724c582282ba3ba1ed0af25a05a17f/RPMswithDjango.md)
-- [ ] [Customer Sales Trend Analysis with PostgreSQL](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/38b9d00d5b8cf32327f139afbf81cb207f9fe325/CustomerSalesTrendAnalysisPostgreSQL.md)
-- [ ] Technical documentation and specifications 
-- [x] [Customer Segmentation Analysis with SQL](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/4914ce37258ffebe612979c7855e0fd019c8eca3/Customer%20Segmentation%20Analysis%20with%20SQL.md)
-- [x] [World Happiness Informational Dashboard- Tableau](https://public.tableau.com/views/WorldHappinessInformationalDashboard/Title?:language=en-US&:display_count=n&:origin=viz_share_link)
-- [x] [Divvy Bike Rider Analysis - Tableau](https://public.tableau.com/views/DIVVYANALYSIS/RidersAnalysis?:language=en-US&:display_count=n&:origin=viz_share_link)
-- [x] [Sales data analysis and visualization with Python](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/55c05d4b57da2c4ad358811c9ffeafd1fa986b3e/Sales%20data%20analysis%20and%20visualization%20with%20Python.md)
-- [x] [Extract, Tranform, Load (ETL) with Microsoft SQL Server Integration Services](https://www.canva.com/design/DAFbF6ULnlw/M-IEfwb71qhXO_sf0nTgiA/view?utm_content=DAFbF6ULnlw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
-- [x] [Business Requirement Documentation Sample](https://www.canva.com/design/DAFb08GxmS0/op8wOGsa2pDsh0tuxEQFcw/view?utm_content=DAFb08GxmS0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+ - [ ] [Customer Sales Trend Analysis with PostgreSQL](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/38b9d00d5b8cf32327f139afbf81cb207f9fe325/CustomerSalesTrendAnalysisPostgreSQL.md)
+- [ ] [build a reporting dashboard with SQL](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/4914ce37258ffebe612979c7855e0fd019c8eca3/Customer%20Segmentation%20Analysis%20with%20SQL.md)
 - [x] [SQL Data Cleaning and Analysis](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/f2969db51e0b5e973965462903698f2f2009ff41/SQL%20Data%20Cleaning%20and%20Analysis.md)
+* **Data Visualization**
+- [x] [Data Quality Assessment Dashboard by Tableau](https://public.tableau.com/views/DQADashboard/DQADB?:language=en-US&:display_count=n&:origin=viz_share_link)
+- [ ] [Contoso Sales Analytics Dashboard by Power BI](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/e4d7223d91b2be3a5462ed15762098b6ed4eb97d/Contoso%20Sales%20Overview%20Dashboard%20Project%20Docutmentation.md)
+- [x] [World Happiness Informational Dashboard- Tableau](https://public.tableau.com/views/WorldHappinessInformationalDashboard/Title?:language=en-US&:display_count=n&:origin=viz_share_link)
+- [x] - [x] [Divvy Bike Rider Analysis - Tableau](https://public.tableau.com/views/DIVVYANALYSIS/RidersAnalysis?:language=en-US&:display_count=n&:origin=viz_share_link)
+- [x] [Sales data analysis and visualization with Python](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/55c05d4b57da2c4ad358811c9ffeafd1fa986b3e/Sales%20data%20analysis%20and%20visualization%20with%20Python.md)
+* **Documentation**
+- [ ] [Develop and Document a Risk Portfolio Management system](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/0ea685e756724c582282ba3ba1ed0af25a05a17f/RPMswithDjango.md)
+    * A project that documents the process for a business process.
+    * A project that documents the requirements for a project.
+* **Project Management**
+- [ ] [The Project Management Cliff Notes](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/f5f50447fb7865ef1a862a98a5ed327c9a9b65b2/The%20Project%20Management%20Cliff%20Notes.md)
+    * A project that uses project management techniques to manage risks and issues.
+    * A project that uses project management techniques to communicate with stakeholders.
+* **Business Process Modelling**
+    * A project that models a business process using a graphical notation.
+    * A project that analyzes a business process to identify opportunities for improvement.
+    * A project that implements a new business process.
+* **Gather Requirements**
+- [x] [Business Requirement Documentation Sample](https://www.canva.com/design/DAFb08GxmS0/op8wOGsa2pDsh0tuxEQFcw/view?utm_content=DAFb08GxmS0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+    * A project that validates requirements with stakeholders.
+    * A project that documents requirements.
+* **Machine Learning**
+    * A project that builds a machine learning model to predict future outcomes.
+    * A project that uses a machine learning model to make decisions.
+    * A project that evaluates the performance of a machine learning model.
+* **Data Analysis**
+    * A project that analyzes data to identify patterns and trends.
+    * A project that uses data to make predictions.
+    * A project that communicates the results of an analysis to stakeholders.
+* **Building Models**
+- [ ] [A Sytematic Guide to Financail Modelling](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/e8095b429677f3d49f848016ad9e628f075dac99/financial_modelling.md)
+* **ETLs**
+- [x] [Extract, Tranform, Load (ETL) with Microsoft SQL Server Integration Services](https://www.canva.com/design/DAFbF6ULnlw/M-IEfwb71qhXO_sf0nTgiA/view?utm_content=DAFbF6ULnlw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+- [x] [ETL with SSIS](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/88cbdcd21e2c18a24f3cfd018c4d035322e4439a/ETL%20Tech%20Doc.pdf)
 
 
 
@@ -67,10 +94,6 @@ Extract, Tranform, Load (ETL) with Microsoft SQL Server Integration Services
 ![Flowchart](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/88cbdcd21e2c18a24f3cfd018c4d035322e4439a/ETLwithSSISflowchart.jpg)
 
 
-Business Requirement Documentation Sample
-------------------------------------------
-
-[PDF](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/7c00fd2c34d6554339c032af068ac96ae3893aa2/BRD%20Sample%20.pdf)
 
 
 
