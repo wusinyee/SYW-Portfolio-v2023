@@ -2,96 +2,81 @@
 
 The benevolent Python emerges as a veritable savior, graciously bestowing the gift of automation upon beleaguered analysts. Behold, in a place where time is money and efficiency is paramount, Python automation unfurls its cape in ten distinguished scenarios:
 
-## 1. Data extraction and preparation
+## 1. Data extraction automation scripts
 
-```python
-import pandas as pd
+Developing an optimal Python automation script for extracting data from a MySQL database encompasses efficient data retrieval, appropriate error handling, and a well-organized, maintainable code structure. 
 
-# Define file paths
-input_file = 'your_dataset.csv'    # Replace with the path to your Mockaroo dataset
-output_file = 'cleaned_dataset.csv'  # Output file path for the cleaned dataset
-
-# Load the dataset
-df = pd.read_csv(input_file)
-
-# Clean and transform the data
-df['Email'] = df['Email'].str.strip().str.lower()
-df['Phone'] = df['Phone'].str.replace(r'\D', '', regex=True)
-df['Address'] = df['Address'].str.strip()
-
-# Save the cleaned dataset to a new CSV file
-df.to_csv(output_file, index=False)
-
-# Display a success message
-print(f"Dataset cleaned and saved to {output_file}")
-```
-
-```python
+```sql
 import mysql.connector
 import pandas as pd
-from sklearn.ensemble import IsolationForest
-import smtplib
-from email.mime.text import MIMEText
-from email.mime.multipart import MIMEMultipart
 
-# Database connection parameters
-db_params = {
-    "host": "localhost",
-    "user": "your_username",
-    "password": "your_password",
-    "database": "your_database",
-}
+def extract_data(host, user, password, database, query):
+    try:
+        # Create a connection to the MySQL database using a context manager
+        with mysql.connector.connect(
+            host=host,
+            user=user,
+            password=password,
+            database=database
+        ) as connection:
+            # Create a cursor using a context manager
+            with connection.cursor() as cursor:
+                # Execute the SQL query and fetch data into a Pandas DataFrame
+                cursor.execute(query)
+                columns = [desc[0] for desc in cursor.description]
+                data = cursor.fetchall()
 
-# Connect to MySQL database and retrieve data
-try:
-    conn = mysql.connector.connect(**db_params)
-    cursor = conn.cursor()
-    cursor.execute("SELECT * FROM your_table")
-    data = cursor.fetchall()
+        # Create a DataFrame from the fetched data
+        df = pd.DataFrame(data, columns=columns)
+        return df
 
-    # Load data into a pandas DataFrame
-    df = pd.DataFrame(data, columns=["Column1", "Column2", ...])  # Replace with actual column names
+    except mysql.connector.Error as err:
+        print(f"Error: {err}")
+        return None
 
-    # Data processing and anomaly detection (replace with your own logic)
-    # Example: Using Isolation Forest for anomaly detection
-    clf = IsolationForest(contamination=0.05)
-    df['anomaly'] = clf.fit_predict(df[['Column1', 'Column2']])
+def test_extract_data():
+    # Replace with your test MySQL server details and query
+    test_host = "your_test_host"
+    test_user = "your_test_user"
+    test_password = "your_test_password"
+    test_database = "your_test_database"
+    test_query = "SELECT * FROM your_test_table"
 
-    # Check if anomalies were detected
-    if -1 in df['anomaly'].values:
-        # Send warning email
-        sender_email = 'your_email@gmail.com'
-        receiver_email = 'data_team@example.com'
-        password = 'your_email_password'
+    # Extract test data
+    test_data = extract_data(test_host, test_user, test_password, test_database, test_query)
 
-        message = MIMEMultipart()
-        message['From'] = sender_email
-        message['To'] = receiver_email
-        message['Subject'] = 'Anomalies Detected'
+    # Check if data extraction was successful
+    assert test_data is not None, "Data extraction failed"
 
-        body = 'Anomalies detected in the data. Please review.'
-        message.attach(MIMEText(body, 'plain'))
+    # Check if the DataFrame has rows
+    assert not test_data.empty, "DataFrame is empty"
 
-        server = smtplib.SMTP('smtp.gmail.com', 587)
-        server.starttls()
-        server.login(sender_email, password)
-        text = message.as_string()
-        server.sendmail(sender_email, receiver_email, text)
-        server.quit()
+    print("Test passed. Data extracted successfully.")
 
-    else:
-        # Save cleaned data as a new CSV file
-        df.to_csv('cleaned_data.csv', index=False)
+if __name__ == "__main__":
+    # Replace with your MySQL server details and query
+    host = "your_host"
+    user = "your_user"
+    password = "your_password"
+    database = "your_database"
+    query = "SELECT * FROM your_table"
 
-except mysql.connector.Error as err:
-    print(f"Error: {err}")
+    # Extract data
+    extracted_data = extract_data(host, user, password, database, query)
 
-finally:
-    if cursor:
-        cursor.close()
-    if conn:
-        conn.close()
+    if extracted_data is not None:
+        # Process the data or save it as needed
+        print(extracted_data.head())
+
+        # You can perform further data processing or save the data to a file here
+
+    # Run the test function
+    test_extract_data()
 ```
+This script utilizes context managers for improved resource management and incorporates a test_extract_data function to verify the accuracy of the data extraction. Replace the test MySQL server details with your own for testing.
+To use the script:
+1. Replace the placeholders for your MySQL server details and query.
+2. Execute the script. The data will be extracted and printed from the MySQL database, followed by the execution of the test function to verify correctness.
 
 ## 2. Report generation
 
