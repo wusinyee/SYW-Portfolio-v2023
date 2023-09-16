@@ -80,3 +80,9 @@ The purpose of this project is to develop a dashboard to monitor key business op
 * Visualizations will include bar charts, line charts, pie charts, and other relevant chart types to represent the metrics effectively.
 * The Looker Studio environment will allow for data exploration, interactive filtering, and drill-down functionality.
 * Scheduled deliveries of dashboard reports will be configured to relevant stakeholders for ongoing monitoring.
+
+----------------------------------------------------------------------------------------------------------------
+
+## The Dataset
+
+
