@@ -83,11 +83,11 @@ The purpose of this project is to develop a dashboard to monitor key business op
 
 ----------------------------------------------------------------------------------------------------------------
 
-## The Dataset
+## Understanding the Dataset
 
-![Tables and Schema](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/391580c0e5993b46c4f87fc4b51e50cd39bb1eaa/dbtable.jpg)
+![Dataset Tables Schema](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/391580c0e5993b46c4f87fc4b51e50cd39bb1eaa/dbtable.jpg)
 
-### 1. Understanding the Dataset
+### Summary Statistics for Table
 
 ### Summary Statistics for Fashion Retail Product Table
 
@@ -101,9 +101,6 @@ The purpose of this project is to develop a dashboard to monitor key business op
 | 50%             | 1460.500000  |
 | 75%             | 2007.500000  |
 | max             | 2500.000000  |
-
-
-
 
 
 
@@ -187,5 +184,24 @@ The purpose of this project is to develop a dashboard to monitor key business op
 | description | 0 |
 | price | 0 |
 | stock_quantity | 0 |
+
+
+![Correcelation Heatmap of the Dataset](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/5c542abbe67574155ab0af2ba018e5444c268104/cooreheatmap.jpg)
+
+The heatmap provided displays the correlation between variables in the combined dataset. Correlation is a metric that quantifies the linear association between two variables. The range of the correlation coefficient is -1 to 1. A correlation of 1 represents a perfect positive correlation, -1 represents a perfect negative correlation, and 0 represents no correlation.
+The heatmap is color-coded based on the correlation between the variables. Red denotes positive correlations, blue denotes negative correlations, and white denotes no correlation. The correlation strength increases as the color darkens.
+Below are several key insights derived from the heatmap analysis:
+- The quantity of stock exhibits a positive correlation with the quantity of orders. This implies that as the stock quantity increases, there is a higher likelihood of an increase in the order quantity. This is logical, as customers tend to place orders for products that are currently available in inventory
+- The order quantity exhibits a positive correlation with the order value. This implies that as the order quantity increases, the order value is also expected to increase. This rationale is also valid, as customers tend to increase their spending when they place larger orders
+- The order value exhibits a positive correlation with the customer lifetime value (CLV). This implies that customers who place orders with higher values are more likely to be valuable customers in the long run. This is due to their increased likelihood of making future purchases from the company
+- Customer Lifetime Value (CLV) exhibits a positive correlation with the customer retention rate. This implies that customers with a higher Customer Lifetime Value (CLV) exhibit a higher likelihood of retention. This is due to their higher value to the company and the company's increased likelihood of investing in their retention
+
+In a broad sense, the heatmap reveals robust positive correlations among several key variables in the dataset. This data can be leveraged to gain insights into customer behavior and formulate effective strategies for boosting sales and enhancing customer retention.For instance, the company can leverage the data from the heatmap in order to:
+- Target customers with high Customer Lifetime Value (CLV) by implementing personalized promotions and exclusive offers
+- Provide discounts on frequently co-purchased products
+- Create loyalty programs that incentivize and acknowledge customers for their recurring purchases
+
+
+
 
 
