@@ -85,4 +85,4 @@ The purpose of this project is to develop a dashboard to monitor key business op
 
 ## The Dataset
 
-
+![Tables and Schema](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/391580c0e5993b46c4f87fc4b51e50cd39bb1eaa/dbtable.jpg)
