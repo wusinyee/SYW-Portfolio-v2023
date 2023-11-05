@@ -1,12 +1,5 @@
 # 💫 About Me:
-## Hi there!👋 My name is Mandy
-* 🌍  Location: Wan Chai, Hong Kong
-* 🔭  I'm currently delving into ML problem framing, clustering, and completing the 100 days of coding challenge with Rust. Besides that, I have my sights set on business process and workflow automation. I would also love to unleash the full capabilities of JIRA and Looker Studio.
-* 👯  I'm open to collaborating on ML/BI/DA and open source projects. And I have a genuine interest in testing different AI-powered tools 
-* 💬  I love staying up-to-date on the latest technological breakthroughs and discoveries, and finding ways to incorporate these insights into my work. 
-* 👨‍💻  All of my projects are available on my [portfolio](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/main/README.md#unlocking-insights-a-collection-of-bi--data-analysis-projects), [Tableau Public Profile](https://public.tableau.com/app/profile/sin.yee.wu), and [Medium Profile](https://medium.com/@wuqianyi1021)
-* ✉️  You can contact me via [wuqianyi1021@gmail.com](mailto:wuqianyi1021@gmail.com)
-* ⚡ I am also an avid enthusiast of philosophy, conceptual engineering, and mental health research.
+🔭 I am currently working on data workflow automation, ML life cycle, and breaking new ground in documentation UI/UX<br>👯 I'm always eager to contribute to interesting open-source projects<br>🤝  I'm looking for help with incorporating Material Design into data visualization<br>🌱 I'm actively learning TabPy, Alteryx, and Material Design<br>⚡ I am also an avid enthusiast of philosophy, skydiving, and mental health research
 
 ### ✍️ Random Dev Quote
 ![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark)
@@ -97,5 +90,8 @@ Extract, Tranform, Load (ETL) with Microsoft SQL Server Integration Services
 
 <p align="left"> <a href="https://www.github.com/wusinyee" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/github.svg" width="32" height="32" /></a> <a href="https://www.linkedin.com/in/sin-yee-mandy-wu-865a0a13a" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/linkedin.svg" width="32" height="32" /></a> <a href="http://www.medium.com/@wuqianyi1021" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/medium.svg" width="32" height="32" /></a></p>
 
+### 😂 Random Dev Meme
+<img src='https://randommeme-five.vercel.app/' style="height: 400px;"/>
 
-
+---
+[![](https://visitcount.itsvg.in/api?id=wusinyee&icon=0&color=0)](https://visitcount.itsvg.in)
