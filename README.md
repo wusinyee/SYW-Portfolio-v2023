@@ -31,7 +31,7 @@ Includes data integration, transformation, processing, quality management, and g
 ### **Documentation**
 - [ ] [Develop and Document a Risk Portfolio Management system](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/0ea685e756724c582282ba3ba1ed0af25a05a17f/RPMswithDjango.md)
 - [ ] Project Charter
-- [ ] UAT: Tired of "Don't Deploy on Friday"? How about "Sign-off Friday"?
+- [ ] [UAT: Tired of "Don't Deploy on Friday"? How about "Sign-off Friday"?](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/caa701ea7cddfe1dc90152019694171ec487f277/uatsignofffridayguide.md)
 ### **Project Management**
 - [ ] [The Project Management Cliff Notes](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/f5f50447fb7865ef1a862a98a5ed327c9a9b65b2/The%20Project%20Management%20Cliff%20Notes.md)
 - [ ] Project management techniques to manage risks and issues
