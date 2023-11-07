@@ -35,7 +35,7 @@ Includes data integration, transformation, processing, quality management, and g
 ### **Project Management**
 - [ ] [The Project Management Cliff Notes](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/f5f50447fb7865ef1a862a98a5ed327c9a9b65b2/The%20Project%20Management%20Cliff%20Notes.md)
 - [ ] Project management techniques to manage risks and issues
-- [ ] Effective communication with stakeholders
+- [ ] Effective communication with stakeholders()
 ### **Business Process Modelling**
 - [ ] Bussines Order Processing Map
 - [ ] Business process modeling and improvement
