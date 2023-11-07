@@ -56,6 +56,7 @@ Certification & Accomplishment
 - [Intermediate Python](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/7eccd777e594ea17023ed3a033fb9eb320ab0637/IPython.pdf)
 - [Intermediate SQL](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/f483b722db454e79f99ff4fe3f9972a12addb34a/ISQL.pdf)
 - [Google Data Analytics Professional Certificate](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/83309c1adf18fee93ee25af5e002a2f6883f90d1/GoogleDataAnalyticsProfCert.pdf)
+- [Google Business Intelligence Professional Certificate](https://coursera.org/share/be0512f91e53db47035eecc4c016c3c9)
 - [Introduction to Data Science with Python](https://github.com/wusinyee/SYW-Portfolio-v2023/blob/d7b06bd605b9fba53f9b829c68e35cc5b7c913ab/DSP.pdf)
 
 
